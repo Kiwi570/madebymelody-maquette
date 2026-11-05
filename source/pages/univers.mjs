@@ -22,7 +22,7 @@ export default (c) => {
       <p class="u-actions" data-anime="gsap">${c.lien('boutique', { classe: 'bouton bouton--noir', texte: c.t('univers.tete.action'), attrs: 'data-action-principale data-survol="magnetique"' })}</p>
       <p class="u-info" data-info-cle>${c.t('univers.tete.info')}</p>
     </div>
-    <div class="u-pochette" data-effet="disque-sort">
+    <div class="u-pochette" data-effet="disque-sort" data-iris-centre>
       <span class="u-pochette-disque" aria-hidden="true">${disqueSvg({ id: 'u-tete', texte: 'MADEBYMELODY · FACE A · ROCK, FLEURS ET BABY DOLL · ' })}</span>
       <div class="u-pochette-cadre">${c.media({ nom: 'site/collage-portrait', alt: c.s('univers.tete.pochette'), priorite: true, sizes: '(max-width: 760px) 80vw, 40vw' })}</div>
     </div>
@@ -31,7 +31,7 @@ export default (c) => {
 
 <section class="u-univers" id="univers">
   <div class="conteneur u-univers-grille">
-    <h2 data-anime="lignes">${c.t('univers.univers.titre')}</h2>
+    <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('univers.univers.titre')}</h2>
     <p class="u-univers-texte" data-anime>${c.t('univers.univers.texte')}</p>
   </div>
   <ul class="conteneur u-triptyque" data-anime="cascade">
@@ -44,7 +44,7 @@ export default (c) => {
 <section class="melangeur" id="melangeur" data-effet="melangeur">
   <div class="conteneur">
     <p class="kicker">${c.t('univers.melangeur.kicker')}</p>
-    <h2 data-anime="lignes">${c.t('univers.melangeur.titre')}</h2>
+    <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('univers.melangeur.titre')}</h2>
     <p class="melangeur-intro">${c.t('univers.melangeur.texte')}</p>
     <div class="melangeur-pistes">
       ${paires.map(([a, b, k]) => html`<div class="tranche" style="--m:0">
@@ -63,13 +63,13 @@ export default (c) => {
 <section class="u-attitude theme-creme" id="attitude">
   <div class="conteneur u-duo">
     ${piece('ballade', 3, c.s('univers.attitude.alt'), { classe: 'u-duo-media', attrs: 'data-fx="zoom"' })}
-    <div><h2 data-anime="lignes">${c.t('univers.attitude.titre')}</h2><p class="u-grand" data-anime>${c.t('univers.attitude.texte')}</p></div>
+    <div><h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('univers.attitude.titre')}</h2><p class="u-grand" data-anime>${c.t('univers.attitude.texte')}</p></div>
   </div>
 </section>
 
 <section class="u-concept theme-rose" id="concept">
   <div class="conteneur u-duo u-duo--inverse">
-    <div><h2 data-anime="lignes">${c.t('univers.concept.titre')}</h2><p class="u-grand" data-anime>${c.t('univers.concept.texte')}</p></div>
+    <div><h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('univers.concept.titre')}</h2><p class="u-grand" data-anime>${c.t('univers.concept.texte')}</p></div>
     ${piece('playground', 1, c.s('univers.concept.alt'), { classe: 'u-duo-media', attrs: 'data-anime="rideau"' })}
   </div>
 </section>
@@ -81,7 +81,7 @@ export default (c) => {
     </div>
     <div>
       <p class="kicker">${c.t('univers.designer.kicker')}</p>
-      <h2 data-anime="lignes">${c.t('univers.designer.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('univers.designer.titre')}</h2>
       <p data-anime>${c.t('univers.designer.texte1')}</p>
       <p data-anime>${c.t('univers.designer.texte2')}</p>
       <dl class="notes" data-anime="cascade">
@@ -97,7 +97,7 @@ export default (c) => {
 <section class="u-fin theme-cerise" id="fin">
   <div class="conteneur u-duo">
     <div>
-      <h2 data-anime="lignes">${c.t('univers.fin.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('univers.fin.titre')}</h2>
       <p class="u-actions" data-anime>
         ${c.lien('boutique', { classe: 'bouton bouton--creme', texte: c.t('univers.fin.boutique'), attrs: 'data-survol="magnetique"' })}
         ${c.lien('sur-mesure', { ancre: 'rendez-vous', classe: 'bouton bouton--contour', texte: c.t('univers.fin.mesure'), attrs: 'data-survol="magnetique"' })}

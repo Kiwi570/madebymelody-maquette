@@ -18,7 +18,7 @@ export default (c) => {
         <a class="bouton bouton--contour" href="mailto:${k.email}">${k.email}</a>
       </p>
     </div>
-    <div class="etiquette-geante" data-effet="etiquette">
+    <div class="etiquette-geante" data-effet="etiquette" data-iris-centre="disque">
       <svg class="etiquette-cercle" viewBox="0 0 400 400" aria-hidden="true" focusable="false" data-audit-ignorer>
         <defs><path id="c-arc" d="M200 200 m-160 0 a160 160 0 1 1 320 0 a160 160 0 1 1 -320 0" /></defs>
         <circle cx="200" cy="200" r="196" class="etiquette-fond" />
@@ -35,7 +35,7 @@ export default (c) => {
 <section class="c-canaux theme-creme" id="message">
   <div class="conteneur c-canaux-grille">
     <div>
-      <h2 data-anime="lignes">${c.t('contact.canaux.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('contact.canaux.titre')}</h2>
       <p data-anime>${c.t('contact.canaux.texte')}</p>
       <dl class="notes notes--clair" data-anime="cascade">
         <div><dt>${c.t('contact.canaux.adresse')}</dt><dd>${k.adresse}</dd></div>
@@ -64,7 +64,7 @@ export default (c) => {
 <section class="c-acces" id="acces">
   <div class="conteneur c-acces-grille">
     <div>
-      <h2 data-anime="lignes">${c.t('contact.acces.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('contact.acces.titre')}</h2>
       <p data-anime>${c.t('contact.acces.texte')}</p>
       <p data-anime><a class="bouton bouton--rose" href="https://www.google.com/maps/search/?api=1&amp;query=Ch.%20de%20Cr%C3%A8ve-C%C5%93ur%203%2C%201260%20Nyon" target="_blank" rel="noopener">${c.t('contact.acces.itineraire')} <span class="visuellement-cache">${c.t('commun.nouvelOnglet')}</span></a></p>
       <div class="c-insta">

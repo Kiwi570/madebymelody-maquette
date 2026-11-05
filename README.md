@@ -1,4 +1,4 @@
-# madebymelody — maquette v1
+# madebymelody — maquette v2
 
 Maquette du futur site de **madebymelody**, créatrice de mode à Nyon : pièces uniques et numérotées, faites main, et atelier sur mesure.
 Direction artistique **« Face A / Face B »** : un disquaire rock où chaque pièce devient une piste numérotée, et où la page bascule du *sage* (rose, tulle, dentelle) au *sauvage* (noir, dentelle noire, rouge cerise).
@@ -9,12 +9,14 @@ Adresse prévue : https://madebymelody-maquette.vercel.app (non indexée par les
 
 | Page | Ouverture | Éléments ludiques |
 |---|---|---|
-| Accueil | « Le disque » : vinyle WebGL dont l'étiquette est une vraie photo, scratché au défilement, qui passe en face B | Intro platine, tracklist, bac à pochettes épinglé, crossfader Face A / Face B, tampon « 1/1 », bandeau des titres |
+| Accueil | « Le disque » : vinyle WebGL dont l'étiquette est une vraie photo, à faire tourner à la main (élan, flou de vitesse, lumière qui suit la souris), scratché au défilement, qui passe en face B ; le disque de l'intro devient celui-ci | Intro platine, tracklist, bac où l'on feuillette les pochettes une à une (« crate digging »), crossfader Face A / Face B, tampon « 1/1 », bandeau des titres |
 | L'univers | « La pochette » : fond crème, le disque sort de la pochette | Mélangeur à trois faders (dentelle ↔ insectes, tulle ↔ paons, silencieux ↔ revendicateur) |
-| Sur mesure | « Le voile » : fond rose, très grand titre, un tulle se lève sur la robe bustier rouge | Set-list en quatre temps, prénom brodé sur une étiquette, demande de rendez-vous en trois étapes (préremplie par l'adresse, ex. `?sujet=mariee`) |
-| Boutique | « Le bac » : ouverture compacte sur kraft, les pochettes sortent du bac | 29 pièces filtrables (type, face), lecture aléatoire, fiche en pochette double avec son propre lien (`?piece=javanaise`), panier simulé (identique dans tous les onglets) |
+| Sur mesure | « Le voile » : fond rose, très grand titre brodé au fil cerise (une aiguille passe), un tulle ondulant se lève sur la robe bustier rouge | Set-list en quatre temps, prénom brodé sur une étiquette, demande de rendez-vous en trois étapes (préremplie par l'adresse, ex. `?sujet=mariee`) |
+| Boutique | « Le bac » : ouverture compacte sur kraft, les pochettes sortent du bac | 29 pièces filtrables (type, face), lecture aléatoire, fiche en pochette double avec son propre lien (`?piece=javanaise`), panier simulé (identique dans tous les onglets) où la pièce ajoutée s'envole en disque |
 | Contact | « L'étiquette » : fond cerise, numéro en très grand sur une étiquette de 45 tours | Formulaire simulé, plan schématique, itinéraire, Instagram |
 | 404 | « Le diamant a sauté » | — |
+
+Sur toutes les pages : un sillon gravé court dans la marge droite et une pointe le lit au défilement (chaque section est une plage numérotée) ; les titres passent du sage au sauvage en arrivant ; l'intro glisse jusqu'à l'objet d'ouverture de la page puis s'ouvre depuis lui, et les changements de page se font en iris (le voile grandit depuis le clic, puis s'ouvre sur l'objet d'ouverture de la page suivante).
 
 Tout est simulé : aucun formulaire, aucune commande ni aucun paiement n'est envoyé. Le site le dit à chaque envoi.
 
@@ -69,3 +71,4 @@ Toutes les photos de vêtements, collages et le logo viennent du site actuel de 
 - Pages : `source/pages/*.mjs`, gabarit commun : `source/gabarits/commun.mjs`, style : `assets/css/site.css`, effets : `assets/js/site.js` et `assets/js/pages.js`.
 - Générer les pages après toute modification : `node outils/generer.mjs` (ne jamais modifier les fichiers `.html` à la main).
 - Auditer : `node _audit/audit.mjs` (standard), `--complet` pour la version finale. Documentation du socle : `outils/SOCLE.md`.
+- Ajout au socle (v2) : `assets/js/socle/iris.js`, branché dans `transitions.js` et `ouverture.js`. Il ne s'active que si le voile porte `data-forme="iris"` et si le navigateur gère `clip-path` et `mask` ; sinon le voile glisse comme avant. L'objet d'ouverture d'une page porte `data-iris-centre` (`="disque"` quand c'est un disque à reprendre tel quel).

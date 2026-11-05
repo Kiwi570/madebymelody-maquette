@@ -139,7 +139,7 @@ function barre(c) {
 }
 
 function voile(c) {
-  return html`<div data-voile aria-hidden="true"><div class="voile-contenu">
+  return html`<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu">
   ${disqueSvg({ classe: 'voile-disque', id: 'voile' })}
   <span data-voile-libelle>${c.libelle(c.page.cle)}</span>
 </div></div>`;
@@ -171,8 +171,10 @@ ${platine(c)}
 <a class="evitement" href="#contenu">${c.t('commun.evitement')}</a>
 ${entete(c)}
 <main id="contenu" tabindex="-1"${c.page.sansAction ? brut(' data-sans-action') : ''}${c.page.sansEffet ? brut(' data-sans-effet') : ''}>
+<div class="sillon" data-effet="sillon" aria-hidden="true" data-audit-ignorer><svg class="sillon-svg" focusable="false" width="40" height="10"><path class="sillon-fond" /><path class="sillon-lu-ombre" /><path class="sillon-lu" /><g class="sillon-plages"></g></svg></div>
 ${contenu}
 </main>
+<div class="diamant" aria-hidden="true" data-audit-ignorer><svg viewBox="0 0 90 24" focusable="false"><path class="diamant-bras" d="M16 12 C 40 12, 52 4, 90 4" /><rect class="diamant-tete" x="12" y="7" width="16" height="10" rx="2" /><path class="diamant-pointe" d="M3 12 L9 7.5 L15 12 L9 16.5 Z" /></svg></div>
 ${pied(c)}
 ${barre(c)}
 </body>

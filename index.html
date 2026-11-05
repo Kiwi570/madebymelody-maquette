@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-page="accueil" data-curseur>
+<html lang="fr" data-v="2" data-page="accueil" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,14 +41,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#141113">
 <link rel="icon" href="/assets/images/favicon-64.png" type="image/png" sizes="64x64">
 <link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
@@ -67,7 +67,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"madebymelody","url":"https://madebymelody-maquette.vercel.app/","telephone":"+41763969174","email":"melody_j8@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"Ch. de Crève-Cœur 3","postalCode":"1260","addressLocality":"Nyon","addressRegion":"VD","addressCountry":"CH"},"sameAs":["https://www.instagram.com/madebymelody.ch/"],"founder":{"@type":"Person","name":"Melody"},"currenciesAccepted":"CHF","description":{"fr":"Créatrice de mode à Nyon : pièces uniques et numérotées pour femmes et enfants, faites main, et atelier sur mesure (robes de mariée, costumes de scène).","en":"Fashion designer in Nyon: one-of-a-kind numbered pieces for women and children, handmade, and a made-to-measure atelier."}}</script>
 </head>
 <body id="haut" class="page-accueil">
-<div data-voile aria-hidden="true"><div class="voile-contenu">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu">
   <svg class="disque-svg voile-disque" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="voile-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
@@ -123,6 +123,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
 </div>
 <main id="contenu" tabindex="-1">
+<div class="sillon" data-effet="sillon" aria-hidden="true" data-audit-ignorer><svg class="sillon-svg" focusable="false" width="40" height="10"><path class="sillon-fond" /><path class="sillon-lu-ombre" /><path class="sillon-lu" /><g class="sillon-plages"></g></svg></div>
 <section class="hero-disque" id="disque" data-plein-ecran>
   <figure class="media hero-fond" data-grok data-audit-ignorer style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-ouverture-mobile-480.webp 480w, /assets/images/grok/accueil-ouverture-mobile-720.webp 720w" sizes="100vw">
@@ -134,7 +135,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <span class="hero-mot hero-mot--a"><span class="ligne-masque"><span data-anime="gsap" class="hero-ligne">Sage</span></span></span>
       <span class="hero-mot hero-mot--b"><span class="ligne-masque"><span data-anime="gsap" class="hero-ligne">et sauvage</span></span></span>
     </h1>
-    <div class="vinyle" data-effet="vinyle" data-superpose role="img" aria-label="Disque dont l&#39;étiquette montre une robe portée ; il tourne et se scratche au défilement.">
+    <div class="vinyle" data-effet="vinyle" data-superpose data-iris-centre="disque" data-souris role="img" aria-label="Disque dont l&#39;étiquette montre une robe portée ; il tourne et se scratche au défilement.">
       <div class="vinyle-css" aria-hidden="true">
         <div class="vinyle-tourne">
           <span class="vinyle-sillons"></span>
@@ -158,6 +159,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <rect x="56" y="186" width="22" height="12" rx="2" transform="rotate(-38 67 192)" class="bras-tete" />
       </svg>
       <p class="vinyle-face" aria-hidden="true"><span>Face</span> <b data-face>A</b></p>
+      <p class="vinyle-indice" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M20 12a8 8 0 1 1-2.34-5.66" /><path d="M20 4v4h-4" /></svg>Faites tourner le disque</p>
     </div>
     <div class="hero-bas" data-anime="gsap">
       <p class="hero-texte">Des pièces uniques et numérotées, faites main à Nyon, pour femmes et enfants.</p>
@@ -189,7 +191,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="tracklist" id="tracklist">
   <div class="conteneur tracklist-tete">
     <p class="kicker">Face A, face B</p>
-    <h2 data-anime="lignes">La tracklist</h2>
+    <h2 data-anime="lignes" data-effet="sage-sauvage">La tracklist</h2>
     <p>29 pistes, 29 pièces uniques. Une sélection de huit.</p>
   </div>
   <div class="conteneur tracklist-grille">
@@ -339,15 +341,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
   <p class="conteneur tracklist-pied"><a href="/boutique" class="bouton bouton--contour" data-libelle="Boutique" data-survol="magnetique">Toute la tracklist</a></p>
 </section>
-<section class="bac ecran epingle" id="bac" data-entete-cache data-fx="galerie" style="--teinte:#3a0f18">
-  <div class="conteneur bac-tete">
-    <h2 data-anime="lignes">Dans le bac</h2>
-    <p>Feuilletez les pochettes : chaque pièce existe en un seul exemplaire. <span class="indice-tactile">Faites glisser</span></p>
-  </div>
-  <div class="piste bac-piste" data-galerie tabindex="0" role="region" aria-label="Pochettes à feuilleter">
-    <article class="pochette" data-effet="pochette" data-teinte="#3a0f18" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+<section class="bac ecran epingle" id="bac" data-entete-cache style="--teinte:#3a0f18">
+  <div class="conteneur bac-grille">
+    <div class="bac-tete">
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Dans le bac</h2>
+      <p>Feuilletez les pochettes : chaque pièce existe en un seul exemplaire. <span class="indice-tactile">Faites défiler</span></p>
+      <p class="bac-compteur" aria-hidden="true"><b data-bac-num>01</b><span> / 08</span></p>
+      <div class="galerie-progres" aria-hidden="true"><span></span></div>
+    </div>
+    <div class="bac-caisse" data-effet="caisse">
+      <div class="piste bac-piste" data-bac-pile data-tient tabindex="0" role="region" aria-label="Pochettes à feuilleter">
+        <article class="pochette" data-effet="pochette" data-teinte="#3a0f18" style="--i:0">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="bac-sunshine-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
   <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
@@ -356,17 +362,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <circle cx="100" cy="100" r="38" class="disque-etiquette" />
   <circle cx="100" cy="100" r="3" class="disque-trou" />
 </svg></span>
-        <figure class="media pochette-media" style="--cadrage:50% 25%">
+            <figure class="media pochette-media" style="--cadrage:50% 25%">
   <picture>
-    <img src="/assets/images/pieces/sunshine-1-1200.webp" srcset="/assets/images/pieces/sunshine-1-480.webp 480w, /assets/images/pieces/sunshine-1-800.webp 800w, /assets/images/pieces/sunshine-1-1200.webp 1200w" sizes="(max-width: 760px) 72vw, 34vh" alt="SUNSHINE, robe madebymelody" width="1200" height="1958" loading="lazy" decoding="async">
+    <img src="/assets/images/pieces/sunshine-1-1200.webp" srcset="/assets/images/pieces/sunshine-1-480.webp 480w, /assets/images/pieces/sunshine-1-800.webp 800w, /assets/images/pieces/sunshine-1-1200.webp 1200w" sizes="(max-width: 760px) 70vw, 40vh" alt="SUNSHINE, robe madebymelody" width="1200" height="1958" loading="lazy" decoding="async">
   </picture>
 </figure>
-      </div>
-      <h3><a href="/boutique?piece=sunshine" data-libelle="Boutique"><span class="pochette-num">03</span> SUNSHINE</a></h3>
-      <p><span data-prix>110 CHF</span> · XS/S</p>
-    </article><article class="pochette" data-effet="pochette" data-teinte="#141113" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="/boutique?piece=sunshine" data-libelle="Boutique"><span class="pochette-num">03</span> SUNSHINE</a></h3>
+            <p><span data-prix>110 CHF</span> · XS/S</p>
+          </div>
+        </article><article class="pochette" data-effet="pochette" data-teinte="#141113" style="--i:1">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="bac-cminor-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
   <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
@@ -375,17 +383,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <circle cx="100" cy="100" r="38" class="disque-etiquette" />
   <circle cx="100" cy="100" r="3" class="disque-trou" />
 </svg></span>
-        <figure class="media pochette-media" style="--cadrage:59% 46%">
+            <figure class="media pochette-media" style="--cadrage:59% 46%">
   <picture>
-    <img src="/assets/images/pieces/cminor-1-1200.webp" srcset="/assets/images/pieces/cminor-1-480.webp 480w, /assets/images/pieces/cminor-1-800.webp 800w, /assets/images/pieces/cminor-1-1200.webp 1200w" sizes="(max-width: 760px) 72vw, 34vh" alt="CMinor, robe madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+    <img src="/assets/images/pieces/cminor-1-1200.webp" srcset="/assets/images/pieces/cminor-1-480.webp 480w, /assets/images/pieces/cminor-1-800.webp 800w, /assets/images/pieces/cminor-1-1200.webp 1200w" sizes="(max-width: 760px) 70vw, 40vh" alt="CMinor, robe madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
   </picture>
 </figure>
-      </div>
-      <h3><a href="/boutique?piece=cminor" data-libelle="Boutique"><span class="pochette-num">18</span> CMinor</a></h3>
-      <p><span data-prix>145 CHF</span> · S/M</p>
-    </article><article class="pochette" data-effet="pochette" data-teinte="#4a1a26" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="/boutique?piece=cminor" data-libelle="Boutique"><span class="pochette-num">18</span> CMinor</a></h3>
+            <p><span data-prix>145 CHF</span> · S/M</p>
+          </div>
+        </article><article class="pochette" data-effet="pochette" data-teinte="#4a1a26" style="--i:2">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="bac-ballade-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
   <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
@@ -394,17 +404,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <circle cx="100" cy="100" r="38" class="disque-etiquette" />
   <circle cx="100" cy="100" r="3" class="disque-trou" />
 </svg></span>
-        <figure class="media pochette-media" style="--cadrage:53% 35%">
+            <figure class="media pochette-media" style="--cadrage:53% 35%">
   <picture>
-    <img src="/assets/images/pieces/ballade-1-1200.webp" srcset="/assets/images/pieces/ballade-1-480.webp 480w, /assets/images/pieces/ballade-1-800.webp 800w, /assets/images/pieces/ballade-1-1200.webp 1200w" sizes="(max-width: 760px) 72vw, 34vh" alt="BALLADE, pantalon madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+    <img src="/assets/images/pieces/ballade-1-1200.webp" srcset="/assets/images/pieces/ballade-1-480.webp 480w, /assets/images/pieces/ballade-1-800.webp 800w, /assets/images/pieces/ballade-1-1200.webp 1200w" sizes="(max-width: 760px) 70vw, 40vh" alt="BALLADE, pantalon madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
   </picture>
 </figure>
-      </div>
-      <h3><a href="/boutique?piece=ballade" data-libelle="Boutique"><span class="pochette-num">24</span> BALLADE</a></h3>
-      <p><span data-prix>150 CHF</span> · S/M</p>
-    </article><article class="pochette" data-effet="pochette" data-teinte="#2a1418" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="/boutique?piece=ballade" data-libelle="Boutique"><span class="pochette-num">24</span> BALLADE</a></h3>
+            <p><span data-prix>150 CHF</span> · S/M</p>
+          </div>
+        </article><article class="pochette" data-effet="pochette" data-teinte="#2a1418" style="--i:3">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="bac-mustang-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
   <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
@@ -413,17 +425,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <circle cx="100" cy="100" r="38" class="disque-etiquette" />
   <circle cx="100" cy="100" r="3" class="disque-trou" />
 </svg></span>
-        <figure class="media pochette-media" style="--cadrage:52% 31%">
+            <figure class="media pochette-media" style="--cadrage:52% 31%">
   <picture>
-    <img src="/assets/images/pieces/mustang-1-1200.webp" srcset="/assets/images/pieces/mustang-1-480.webp 480w, /assets/images/pieces/mustang-1-800.webp 800w, /assets/images/pieces/mustang-1-1200.webp 1200w" sizes="(max-width: 760px) 72vw, 34vh" alt="MUSTANG, veste madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
+    <img src="/assets/images/pieces/mustang-1-1200.webp" srcset="/assets/images/pieces/mustang-1-480.webp 480w, /assets/images/pieces/mustang-1-800.webp 800w, /assets/images/pieces/mustang-1-1200.webp 1200w" sizes="(max-width: 760px) 70vw, 40vh" alt="MUSTANG, veste madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
   </picture>
 </figure>
-      </div>
-      <h3><a href="/boutique?piece=mustang" data-libelle="Boutique"><span class="pochette-num">28</span> MUSTANG</a></h3>
-      <p><span data-prix>190 CHF</span> · XS/S</p>
-    </article><article class="pochette" data-effet="pochette" data-teinte="#5a1420" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="/boutique?piece=mustang" data-libelle="Boutique"><span class="pochette-num">28</span> MUSTANG</a></h3>
+            <p><span data-prix>190 CHF</span> · XS/S</p>
+          </div>
+        </article><article class="pochette" data-effet="pochette" data-teinte="#5a1420" style="--i:4">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="bac-madly-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
   <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
@@ -432,17 +446,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <circle cx="100" cy="100" r="38" class="disque-etiquette" />
   <circle cx="100" cy="100" r="3" class="disque-trou" />
 </svg></span>
-        <figure class="media pochette-media" style="--cadrage:52% 16%">
+            <figure class="media pochette-media" style="--cadrage:52% 16%">
   <picture>
-    <img src="/assets/images/pieces/madly-1-1200.webp" srcset="/assets/images/pieces/madly-1-480.webp 480w, /assets/images/pieces/madly-1-800.webp 800w, /assets/images/pieces/madly-1-1200.webp 1200w" sizes="(max-width: 760px) 72vw, 34vh" alt="MADLY, short madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+    <img src="/assets/images/pieces/madly-1-1200.webp" srcset="/assets/images/pieces/madly-1-480.webp 480w, /assets/images/pieces/madly-1-800.webp 800w, /assets/images/pieces/madly-1-1200.webp 1200w" sizes="(max-width: 760px) 70vw, 40vh" alt="MADLY, short madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
   </picture>
 </figure>
-      </div>
-      <h3><a href="/boutique?piece=madly" data-libelle="Boutique"><span class="pochette-num">01</span> MADLY</a></h3>
-      <p><span data-prix>50 CHF</span> · S/M</p>
-    </article><article class="pochette" data-effet="pochette" data-teinte="#1e1a1c" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="/boutique?piece=madly" data-libelle="Boutique"><span class="pochette-num">01</span> MADLY</a></h3>
+            <p><span data-prix>50 CHF</span> · S/M</p>
+          </div>
+        </article><article class="pochette" data-effet="pochette" data-teinte="#1e1a1c" style="--i:5">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="bac-juliette-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
   <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
@@ -451,17 +467,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <circle cx="100" cy="100" r="38" class="disque-etiquette" />
   <circle cx="100" cy="100" r="3" class="disque-trou" />
 </svg></span>
-        <figure class="media pochette-media" style="--cadrage:38% 18%">
+            <figure class="media pochette-media" style="--cadrage:38% 18%">
   <picture>
-    <img src="/assets/images/pieces/juliette-1-1200.webp" srcset="/assets/images/pieces/juliette-1-480.webp 480w, /assets/images/pieces/juliette-1-800.webp 800w, /assets/images/pieces/juliette-1-1200.webp 1200w" sizes="(max-width: 760px) 72vw, 34vh" alt="JULIETTE, haut madebymelody" width="1200" height="1200" loading="lazy" decoding="async">
+    <img src="/assets/images/pieces/juliette-1-1200.webp" srcset="/assets/images/pieces/juliette-1-480.webp 480w, /assets/images/pieces/juliette-1-800.webp 800w, /assets/images/pieces/juliette-1-1200.webp 1200w" sizes="(max-width: 760px) 70vw, 40vh" alt="JULIETTE, haut madebymelody" width="1200" height="1200" loading="lazy" decoding="async">
   </picture>
 </figure>
-      </div>
-      <h3><a href="/boutique?piece=juliette" data-libelle="Boutique"><span class="pochette-num">04</span> JULIETTE</a></h3>
-      <p><span data-prix>55 CHF</span> · XS/S</p>
-    </article><article class="pochette" data-effet="pochette" data-teinte="#3a1420" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="/boutique?piece=juliette" data-libelle="Boutique"><span class="pochette-num">04</span> JULIETTE</a></h3>
+            <p><span data-prix>55 CHF</span> · XS/S</p>
+          </div>
+        </article><article class="pochette" data-effet="pochette" data-teinte="#3a1420" style="--i:6">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="bac-grapevine-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
   <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
@@ -470,17 +488,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <circle cx="100" cy="100" r="38" class="disque-etiquette" />
   <circle cx="100" cy="100" r="3" class="disque-trou" />
 </svg></span>
-        <figure class="media pochette-media" style="--cadrage:52% 46%">
+            <figure class="media pochette-media" style="--cadrage:52% 46%">
   <picture>
-    <img src="/assets/images/pieces/grapevine-1-1200.webp" srcset="/assets/images/pieces/grapevine-1-480.webp 480w, /assets/images/pieces/grapevine-1-800.webp 800w, /assets/images/pieces/grapevine-1-1200.webp 1200w" sizes="(max-width: 760px) 72vw, 34vh" alt="GRAPEVINE, haut madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+    <img src="/assets/images/pieces/grapevine-1-1200.webp" srcset="/assets/images/pieces/grapevine-1-480.webp 480w, /assets/images/pieces/grapevine-1-800.webp 800w, /assets/images/pieces/grapevine-1-1200.webp 1200w" sizes="(max-width: 760px) 70vw, 40vh" alt="GRAPEVINE, haut madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
   </picture>
 </figure>
-      </div>
-      <h3><a href="/boutique?piece=grapevine" data-libelle="Boutique"><span class="pochette-num">07</span> GRAPEVINE</a></h3>
-      <p><span data-prix>55 CHF</span> · M</p>
-    </article><article class="pochette" data-effet="pochette" data-teinte="#241215" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="/boutique?piece=grapevine" data-libelle="Boutique"><span class="pochette-num">07</span> GRAPEVINE</a></h3>
+            <p><span data-prix>55 CHF</span> · M</p>
+          </div>
+        </article><article class="pochette" data-effet="pochette" data-teinte="#241215" style="--i:7">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="bac-playground-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
   <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
@@ -489,17 +509,21 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <circle cx="100" cy="100" r="38" class="disque-etiquette" />
   <circle cx="100" cy="100" r="3" class="disque-trou" />
 </svg></span>
-        <figure class="media pochette-media" style="--cadrage:54% 37%">
+            <figure class="media pochette-media" style="--cadrage:54% 37%">
   <picture>
-    <img src="/assets/images/pieces/playground-1-1200.webp" srcset="/assets/images/pieces/playground-1-480.webp 480w, /assets/images/pieces/playground-1-800.webp 800w, /assets/images/pieces/playground-1-1200.webp 1200w" sizes="(max-width: 760px) 72vw, 34vh" alt="PLAYGROUND, robe madebymelody" width="1200" height="900" loading="lazy" decoding="async">
+    <img src="/assets/images/pieces/playground-1-1200.webp" srcset="/assets/images/pieces/playground-1-480.webp 480w, /assets/images/pieces/playground-1-800.webp 800w, /assets/images/pieces/playground-1-1200.webp 1200w" sizes="(max-width: 760px) 70vw, 40vh" alt="PLAYGROUND, robe madebymelody" width="1200" height="900" loading="lazy" decoding="async">
   </picture>
 </figure>
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="/boutique?piece=playground" data-libelle="Boutique"><span class="pochette-num">20</span> PLAYGROUND</a></h3>
+            <p><span data-prix>160 CHF</span> · S/M</p>
+          </div>
+        </article>
       </div>
-      <h3><a href="/boutique?piece=playground" data-libelle="Boutique"><span class="pochette-num">20</span> PLAYGROUND</a></h3>
-      <p><span data-prix>160 CHF</span> · S/M</p>
-    </article>
+      <div class="bac-bois" aria-hidden="true" data-audit-ignorer></div>
+    </div>
   </div>
-  <div class="galerie-progres" aria-hidden="true"><span></span></div>
 </section>
 <section class="bascule" id="bascule" data-effet="bascule">
   <div class="bascule-scene" data-plein-ecran>
@@ -572,7 +596,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
     <div>
       <p class="kicker">Notes de pochette</p>
-      <h2 data-anime="lignes">La designer</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">La designer</h2>
       <p data-anime>Créatrice de mode suisse basée à Nyon, dans le canton de Vaud, Melody a créé la marque à l&#39;âge de 25 ans, après sa formation dans des écoles de mode entre Paris et Genève et un stage chez John Galliano à Paris en 2009.</p>
       <dl class="notes" data-anime="cascade">
         <div><dt>Formation</dt><dd>LISAA Paris · HEAD Genève</dd></div>
@@ -587,7 +611,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur teaser-grille">
     <div class="teaser-texte">
       <p class="kicker">Atelier sur mesure</p>
-      <h2 data-anime="lignes">Pour un événement ou votre quotidien</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Pour un événement ou votre quotidien</h2>
       <p data-anime>Vous souhaitez porter la tenue de vos rêves, et surtout être unique pour ce grand jour ? Vous avez un projet en tête, ou pas encore ? madebymelody crée votre envie sur mesure, dans son atelier.</p>
       <p data-anime><a href="/sur-mesure#rendez-vous" class="bouton bouton--noir" data-libelle="Sur mesure" data-survol="magnetique">Parlons-en</a></p>
     </div>
@@ -626,7 +650,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <button type="button" class="ruban-pause" data-pause-pour="ruban" data-libelle-pause="Pause" data-libelle-lecture="Lecture"><span data-libelle-bouton>Pause</span></button>
   </div>
   <div class="conteneur atelier-texte">
-    <h2 data-anime="lignes">Venez parler de votre pièce</h2>
+    <h2 data-anime="lignes" data-effet="sage-sauvage">Venez parler de votre pièce</h2>
     <p data-anime>L&#39;atelier accueille toutes vos envies, des projets les plus fous aux plus créatifs. Ch. de Crève-Cœur 3, 1260 Nyon.</p>
     <p class="atelier-actions" data-anime>
       <a href="/sur-mesure#rendez-vous" class="bouton bouton--rose" data-libelle="Sur mesure" data-survol="magnetique">Prendre rendez-vous</a>
@@ -635,6 +659,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 </main>
+<div class="diamant" aria-hidden="true" data-audit-ignorer><svg viewBox="0 0 90 24" focusable="false"><path class="diamant-bras" d="M16 12 C 40 12, 52 4, 90 4" /><rect class="diamant-tete" x="12" y="7" width="16" height="10" rx="2" /><path class="diamant-pointe" d="M3 12 L9 7.5 L15 12 L9 16.5 Z" /></svg></div>
 <footer class="pied" id="pied" data-masque-barre>
   <div class="conteneur pied-haut">
     <div class="pied-disque" data-effet="face-b">

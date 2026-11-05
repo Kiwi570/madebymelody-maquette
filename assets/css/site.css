@@ -59,9 +59,9 @@ h2 { font-size: clamp(2.2rem, 1.4rem + 3.4vw, 4.6rem); }
 .curseur { border-color: var(--rose); border-width: 2px; background: radial-gradient(circle, var(--rose) 0 2px, transparent 3px); }
 
 /* ---------- Intro : la platine (panneau visible dès la première image) ---------- */
-.ouverture-panneau { --trou: 0px; place-content: center; background: var(--noir); color: var(--creme);
-  -webkit-mask: radial-gradient(circle at 50% 50%, transparent var(--trou), #000 calc(var(--trou) + 1px));
-          mask: radial-gradient(circle at 50% 50%, transparent var(--trou), #000 calc(var(--trou) + 1px)); }
+.ouverture-panneau { --trou: -2px; place-content: center; background: var(--noir); color: var(--creme);
+  -webkit-mask: radial-gradient(circle at var(--cx, 50%) var(--cy, 50%), transparent var(--trou), #000 calc(var(--trou) + 1px));
+          mask: radial-gradient(circle at var(--cx, 50%) var(--cy, 50%), transparent var(--trou), #000 calc(var(--trou) + 1px)); }
 .platine { position: relative; width: min(58vmin, 520px); aspect-ratio: 1; }
 .platine-disque { position: absolute; inset: 0; }
 .intro-disque { width: 100%; height: 100%; }
@@ -85,6 +85,10 @@ h2 { font-size: clamp(2.2rem, 1.4rem + 3.4vw, 4.6rem); }
 
 /* Voile de transition : panneau rose, étiquette qui tourne avec le nom de la page. */
 [data-voile] { background: var(--rose); color: var(--noir); }
+/* Voile en iris (socle/iris.js) : le trou s'ouvre depuis l'objet d'ouverture de la page. */
+[data-voile].iris-ouvre {
+  -webkit-mask: radial-gradient(circle at var(--cx, 50%) var(--cy, 50%), transparent var(--trou, -2px), #000 calc(var(--trou, -2px) + 1px));
+          mask: radial-gradient(circle at var(--cx, 50%) var(--cy, 50%), transparent var(--trou, -2px), #000 calc(var(--trou, -2px) + 1px)); }
 .voile-disque { width: min(34vmin, 260px); height: auto; animation: tourne 1.8s linear infinite; }
 .voile-disque .disque-etiquette { fill: var(--cerise); }
 [data-voile-libelle] { font-family: var(--police-titres); font-variation-settings: var(--sauvage); font-weight: 700; font-size: clamp(2rem, 6vw, 4.2rem); }
@@ -115,7 +119,7 @@ h2 { font-size: clamp(2.2rem, 1.4rem + 3.4vw, 4.6rem); }
 .vinyle-tourne { position: absolute; inset: 0; border-radius: 50%; box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 0 1px #2a2427;
   background: repeating-radial-gradient(circle at 50% 50%, #121012 0 1.4px, #0a090a 1.4px 2.8px); }
 .vinyle-sillons { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 20deg, transparent 0 8%, rgba(244,198,207,.12) 12%, transparent 18% 50%, rgba(244,198,207,.1) 62%, transparent 68%); }
-.vinyle-etiquette { position: absolute; inset: 31%; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 3px var(--rose); }
+.vinyle-etiquette { position: absolute; inset: 27%; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 3px var(--rose); }
 .vinyle-etiquette .media { position: absolute; inset: 0; border-radius: 0; }
 .vinyle-etiquette .etiquette-b { opacity: 0; }
 .vinyle.face-b .vinyle-etiquette .etiquette-b { opacity: 1; }
@@ -124,6 +128,16 @@ h2 { font-size: clamp(2.2rem, 1.4rem + 3.4vw, 4.6rem); }
 .vinyle-bras { position: absolute; width: 28%; right: -18%; top: -14%; transform-origin: 80% 10%; overflow: visible; pointer-events: none; }
 .vinyle-face { position: absolute; left: -6%; bottom: 2%; margin: 0; padding: .45em .9em; border: 2px solid var(--rose); border-radius: 999px; color: var(--rose); font: 500 clamp(.75rem, 1.1vw, .95rem) var(--police-mono); letter-spacing: .22em; text-transform: uppercase; transform: rotate(-10deg); background: rgba(20,17,19,.75); }
 .vinyle-face b { font-weight: 500; }
+/* Disque scratchable : on l'attrape à la main ; le défilement vertical reste libre sur téléphone. */
+html.js:not(.calme) .vinyle { cursor: grab; touch-action: pan-y; -webkit-user-select: none; user-select: none; }
+html.js:not(.calme) .vinyle.est-tenu { cursor: grabbing; }
+.vinyle-indice { position: absolute; right: -10%; bottom: 4%; display: none; align-items: center; gap: .5em; margin: 0; padding: .45em .8em; border-radius: 999px;
+  background: var(--creme); color: var(--noir); font: 500 clamp(.75rem, .95vw, .82rem) var(--police-mono); letter-spacing: .14em; text-transform: uppercase;
+  transform: rotate(6deg); transition: opacity .5s var(--courbe), transform .5s var(--courbe); pointer-events: none; }
+.vinyle-indice svg { width: 1.3em; height: 1.3em; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+html.js:not(.calme) .vinyle-indice { display: inline-flex; }
+.vinyle-indice.est-vu { opacity: 0; transform: rotate(6deg) translateY(8px); }
+@media (max-width: 760px) { .vinyle-indice { right: -4%; bottom: -4%; } }
 .hero-bas { grid-area: bas; display: grid; justify-items: center; text-align: center; gap: 12px; max-width: 46rem; }
 .hero-texte { margin: 0; font-size: clamp(1rem, .95rem + .3vw, 1.2rem); color: var(--creme); }
 .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 14px; margin: 0; }
@@ -189,35 +203,61 @@ html.calme .manifeste-titre .mot, html:not(.js) .manifeste-titre .mot { opacity:
   .piste-prix { grid-column: 3; grid-row: 1; }
 }
 
-/* ---------- Le bac : galerie horizontale épinglée ---------- */
+/* ---------- Le bac : « crate digging », les pochettes basculent une à une (repli : rangée à faire défiler) ---------- */
 .bac { background: var(--teinte, var(--noir)); transition: background-color .8s var(--courbe); overflow: hidden; }
+.bac-grille { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
 .bac-tete h2 { margin: 0; font-size: clamp(2rem, min(5vw, 8vh), 4.4rem); }
 .bac-tete p { margin: .2em 0 12px; }
-.bac-piste { display: flex; align-items: stretch; gap: clamp(60px, 14vh, 150px); padding-inline: var(--gouttiere) 30vw; width: max-content; padding-top: 8px; }
-.pochette { height: 100%; aspect-ratio: 4 / 5; display: flex; flex-direction: column; }
-.pochette-cadre { position: relative; flex: 1 1 auto; min-height: 0; }
-.pochette-media { position: relative; z-index: 2; height: 100%; border-radius: 2px; box-shadow: 10px 10px 30px rgba(0,0,0,.45); }
-.pochette-disque { position: absolute; z-index: 1; top: 4%; bottom: 4%; right: 0; aspect-ratio: 1; transform: translateX(0); }
+.bac-compteur { display: none; }
+.bac-caisse { position: relative; flex: 1 1 auto; min-height: 0; }
+.bac-bois { display: none; }
+.bac-piste { display: flex; align-items: stretch; gap: 24px; padding: 8px 0 12px; overflow-x: auto; scroll-snap-type: x mandatory; }
+.pochette { position: relative; flex: 0 0 min(360px, 72vw); display: flex; flex-direction: column; scroll-snap-align: start; }
+.pochette-cadre { position: relative; aspect-ratio: 1; min-height: 0; }
+.pochette-media { position: absolute; inset: 0; z-index: 2; height: auto; aspect-ratio: auto; border-radius: 2px; box-shadow: 10px 10px 30px rgba(0,0,0,.45); }
+.pochette-disque { position: absolute; z-index: 1; top: 3%; bottom: 3%; right: 0; aspect-ratio: 1; transform: translateX(0); }
 .pochette-disque .disque-svg { width: 100%; height: 100%; }
 .pochette h3 { margin: 12px 0 0; font-size: clamp(1.1rem, .9rem + .8vw, 1.6rem); }
 .pochette h3 a { text-decoration: none; }
 .pochette h3 a::after { content: ''; position: absolute; inset: 0; z-index: 3; }
-.pochette { position: relative; }
 .pochette-num { font: 500 .85rem var(--police-mono); color: var(--rose); position: static; padding: 0; background: none; }
 .pochette p { margin: 2px 0 0; font: 500 .9rem var(--police-mono); }
-.galerie-progres { height: 3px; margin: 14px var(--gouttiere) 0; background: rgba(243,235,221,.2); flex: none; }
+.galerie-progres { height: 3px; margin: 14px 0 0; background: rgba(243,235,221,.2); flex: none; max-width: 22rem; }
 .galerie-progres span { display: block; height: 100%; background: var(--rose); transform-origin: 0 50%; transform: scaleX(0); }
-html.calme .bac.ecran.epingle, html:not(.js) .bac.ecran.epingle { height: auto; min-height: 0; }
-html.calme .bac-piste, html:not(.js) .bac-piste { width: auto; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; gap: 24px; padding-inline: var(--gouttiere); }
-html.calme .pochette, html:not(.js) .pochette { flex: 0 0 min(360px, 72vw); height: auto; aspect-ratio: auto; scroll-snap-align: start; }
-html.calme .pochette-cadre, html:not(.js) .pochette-cadre { aspect-ratio: 1; flex: none; }
-@media (max-width: 760px) {
-  .bac.ecran.epingle { height: auto; min-height: 0; }
-  .bac-piste { width: auto; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; gap: 18px; padding-inline: var(--gouttiere); }
-  .pochette { flex: 0 0 72vw; height: auto; aspect-ratio: auto; scroll-snap-align: center; }
-  .pochette-cadre { aspect-ratio: 1; flex: none; }
-  .galerie-progres { display: none; }
+
+/* Bac animé (classe posée par le script, jamais en mode calme) : pile en perspective, la pochette de devant bascule vers soi. */
+.bac.caisse-active .bac-grille { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: clamp(24px, 4vw, 64px); }
+.bac.caisse-active .bac-compteur { display: block; margin: clamp(16px, 4vh, 40px) 0 0; font: 500 clamp(3rem, 2rem + 4vw, 6.5rem)/1 var(--police-titres); font-variation-settings: var(--sauvage); }
+.bac.caisse-active .bac-compteur span { font: 500 max(.75rem, .3em) var(--police-mono); letter-spacing: .14em; opacity: .7; }
+.bac.caisse-active .bac-caisse { --s: min(52svh, 36vw, 520px); height: calc(var(--s) * 1.3); display: grid; place-items: end center; perspective: 1100px; perspective-origin: 50% 35%; }
+.bac.caisse-active .bac-piste { position: relative; width: var(--s); height: var(--s); margin-bottom: calc(var(--s) * .04); padding: 0; overflow: visible; display: block; scroll-snap-type: none; }
+.bac.caisse-active .pochette { position: absolute; left: 0; right: 0; bottom: 0; width: auto; height: auto; transform-origin: 50% 100%; will-change: transform, opacity; }
+.bac.caisse-active .pochette-cadre::after { content: ''; position: absolute; inset: 0; z-index: 2; background: #0b0a0b; opacity: var(--ombre, 0); pointer-events: none; border-radius: 2px; }
+/* Étiquette de prix collée sur la pochette de devant. */
+.bac.caisse-active .pochette { display: grid; }
+.bac.caisse-active .pochette-cadre, .bac.caisse-active .pochette-legende { grid-area: 1 / 1; }
+/* Pas positionnée : le lien de la pièce couvre toute la pochette. */
+.bac.caisse-active .pochette-legende { position: static; align-self: start; justify-self: start; margin: 7% 0 0 -7%; z-index: 4; max-width: 78%; padding: .55em .95em .6em; border-radius: 3px; background: var(--creme); color: var(--noir);
+  transform: rotate(-4deg); box-shadow: 0 10px 24px rgba(0,0,0,.35); transition: opacity .25s linear; }
+.bac.caisse-active .pochette h3 { margin: 0; font-size: clamp(1.05rem, .8rem + .9vw, 1.6rem); line-height: 1.1; }
+.bac.caisse-active .pochette-num { color: var(--cerise); }
+.bac.caisse-active .pochette p { font-size: .8rem; }
+.bac.caisse-active .pochette:not(.est-devant) .pochette-legende { opacity: 0; }
+.bac.caisse-active .pochette:not(.est-devant) { pointer-events: none; }
+.bac.caisse-active .bac-bois { display: block; position: absolute; left: 50%; bottom: 0; width: calc(var(--s) * 1.2); height: calc(var(--s) * .3); transform: translateX(-50%); z-index: 40; pointer-events: none;
+  background: linear-gradient(180deg, #c4945f 0, #a97a49 100%); border-radius: 3px 3px 6px 6px; box-shadow: 0 18px 40px rgba(0,0,0,.4), inset 0 2px 0 rgba(255,255,255,.18);
+  -webkit-mask: linear-gradient(#000, #000); mask: linear-gradient(#000, #000); }
+.bac.caisse-active .bac-bois::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(0,0,0,.05) 0 2px, transparent 2px 38px), repeating-linear-gradient(180deg, transparent 0 22%, rgba(0,0,0,.12) 22% 23%); }
+.bac.caisse-active .bac-bois::after { content: 'madebymelody · pièces uniques'; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); white-space: nowrap; font: 500 clamp(.62rem, .8vw, .78rem) var(--police-mono); letter-spacing: .22em; text-transform: uppercase; color: #3b2814; }
+@media (max-width: 860px) {
+  .bac.caisse-active .bac-grille { grid-template-columns: minmax(0, 1fr); align-content: start; gap: 8px; }
+  .bac.caisse-active .bac-tete p:not(.bac-compteur) { margin-bottom: 0; }
+  .bac.caisse-active .bac-compteur { margin-top: 6px; font-size: clamp(2.2rem, 10vw, 3.2rem); }
+  .bac.caisse-active .galerie-progres { display: none; }
+  .bac.caisse-active .bac-caisse { --s: min(64vw, 40svh, 380px); margin-top: auto; }
+  .bac.caisse-active .pochette-legende { margin-left: -4%; }
 }
+html.calme .bac.ecran.epingle, html:not(.js) .bac.ecran.epingle { height: auto; min-height: 0; }
 
 /* ---------- Face A / Face B ---------- */
 .bascule { position: relative; }
@@ -755,3 +795,49 @@ section.b-infos, section.c-canaux, section.c-acces, section.melangeur { padding-
 html:not(.js) .hero-scene { padding-top: 136px; }
 .u-titre .ligne-masque + .ligne-masque, .sm-titre .ligne-masque + .ligne-masque { margin-top: .18em; }
 @media (max-width: 760px) { html:not(.js) .hero-scene { --d: min(56vw, 28svh); padding-top: 128px; } html:not(.js) .hero-texte { display: none; } }
+
+/* ---------- Le sillon et le diamant : la page est un disque, la pointe lit le sillon gravé dans la marge ---------- */
+main { position: relative; }
+.sillon { position: absolute; top: 0; right: 0; width: 40px; height: 100%; z-index: 30; pointer-events: none; display: none; }
+html.js .sillon { display: block; }
+.sillon-svg { position: absolute; inset: 0 auto auto 0; overflow: visible; }
+.sillon path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.sillon-fond { stroke: rgba(150, 128, 134, .55); stroke-width: 1; stroke-dasharray: 1 5; }
+.sillon-lu-ombre { stroke: rgba(20, 17, 19, .5); stroke-width: 3.5; }
+.sillon-lu { stroke: var(--rose); stroke-width: 1.4; }
+.sillon-plage circle { fill: none; stroke: rgba(150, 128, 134, .7); stroke-width: 1; transition: stroke .4s, r .4s; }
+.sillon-plage text { font: 500 9px var(--police-mono); letter-spacing: .06em; fill: rgba(150, 128, 134, .9); text-anchor: middle; transition: fill .4s; }
+.sillon-plage.est-lue circle { stroke: var(--rose); }
+.sillon-plage.est-lue text { fill: var(--rose); }
+.diamant { position: fixed; left: 0; top: 0; z-index: 700; width: 90px; height: 24px; pointer-events: none; display: none; will-change: transform;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.45)); transition: opacity .3s; }
+html.js:not(.calme) .diamant { display: block; }
+html.menu-ouvert .diamant, html:not(.pret) .diamant { opacity: 0; }
+.diamant svg { width: 100%; height: 100%; overflow: visible; }
+.diamant-bras { fill: none; stroke: #c9bfb8; stroke-width: 2.4; stroke-linecap: round; }
+.diamant-tete { fill: var(--or); }
+.diamant-pointe { fill: var(--rose); stroke: var(--noir); stroke-width: 1; }
+@media (max-width: 760px) {
+  .sillon { width: 14px; }
+  .sillon-plage text { display: none; }
+  .diamant { width: 60px; height: 16px; }
+}
+
+/* Envol vers le panier (boutique). */
+.envol { position: fixed; z-index: 820; pointer-events: none; border-radius: 4px; background: var(--noir-2) center / cover no-repeat;
+  box-shadow: 0 0 0 3px var(--rose), 0 14px 30px rgba(0,0,0,.45); will-change: transform; }
+
+/* Titres : du sage au sauvage à mesure qu'ils arrivent (axes SOFT et WONK de Fraunces, graisse inchangée). */
+[data-effet="sage-sauvage"] { font-variation-settings: "SOFT" 100, "WONK" 0; }
+
+/* Sur mesure : le titre se brode au fil cerise, point satin, une aiguille passe devant. */
+.sm-titre .sm-ligne { display: inline-block; position: relative; --c: 100%; }
+.sm-titre .sm-ligne::after { content: attr(data-texte); position: absolute; inset: 0; pointer-events: none; color: transparent;
+  background: repeating-linear-gradient(118deg, #8d0a20 0 1.2px, #c8102e 1.2px 2.6px, #e4566c 2.6px 3.2px); -webkit-background-clip: text; background-clip: text;
+  font-variation-settings: var(--sage); clip-path: inset(-.3em calc(100% - var(--c)) -.35em -.3em); }
+/* Le point avant (tirets) se coud avec le fil, l'aiguille est un pseudo-élément (hors du texte). */
+.sm-titre .sm-ligne { background: repeating-linear-gradient(90deg, var(--cerise) 0 7px, transparent 7px 12px) 0 100% / var(--c) 2px no-repeat; }
+.sm-titre .sm-ligne::before { content: ''; position: absolute; left: var(--c); top: -.1em; width: .16em; height: 1.05em; pointer-events: none;
+  opacity: var(--aig, 0); transform: translate(-50%, var(--saut, 0px)) rotate(14deg); transform-origin: 50% 80%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 64'%3E%3Cpath d='M5 0 L6.4 50 L5 64 L3.6 50 Z' fill='%23c9bfb8'/%3E%3Cellipse cx='5' cy='8' rx='1.3' ry='4' fill='%23f4c6cf'/%3E%3Cpath d='M5 8 C 18 20, -8 34, 12 52' stroke='%23c8102e' stroke-width='1.2' fill='none'/%3E%3C/svg%3E") center / contain no-repeat; }
+html.calme .sm-titre .sm-ligne::before, html:not(.js) .sm-titre .sm-ligne::before { display: none; }

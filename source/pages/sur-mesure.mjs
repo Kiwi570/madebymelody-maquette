@@ -13,8 +13,8 @@ export default (c) => {
   <div class="conteneur sm-tete-texte">
     <p class="kicker">${c.t('surmesure.tete.kicker')}</p>
     <h1 class="sm-titre">
-      <span class="ligne-masque"><span data-anime="gsap" class="sm-ligne">${c.t('surmesure.tete.titre1')}</span></span>
-      <span class="ligne-masque"><span data-anime="gsap" class="sm-ligne sm-ligne--sauvage">${c.t('surmesure.tete.titre2')}</span></span>
+      <span class="ligne-masque"><span data-anime="gsap" class="sm-ligne" data-effet="couture" data-texte="${c.s('surmesure.tete.titre1')}">${c.t('surmesure.tete.titre1')}</span></span>
+      <span class="ligne-masque"><span data-anime="gsap" class="sm-ligne sm-ligne--sauvage" data-effet="couture" data-texte="${c.s('surmesure.tete.titre2')}">${c.t('surmesure.tete.titre2')}</span></span>
     </h1>
     <div class="sm-tete-bas" data-anime="gsap">
       <p class="sm-intro">${c.t('surmesure.tete.texte')}</p>
@@ -22,16 +22,16 @@ export default (c) => {
       <span class="sm-info" data-info-cle>${c.t('surmesure.tete.info')}</span></p>
     </div>
   </div>
-  <div class="sm-bandeau" data-effet="tulle">
+  <div class="sm-bandeau" data-effet="tulle" data-iris-centre>
     ${c.media({ nom: 'site/robe-sur-mesure', alt: c.s('surmesure.tete.alt'), priorite: true, classe: 'sm-robe', sizes: '(max-width: 760px) 70vw, 30vw' })}
-    ${c.media({ nom: 'grok/surmesure-ouverture', alt: I['grok/surmesure-ouverture'].alt, priorite: true, classe: 'sm-tulle', sizes: '100vw', attrs: 'data-superpose' })}
+    ${c.media({ nom: 'grok/surmesure-ouverture', alt: I['grok/surmesure-ouverture'].alt, priorite: true, classe: 'sm-tulle', sizes: '100vw', attrs: 'data-superpose data-fx="onde" data-fx-force="1.6"' })}
   </div>
 </section>
 
 <section class="sm-conseil" id="atelier">
   <div class="conteneur u-duo">
     ${piece('javanaise', 1, c.s('surmesure.atelier.alt'), { classe: 'sm-conseil-media', attrs: 'data-fx="parallaxe"' })}
-    <div><h2 data-anime="lignes">${c.t('surmesure.atelier.titre')}</h2><p class="u-grand" data-anime>${c.t('surmesure.atelier.texte')}</p></div>
+    <div><h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('surmesure.atelier.titre')}</h2><p class="u-grand" data-anime>${c.t('surmesure.atelier.texte')}</p></div>
   </div>
 </section>
 
@@ -39,7 +39,7 @@ export default (c) => {
   <div class="conteneur sm-mariees-grille">
     <div class="sm-mariees-texte">
       <p class="kicker">${c.t('surmesure.mariees.kicker')}</p>
-      <h2 data-anime="lignes">${c.t('surmesure.mariees.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('surmesure.mariees.titre')}</h2>
       <p data-anime>${c.t('surmesure.mariees.texte')}</p>
       <p data-anime>${c.t('surmesure.mariees.demoiselles')}</p>
       <p data-anime>${c.lien('sur-mesure', { ancre: 'rendez-vous', params: 'sujet=mariee', classe: 'bouton bouton--noir', texte: c.t('surmesure.mariees.action') })}</p>
@@ -56,7 +56,7 @@ export default (c) => {
   <div class="conteneur sm-deroule-grille">
     <div>
       <p class="kicker">${c.t('surmesure.deroule.kicker')}</p>
-      <h2 data-anime="lignes">${c.t('surmesure.deroule.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('surmesure.deroule.titre')}</h2>
       <ol class="setlist" data-anime="cascade">
         ${[1, 2, 3, 4].map((n) => html`<li><span class="setlist-num">${String(n).padStart(2, '0')}</span><div><h3>${c.t(`surmesure.deroule.e${n}`)}</h3><p>${c.t(`surmesure.deroule.d${n}`)}</p></div></li>`)}
       </ol>
@@ -70,7 +70,7 @@ export default (c) => {
 
 <section class="sm-enfants theme-rose" id="enfants">
   <div class="conteneur u-duo u-duo--inverse">
-    <div><h2 data-anime="lignes">${c.t('surmesure.enfants.titre')}</h2><p class="u-grand" data-anime>${c.t('surmesure.enfants.texte')}</p></div>
+    <div><h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('surmesure.enfants.titre')}</h2><p class="u-grand" data-anime>${c.t('surmesure.enfants.texte')}</p></div>
     <div class="sm-enfants-visuels">
       ${c.media({ nom: 'site/collage-enfants', alt: I['site/collage-enfants'].alt, classe: 'sm-enfants-collage', sizes: '(max-width: 760px) 80vw, 30vw', attrs: 'data-fx="zoom"' })}
       ${c.media({ nom: 'grok/surmesure-enfants', alt: I['grok/surmesure-enfants'].alt, classe: 'sm-enfants-nuages', sizes: '(max-width: 760px) 50vw, 16vw', attrs: 'data-fx="parallaxe" data-fx-force="14"' })}
@@ -82,7 +82,7 @@ export default (c) => {
   ${c.media({ nom: 'grok/surmesure-costumiere', alt: I['grok/surmesure-costumiere'].alt, classe: 'sm-scene-fond', sizes: '100vw', attrs: 'data-fx="parallaxe" data-fx-force="12"' })}
   <div class="conteneur">
     <p class="kicker">${c.t('surmesure.scene.kicker')}</p>
-    <h2 data-anime="lignes">${c.t('surmesure.scene.titre')}</h2>
+    <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('surmesure.scene.titre')}</h2>
     <ul class="sm-scene-cartes" data-anime="cascade">
       ${[1, 2, 3].map((n) => html`<li><h3>${c.t(`surmesure.scene.t${n}`)}</h3><p>${c.t(`surmesure.scene.d${n}`)}</p></li>`)}
     </ul>
@@ -93,7 +93,7 @@ export default (c) => {
   <div class="conteneur sm-brode-grille">
     <div>
       <p class="kicker">${c.t('surmesure.brode.kicker')}</p>
-      <h2 data-anime="lignes">${c.t('surmesure.brode.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('surmesure.brode.titre')}</h2>
       <p data-anime>${c.t('surmesure.brode.texte')}</p>
       <div class="champ"><label for="prenom-brode">${c.t('surmesure.brode.label')}</label><input id="prenom-brode" type="text" maxlength="14" value="${c.s('surmesure.brode.defaut')}" autocomplete="off"></div>
       <p class="note">${c.t('surmesure.brode.note')}</p>
@@ -108,7 +108,7 @@ export default (c) => {
   <div class="conteneur sm-rdv-grille">
     <div class="sm-rdv-tete">
       <p class="kicker">${c.t('surmesure.rdv.kicker')}</p>
-      <h2 data-anime="lignes">${c.t('surmesure.rdv.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('surmesure.rdv.titre')}</h2>
       <p>${c.t('surmesure.rdv.texte')}</p>
       ${piece('envolez-moi', 3, c.s('surmesure.rdv.alt'), { classe: 'sm-rdv-media', sizes: '(max-width: 760px) 60vw, 24vw', attrs: 'data-fx="zoom"' })}
     </div>

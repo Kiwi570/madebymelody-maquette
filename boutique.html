@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-page="boutique" data-curseur>
+<html lang="fr" data-v="2" data-page="boutique" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,14 +41,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#141113">
 <link rel="icon" href="/assets/images/favicon-64.png" type="image/png" sizes="64x64">
 <link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
@@ -67,7 +67,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"madebymelody","url":"https://madebymelody-maquette.vercel.app/","telephone":"+41763969174","email":"melody_j8@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"Ch. de Crève-Cœur 3","postalCode":"1260","addressLocality":"Nyon","addressRegion":"VD","addressCountry":"CH"},"sameAs":["https://www.instagram.com/madebymelody.ch/"],"founder":{"@type":"Person","name":"Melody"},"currenciesAccepted":"CHF","description":{"fr":"Créatrice de mode à Nyon : pièces uniques et numérotées pour femmes et enfants, faites main, et atelier sur mesure (robes de mariée, costumes de scène).","en":"Fashion designer in Nyon: one-of-a-kind numbered pieces for women and children, handmade, and a made-to-measure atelier."}}</script>
 </head>
 <body id="haut" class="page-boutique">
-<div data-voile aria-hidden="true"><div class="voile-contenu">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu">
   <svg class="disque-svg voile-disque" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="voile-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
@@ -124,6 +124,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
 </div>
 <main id="contenu" tabindex="-1">
+<div class="sillon" data-effet="sillon" aria-hidden="true" data-audit-ignorer><svg class="sillon-svg" focusable="false" width="40" height="10"><path class="sillon-fond" /><path class="sillon-lu-ombre" /><path class="sillon-lu" /><g class="sillon-plages"></g></svg></div>
 <section class="b-tete" id="debut">
   <figure class="media b-tete-fond" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/boutique-fond-mobile-480.webp 480w, /assets/images/grok/boutique-fond-mobile-720.webp 720w" sizes="100vw">
@@ -141,7 +142,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <a class="bouton bouton--contour" href="#catalogue">Voir les 29 pièces</a>
       </p>
     </div>
-    <div class="bac3d" data-effet="bac" aria-hidden="true">
+    <div class="bac3d" data-effet="bac" aria-hidden="true" data-iris-centre>
       <div class="bac3d-pochettes">
         <div class="bac3d-pochette" style="--i:0"><figure class="media " style="--cadrage:61% 56%">
   <picture>
@@ -631,7 +632,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="b-infos" id="infos">
   <div class="conteneur u-duo">
     <div>
-      <h2 data-anime="lignes">Bon à savoir</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Bon à savoir</h2>
       <p class="u-grand" data-anime>Chaque pièce n&#39;existe qu&#39;en un seul exemplaire.</p>
       <ul class="b-infos-liste" data-anime="cascade">
         <li>Offerte pour toute commande au-delà d&#39;un montant : à compléter.</li><li>Si vous n&#39;êtes pas satisfaite de votre achat, la politique de retour est simple et rapide : conditions à compléter.</li><li>Moyens de paiement : à compléter.</li><li>Prix en CHF ; mention de la TVA à compléter.</li>
@@ -1845,6 +1846,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </aside>
 </main>
+<div class="diamant" aria-hidden="true" data-audit-ignorer><svg viewBox="0 0 90 24" focusable="false"><path class="diamant-bras" d="M16 12 C 40 12, 52 4, 90 4" /><rect class="diamant-tete" x="12" y="7" width="16" height="10" rx="2" /><path class="diamant-pointe" d="M3 12 L9 7.5 L15 12 L9 16.5 Z" /></svg></div>
 <footer class="pied" id="pied" data-masque-barre>
   <div class="conteneur pied-haut">
     <div class="pied-disque" data-effet="face-b">

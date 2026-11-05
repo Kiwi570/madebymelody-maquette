@@ -2,13 +2,40 @@
   "nom": "madebymelody",
   "adresse": "https://madebymelody-maquette.vercel.app",
   "siteActuel": "madebymelody.ch",
-  "version": 1,
-  "langues": ["fr"],
-  "navigation": ["accueil", "univers", "sur-mesure", "boutique", "contact"],
-  "actionEntete": { "page": "sur-mesure", "ancre": "rendez-vous" },
-  "couleurs": { "fond": "#141113", "texte": "#f3ebdd", "voile": "#f4c6cf", "ouverture": "#141113", "menu": "#141113", "theme": "#141113" },
-  "contact": { "telephone": "+41 76 396 91 74", "telephoneLien": "+41763969174", "email": "melody_j8@hotmail.com", "adresse": "Ch. de Crève-Cœur 3, 1260 Nyon, Suisse", "instagram": "https://www.instagram.com/madebymelody.ch/" },
-  "polices": ["/assets/polices/fraunces-latin-full-normal.woff2", "/assets/polices/dm-sans-latin-wght-normal.woff2"],
+  "version": 2,
+  "langues": [
+    "fr"
+  ],
+  "navigation": [
+    "accueil",
+    "univers",
+    "sur-mesure",
+    "boutique",
+    "contact"
+  ],
+  "actionEntete": {
+    "page": "sur-mesure",
+    "ancre": "rendez-vous"
+  },
+  "couleurs": {
+    "fond": "#141113",
+    "texte": "#f3ebdd",
+    "voile": "#f4c6cf",
+    "ouverture": "#141113",
+    "menu": "#141113",
+    "theme": "#141113"
+  },
+  "contact": {
+    "telephone": "+41 76 396 91 74",
+    "telephoneLien": "+41763969174",
+    "email": "melody_j8@hotmail.com",
+    "adresse": "Ch. de Crève-Cœur 3, 1260 Nyon, Suisse",
+    "instagram": "https://www.instagram.com/madebymelody.ch/"
+  },
+  "polices": [
+    "/assets/polices/fraunces-latin-full-normal.woff2",
+    "/assets/polices/dm-sans-latin-wght-normal.woff2"
+  ],
   "imagePartage": "accueil-ouverture-1280.webp",
   "curseur": true
 }

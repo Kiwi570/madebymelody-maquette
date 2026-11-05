@@ -33,11 +33,26 @@ export function initPages(o) {
     } else regler(50);
   });
 
+  /* ---------- Sur mesure : le titre brodé ---------- */
+  let cousu = false;
+  function couture() {
+    if (cousu || !gsap || etat.calme) return;
+    cousu = true;
+    const lignes = $$('.sm-ligne[data-effet="couture"]');
+    gsap.timeline()
+      .fromTo(lignes, { '--c': '0%' }, { '--c': '100%', duration: 1.25, stagger: 0.55, ease: 'power1.inOut' }, 0)
+      .fromTo(lignes, { '--aig': 0 }, { '--aig': 1, duration: 0.15, stagger: 0.55 }, 0)
+      .fromTo(lignes, { '--saut': '0px' }, { '--saut': '-9px', duration: 0.08, repeat: 15, yoyo: true, ease: 'sine.inOut', stagger: 0.55 }, 0)
+      .to(lignes, { '--aig': 0, duration: 0.25, stagger: 0.55 }, 1.2);
+  }
+
   /* ---------- Sur mesure : le voile de tulle se lève sur la robe ---------- */
   const tulle = $('.sm-tulle');
   if (tulle) {
     PAGES.ouvertures['sur-mesure'] = (tl, t0, intro) => {
       tl.fromTo('.sm-ligne', { yPercent: 110, opacity: 1 }, { yPercent: 0, opacity: 1, duration: 0.8, stagger: 0.14, ease: 'power4.out' }, t0)
+        /* La couture se joue à part (hors du budget de l'intro) : le fil cerise recouvre le titre, l'aiguille passe devant. */
+        .call(couture, null, t0 + 0.5)
         .fromTo('.sm-tete-bas', { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 }, t0 + 0.3)
         .fromTo(tulle, { yPercent: -30, opacity: intro ? 0 : 1 }, { yPercent: 0, opacity: 1, duration: 0.9, ease: 'power2.out' }, t0);
     };
@@ -340,8 +355,36 @@ function boutique({ gsap, ST, etat, PAGES, $, $$ }) {
     /* Pièce unique : une seule fois dans le panier. */
     panier = panier.includes(id) ? panier.filter((x) => x !== id) : [...panier, id];
     ecrire(); majPanier();
-    if (gsap && !etat.calme && panier.includes(id)) gsap.fromTo(boutons, { scale: 1 }, { scale: 1.08, duration: 0.16, yoyo: true, repeat: 1, clearProps: 'transform' });
+    if (gsap && !etat.calme && panier.includes(id)) envol(b);
   });
+  /* Envol vers le panier : la photo de la pièce s'arrondit en disque et file en arc jusqu'au bouton Panier visible. */
+  const bosse = (cible) => gsap.fromTo(cible || boutons, { scale: 1 }, { scale: 1.12, duration: 0.16, yoyo: true, repeat: 1, ease: 'power2.out', clearProps: 'transform' });
+  function envol(b) {
+    /* Bouton affiché (en-tête sur ordinateur, barre du bas sur téléphone) ; l'en-tête caché redescend pour le recevoir. */
+    const cible = boutons.find((x) => x.offsetParent !== null && x.getBoundingClientRect().width > 0 && getComputedStyle(x).visibility !== 'hidden');
+    const img = (b.closest('.carte-piece, .fiche-contenu, [data-fiche], #fiche') || document).querySelector('img');
+    if (!cible || !img) { bosse(cible); return; }
+    const entete = cible.closest('[data-entete]');
+    let decale = 0;
+    if (entete) { decale = Math.max(0, -entete.getBoundingClientRect().top); document.documentElement.classList.remove('entete-cache'); }
+    const a = img.getBoundingClientRect(), z0 = cible.getBoundingClientRect();
+    const z = { left: z0.left, width: z0.width, top: z0.top + decale, height: z0.height };
+    if (a.width < 4 || a.bottom < 0 || a.top > innerHeight) { bosse(cible); return; }
+    const d = Math.min(a.width, a.height);
+    const vol = document.createElement('div');
+    vol.className = 'envol'; vol.setAttribute('aria-hidden', 'true');
+    vol.style.cssText = `left:${a.left + (a.width - d) / 2}px;top:${a.top + (a.height - d) / 2}px;width:${d}px;height:${d}px;background-image:url("${img.currentSrc || img.src}")`;
+    document.body.appendChild(vol);
+    const dx = z.left + z.width / 2 - (a.left + a.width / 2), dy = z.top + z.height / 2 - (a.top + a.height / 2);
+    const s = Math.max(0.08, 28 / d);
+    gsap.timeline({ onComplete: () => { vol.remove(); bosse(cible); } })
+      .to(vol, { borderRadius: '50%', scale: 0.62, rotate: -12, duration: 0.22, ease: 'power2.out' }, 0)
+      .to(vol, { x: dx, duration: 0.72, ease: 'power1.inOut' }, 0.12)
+      .to(vol, { y: Math.min(dy, 0) - Math.max(60, innerHeight * 0.12), duration: 0.3, ease: 'power2.out' }, 0.12)
+      .to(vol, { y: dy, duration: 0.42, ease: 'power2.in' }, 0.42)
+      .to(vol, { scale: s, rotate: 260, duration: 0.6, ease: 'power2.in' }, 0.24)
+      .to(vol, { opacity: 0, duration: 0.12 }, 0.78);
+  }
   window.addEventListener('storage', (e) => { if (e.key === CLE) { panier = lire(); majPanier(); } });
   panierEl.__fermer = () => { fermerFenetre(panierEl); boutons.forEach((b) => b.setAttribute('aria-expanded', 'false')); };
   boutons.forEach((bouton) => bouton.addEventListener('click', () => { ouvrirFenetre(panierEl, bouton); bouton.setAttribute('aria-expanded', 'true'); $('.fiche-fermer', panierEl).focus(); $('[data-panier-message]').hidden = true; $('[data-commander]').disabled = panier.length === 0; }));

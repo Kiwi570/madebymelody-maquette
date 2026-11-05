@@ -95,7 +95,8 @@
       "rdv": "Prendre rendez-vous",
       "info": "29 pièces uniques, de 50 à 220 CHF",
       "face": "Face",
-      "disque": "Disque dont l'étiquette montre une robe portée ; il tourne et se scratche au défilement."
+      "disque": "Disque dont l'étiquette montre une robe portée ; il tourne et se scratche au défilement.",
+      "indice": "Faites tourner le disque"
     },
     "manifeste": {
       "titre": "Des pièces uniques parce que vous êtes uniques.",
@@ -115,7 +116,7 @@
       "titre": "Dans le bac",
       "texte": "Feuilletez les pochettes : chaque pièce existe en un seul exemplaire.",
       "region": "Pochettes à feuilleter",
-      "glisser": "Faites glisser",
+      "glisser": "Faites défiler",
       "voir": "Voir la pièce"
     },
     "bascule": {

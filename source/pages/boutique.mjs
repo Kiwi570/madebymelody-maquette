@@ -28,7 +28,7 @@ export default (c) => {
         <a class="bouton bouton--contour" href="#catalogue">${c.t('boutique.tete.catalogue')}</a>
       </p>
     </div>
-    <div class="bac3d" data-effet="bac" aria-hidden="true">
+    <div class="bac3d" data-effet="bac" aria-hidden="true" data-iris-centre>
       <div class="bac3d-pochettes">
         ${BAC.map((id, i) => html`<div class="bac3d-pochette" style="--i:${i}">${c.media({ nom: P[id].photos[0].nom, alt: '', cadrage: P[id].photos[0].cadrage, priorite: i > 2, sizes: '(max-width: 760px) 40vw, 18vw' })}</div>`)}
       </div>
@@ -76,7 +76,7 @@ export default (c) => {
 <section class="b-infos" id="infos">
   <div class="conteneur u-duo">
     <div>
-      <h2 data-anime="lignes">${c.t('boutique.infos.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('boutique.infos.titre')}</h2>
       <p class="u-grand" data-anime>${c.t('boutique.infos.texte')}</p>
       <ul class="b-infos-liste" data-anime="cascade">
         <li>${c.t('univers.experience.d1')}</li><li>${c.t('univers.experience.d2')}</li><li>${c.t('boutique.panier.paiement')}</li><li>${c.t('boutique.panier.prixTva')}</li>

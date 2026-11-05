@@ -3,10 +3,11 @@
    de démarrer couverte) ; 3. la nouvelle page se prépare sous le voile ; 4. le voile se retire.
    Les liens vers la page en cours font défiler sans recharger (chemins normalisés, cleanUrls).
    Les grands sauts dans une même page passent aussi sous le voile. */
-import { html, etat, chemin, stockage, emettre } from './etat.js?v=1';
-import { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=1';
-import { fermerMenu } from './entete.js?v=1';
-import { suivre, lacher } from './gouttiere.js?v=1';
+import { html, etat, chemin, stockage, emettre } from './etat.js?v=2';
+import { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=2';
+import { fermerMenu } from './entete.js?v=2';
+import { suivre, lacher } from './gouttiere.js?v=2';
+import { estIris, retenirPoint, irisCouvrir, irisDecouvrir, irisNettoyer } from './iris.js?v=2';
 
 const prechargees = new Set();
 let enDepart = false;
@@ -18,6 +19,7 @@ function couvrir(duree = 450) {
   if (!v || etat.calme) return Promise.resolve();
   html.classList.remove('voile-leve');
   v.style.visibility = 'visible';
+  if (estIris(v)) return irisCouvrir(v, duree);
   const a = v.animate([{ transform: 'translateY(100%)' }, { transform: 'translateY(0)' }],
     { duration: duree, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'forwards' });
   return a.finished.catch(() => {});
@@ -26,6 +28,7 @@ function couvrir(duree = 450) {
 function decouvrir(duree = 450) {
   const v = voile();
   if (!v || etat.calme) return Promise.resolve();
+  if (estIris(v)) return irisDecouvrir(v, duree).then(() => { html.classList.add('voile-leve'); irisNettoyer(v); });
   const a = v.animate([{ transform: 'translateY(0)' }, { transform: 'translateY(-100%)' }],
     { duration: duree, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'forwards' });
   return a.finished.catch(() => {}).then(() => {
@@ -97,11 +100,13 @@ export function initTransitions() {
     if (a.dataset.langue) { try { stockage('local').setItem('socle:langue', a.dataset.langue); } catch {} }
     if (chemin(url) === chemin(location) && url.search === location.search) {
       e.preventDefault();
+      retenirPoint(e, a);
       fermerMenu({ rendreFocus: false });
       allerAncre(url.hash);
       return;
     }
     e.preventDefault();
+    retenirPoint(e, a);
     partir(url, a.dataset.libelle || a.textContent.trim().slice(0, 40));
   });
 

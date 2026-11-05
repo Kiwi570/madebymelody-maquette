@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-page="contact" data-curseur>
+<html lang="fr" data-v="2" data-page="contact" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,14 +41,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#141113">
 <link rel="icon" href="/assets/images/favicon-64.png" type="image/png" sizes="64x64">
 <link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
@@ -67,7 +67,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"madebymelody","url":"https://madebymelody-maquette.vercel.app/","telephone":"+41763969174","email":"melody_j8@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"Ch. de Crève-Cœur 3","postalCode":"1260","addressLocality":"Nyon","addressRegion":"VD","addressCountry":"CH"},"sameAs":["https://www.instagram.com/madebymelody.ch/"],"founder":{"@type":"Person","name":"Melody"},"currenciesAccepted":"CHF","description":{"fr":"Créatrice de mode à Nyon : pièces uniques et numérotées pour femmes et enfants, faites main, et atelier sur mesure (robes de mariée, costumes de scène).","en":"Fashion designer in Nyon: one-of-a-kind numbered pieces for women and children, handmade, and a made-to-measure atelier."}}</script>
 </head>
 <body id="haut" class="page-contact">
-<div data-voile aria-hidden="true"><div class="voile-contenu">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu">
   <svg class="disque-svg voile-disque" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="voile-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
@@ -123,6 +123,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
 </div>
 <main id="contenu" tabindex="-1">
+<div class="sillon" data-effet="sillon" aria-hidden="true" data-audit-ignorer><svg class="sillon-svg" focusable="false" width="40" height="10"><path class="sillon-fond" /><path class="sillon-lu-ombre" /><path class="sillon-lu" /><g class="sillon-plages"></g></svg></div>
 <section class="c-tete theme-cerise" id="debut">
   <div class="conteneur c-tete-grille">
     <div class="c-tete-texte">
@@ -134,7 +135,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <a class="bouton bouton--contour" href="mailto:melody_j8@hotmail.com">melody_j8@hotmail.com</a>
       </p>
     </div>
-    <div class="etiquette-geante" data-effet="etiquette">
+    <div class="etiquette-geante" data-effet="etiquette" data-iris-centre="disque">
       <svg class="etiquette-cercle" viewBox="0 0 400 400" aria-hidden="true" focusable="false" data-audit-ignorer>
         <defs><path id="c-arc" d="M200 200 m-160 0 a160 160 0 1 1 320 0 a160 160 0 1 1 -320 0" /></defs>
         <circle cx="200" cy="200" r="196" class="etiquette-fond" />
@@ -154,7 +155,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="c-canaux theme-creme" id="message">
   <div class="conteneur c-canaux-grille">
     <div>
-      <h2 data-anime="lignes">Une question, une envie ?</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Une question, une envie ?</h2>
       <p data-anime>Une question, une suggestion ou l&#39;envie d&#39;en savoir plus sur l&#39;atelier sur mesure ? Remplissez le formulaire ou utilisez l&#39;un des canaux.</p>
       <dl class="notes notes--clair" data-anime="cascade">
         <div><dt>Adresse</dt><dd>Ch. de Crève-Cœur 3, 1260 Nyon, Suisse</dd></div>
@@ -186,7 +187,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="c-acces" id="acces">
   <div class="conteneur c-acces-grille">
     <div>
-      <h2 data-anime="lignes">Venir à l&#39;atelier</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Venir à l&#39;atelier</h2>
       <p data-anime>L&#39;atelier se trouve à Nyon, au bord du Léman. Plan schématique, à titre indicatif.</p>
       <p data-anime><a class="bouton bouton--rose" href="https://www.google.com/maps/search/?api=1&amp;query=Ch.%20de%20Cr%C3%A8ve-C%C5%93ur%203%2C%201260%20Nyon" target="_blank" rel="noopener">Ouvrir l&#39;itinéraire <span class="visuellement-cache">(nouvel onglet)</span></a></p>
       <div class="c-insta">
@@ -216,6 +217,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 </main>
+<div class="diamant" aria-hidden="true" data-audit-ignorer><svg viewBox="0 0 90 24" focusable="false"><path class="diamant-bras" d="M16 12 C 40 12, 52 4, 90 4" /><rect class="diamant-tete" x="12" y="7" width="16" height="10" rx="2" /><path class="diamant-pointe" d="M3 12 L9 7.5 L15 12 L9 16.5 Z" /></svg></div>
 <footer class="pied" id="pied" data-masque-barre>
   <div class="conteneur pied-haut">
     <div class="pied-disque" data-effet="face-b">

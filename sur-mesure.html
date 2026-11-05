@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-page="sur-mesure" data-curseur>
+<html lang="fr" data-v="2" data-page="sur-mesure" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,14 +41,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#141113">
 <link rel="icon" href="/assets/images/favicon-64.png" type="image/png" sizes="64x64">
 <link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
@@ -67,7 +67,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"madebymelody","url":"https://madebymelody-maquette.vercel.app/","telephone":"+41763969174","email":"melody_j8@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"Ch. de Crève-Cœur 3","postalCode":"1260","addressLocality":"Nyon","addressRegion":"VD","addressCountry":"CH"},"sameAs":["https://www.instagram.com/madebymelody.ch/"],"founder":{"@type":"Person","name":"Melody"},"currenciesAccepted":"CHF","description":{"fr":"Créatrice de mode à Nyon : pièces uniques et numérotées pour femmes et enfants, faites main, et atelier sur mesure (robes de mariée, costumes de scène).","en":"Fashion designer in Nyon: one-of-a-kind numbered pieces for women and children, handmade, and a made-to-measure atelier."}}</script>
 </head>
 <body id="haut" class="page-sur-mesure">
-<div data-voile aria-hidden="true"><div class="voile-contenu">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu">
   <svg class="disque-svg voile-disque" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
   <defs><path id="voile-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
   <circle cx="100" cy="100" r="98" class="disque-vinyle" />
@@ -123,12 +123,13 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
 </div>
 <main id="contenu" tabindex="-1">
+<div class="sillon" data-effet="sillon" aria-hidden="true" data-audit-ignorer><svg class="sillon-svg" focusable="false" width="40" height="10"><path class="sillon-fond" /><path class="sillon-lu-ombre" /><path class="sillon-lu" /><g class="sillon-plages"></g></svg></div>
 <section class="sm-tete theme-rose" id="debut">
   <div class="conteneur sm-tete-texte">
     <p class="kicker">Atelier sur mesure</p>
     <h1 class="sm-titre">
-      <span class="ligne-masque"><span data-anime="gsap" class="sm-ligne">Un espace pour</span></span>
-      <span class="ligne-masque"><span data-anime="gsap" class="sm-ligne sm-ligne--sauvage">toutes vos idées</span></span>
+      <span class="ligne-masque"><span data-anime="gsap" class="sm-ligne" data-effet="couture" data-texte="Un espace pour">Un espace pour</span></span>
+      <span class="ligne-masque"><span data-anime="gsap" class="sm-ligne sm-ligne--sauvage" data-effet="couture" data-texte="toutes vos idées">toutes vos idées</span></span>
     </h1>
     <div class="sm-tete-bas" data-anime="gsap">
       <p class="sm-intro">Imaginez un endroit où vous pourriez confier à quelqu&#39;un vos envies, vos goûts, votre silhouette. Quelque part où les projets uniques prennent forme.</p>
@@ -136,13 +137,13 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <span class="sm-info" data-info-cle>Des délais qui s&#39;adaptent à vos besoins</span></p>
     </div>
   </div>
-  <div class="sm-bandeau" data-effet="tulle">
+  <div class="sm-bandeau" data-effet="tulle" data-iris-centre>
     <figure class="media sm-robe" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/site/robe-sur-mesure-1400.webp" srcset="/assets/images/site/robe-sur-mesure-480.webp 480w, /assets/images/site/robe-sur-mesure-800.webp 800w, /assets/images/site/robe-sur-mesure-1400.webp 1400w" sizes="(max-width: 760px) 70vw, 30vw" alt="Robe bustier rouge sur mesure, sur un buste de couture" width="1400" height="1867" fetchpriority="high" loading="eager" decoding="async">
   </picture>
 </figure>
-    <figure class="media sm-tulle" data-grok data-superpose style="--cadrage:50% 50%">
+    <figure class="media sm-tulle" data-grok data-superpose data-fx="onde" data-fx-force="1.6" style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/surmesure-ouverture-mobile-480.webp 480w, /assets/images/grok/surmesure-ouverture-mobile-720.webp 720w" sizes="100vw">
     <img src="/assets/images/grok/surmesure-ouverture-1280.webp" srcset="/assets/images/grok/surmesure-ouverture-640.webp 640w, /assets/images/grok/surmesure-ouverture-1280.webp 1280w, /assets/images/grok/surmesure-ouverture-1600.webp 1600w" sizes="100vw" alt="Voile de tulle ivoire suspendu dans un studio rose pâle" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
@@ -156,14 +157,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/pieces/javanaise-2-1200.webp" srcset="/assets/images/pieces/javanaise-2-480.webp 480w, /assets/images/pieces/javanaise-2-800.webp 800w, /assets/images/pieces/javanaise-2-1200.webp 1200w" sizes="(max-width: 760px) 90vw, 40vw" alt="Veste JAVANAISE sur un buste de couture" width="1200" height="900" loading="lazy" decoding="async">
   </picture>
 </figure>
-    <div><h2 data-anime="lignes">Je vous conseille</h2><p class="u-grand" data-anime>Ensemble, nous évoluons au gré de vos envies. Je vous accompagne du choix de la forme à celui de la matière, selon vos envies et vos besoins.</p></div>
+    <div><h2 data-anime="lignes" data-effet="sage-sauvage">Je vous conseille</h2><p class="u-grand" data-anime>Ensemble, nous évoluons au gré de vos envies. Je vous accompagne du choix de la forme à celui de la matière, selon vos envies et vos besoins.</p></div>
   </div>
 </section>
 <section class="sm-mariees theme-creme" id="mariees">
   <div class="conteneur sm-mariees-grille">
     <div class="sm-mariees-texte">
       <p class="kicker">Le grand jour</p>
-      <h2 data-anime="lignes">Robes de mariée</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Robes de mariée</h2>
       <p data-anime>Se sentir unique, belle, désirée, remplie de bonheur et naturelle… La robe est le reflet de celle qui la porte et fait vivre la magie d&#39;un moment exceptionnel. Afin que ce moment éphémère dure éternellement, madebymelody vous accueille dans son atelier pour vous conseiller et réaliser la robe de vos rêves.</p>
       <p data-anime>La création sur mesure donne aussi vie à vos désirs de demoiselle d&#39;honneur, de princesse d&#39;un soir, ou simplement de femme active dans un quotidien qui donne envie de quelque chose de spécial.</p>
       <p data-anime><a href="/sur-mesure?sujet=mariee#rendez-vous" class="bouton bouton--noir" data-libelle="Sur mesure">Parler de ma robe</a></p>
@@ -187,7 +188,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur sm-deroule-grille">
     <div>
       <p class="kicker">La set-list</p>
-      <h2 data-anime="lignes">Votre pièce, en quatre temps</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Votre pièce, en quatre temps</h2>
       <ol class="setlist" data-anime="cascade">
         <li><span class="setlist-num">01</span><div><h3>La rencontre</h3><p>C&#39;est ici que naît le fruit d&#39;une rencontre, d&#39;un partage, pour saisir vos rêves et votre personnalité.</p></div></li><li><span class="setlist-num">02</span><div><h3>La forme et la matière</h3><p>Des matières nobles, sélectionnées avec soin pour votre pièce.</p></div></li><li><span class="setlist-num">03</span><div><h3>La confection à la main</h3><p>Chaque pièce est réalisée à la main dans son intégralité, dans l&#39;atelier.</p></div></li><li><span class="setlist-num">04</span><div><h3>À votre rythme</h3><p>Tout est réalisé sur mesure, dans des délais qui s&#39;adaptent à vos besoins.</p></div></li>
       </ol>
@@ -204,7 +205,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="sm-enfants theme-rose" id="enfants">
   <div class="conteneur u-duo u-duo--inverse">
-    <div><h2 data-anime="lignes">Les enfants</h2><p class="u-grand" data-anime>Un monde d&#39;insouciance, un univers léger qui observe les petits gestes et qui font grandir les petits riens en de grandes idées… madebymelody crée des pièces uniques pour que chaque instant leur appartienne.</p></div>
+    <div><h2 data-anime="lignes" data-effet="sage-sauvage">Les enfants</h2><p class="u-grand" data-anime>Un monde d&#39;insouciance, un univers léger qui observe les petits gestes et qui font grandir les petits riens en de grandes idées… madebymelody crée des pièces uniques pour que chaque instant leur appartienne.</p></div>
     <div class="sm-enfants-visuels">
       <figure class="media sm-enfants-collage" data-fx="zoom" style="--cadrage:50% 50%">
   <picture>
@@ -227,7 +228,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
   <div class="conteneur">
     <p class="kicker">Autres services personnalisés</p>
-    <h2 data-anime="lignes">Sur scène et à l&#39;écran</h2>
+    <h2 data-anime="lignes" data-effet="sage-sauvage">Sur scène et à l&#39;écran</h2>
     <ul class="sm-scene-cartes" data-anime="cascade">
       <li><h3>Costumière</h3><p>madebymelody est présente sur scène lors de défilés, et accompagne les acteurs dans leurs personnages pour le théâtre et le cinéma.</p></li><li><h3>Théâtre, cinéma…</h3><p>Le bonheur de se plonger dans une atmosphère, de chercher et de créer des personnages.</p></li><li><h3>Recherche de style</h3><p>Comprendre et accompagner l&#39;humain dans son environnement, par son apparence et son comportement.</p></li>
     </ul>
@@ -237,7 +238,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur sm-brode-grille">
     <div>
       <p class="kicker">L&#39;étiquette</p>
-      <h2 data-anime="lignes">Brodez votre prénom</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Brodez votre prénom</h2>
       <p data-anime>Chaque création sur mesure est faite pour une seule personne. Écrivez un prénom : il se brode point par point sur l&#39;étiquette.</p>
       <div class="champ"><label for="prenom-brode">Prénom à broder</label><input id="prenom-brode" type="text" maxlength="14" value="Votre prénom" autocomplete="off"></div>
       <p class="note">Aperçu ludique : les étiquettes réelles sont à définir avec Melody.</p>
@@ -251,7 +252,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur sm-rdv-grille">
     <div class="sm-rdv-tete">
       <p class="kicker">Rendez-vous</p>
-      <h2 data-anime="lignes">Racontez-moi votre pièce</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">Racontez-moi votre pièce</h2>
       <p>Trois étapes : votre projet, votre message, vos coordonnées.</p>
       <figure class="media sm-rdv-media" data-fx="zoom" style="--cadrage:51% 44%">
   <picture>
@@ -293,6 +294,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 </main>
+<div class="diamant" aria-hidden="true" data-audit-ignorer><svg viewBox="0 0 90 24" focusable="false"><path class="diamant-bras" d="M16 12 C 40 12, 52 4, 90 4" /><rect class="diamant-tete" x="12" y="7" width="16" height="10" rx="2" /><path class="diamant-pointe" d="M3 12 L9 7.5 L15 12 L9 16.5 Z" /></svg></div>
 <footer class="pied" id="pied" data-masque-barre>
   <div class="conteneur pied-haut">
     <div class="pied-disque" data-effet="face-b">

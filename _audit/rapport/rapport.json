@@ -1,6 +1,18 @@
 {
   "echecs": [],
-  "aRegarder": [],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (5.3 %), voir comparaisons/rechargement-boutique-*.png",
+      "etape": "parcours",
+      "page": "/boutique",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    }
+  ],
   "nonLances": [
     {
       "controle": "parcours:calme",
@@ -14,6 +26,8 @@
     "robots.txt": 1,
     "numéro de version": 1,
     "langues": 1,
+    "mesures": 66,
+    "balayage": 5,
     "intro accélérable et passable": 7,
     "menu": 1,
     "clavier": 6,
@@ -22,10 +36,13 @@
     "liens vers la page en cours": 5,
     "changements de hauteur": 5,
     "mode calme": 10,
-    "parcours du projet": 1
+    "parcours du projet": 1,
+    "mouvement": 10,
+    "effets du plan": 18,
+    "souris immobile": 8
   },
   "infos": [
-    "Numéro de version des fichiers : ?v=1",
+    "Numéro de version des fichiers : ?v=2",
     "Audit standard : étapes lourdes sur /, /boutique, /contact, /sur-mesure, /univers.",
     "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés."
   ]

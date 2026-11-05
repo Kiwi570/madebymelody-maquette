@@ -21,7 +21,7 @@ export default (c) => {
       <span class="hero-mot hero-mot--a"><span class="ligne-masque"><span data-anime="gsap" class="hero-ligne">${c.t('accueil.hero.titre1')}</span></span></span>
       <span class="hero-mot hero-mot--b"><span class="ligne-masque"><span data-anime="gsap" class="hero-ligne">${c.t('accueil.hero.titre2')}</span></span></span>
     </h1>
-    <div class="vinyle" data-effet="vinyle" data-superpose role="img" aria-label="${c.s('accueil.hero.disque')}">
+    <div class="vinyle" data-effet="vinyle" data-superpose data-iris-centre="disque" data-souris role="img" aria-label="${c.s('accueil.hero.disque')}">
       <div class="vinyle-css" aria-hidden="true">
         <div class="vinyle-tourne">
           <span class="vinyle-sillons"></span>
@@ -37,6 +37,7 @@ export default (c) => {
         <rect x="56" y="186" width="22" height="12" rx="2" transform="rotate(-38 67 192)" class="bras-tete" />
       </svg>
       <p class="vinyle-face" aria-hidden="true"><span>${c.t('accueil.hero.face')}</span> <b data-face>A</b></p>
+      <p class="vinyle-indice" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M20 12a8 8 0 1 1-2.34-5.66" /><path d="M20 4v4h-4" /></svg>${c.t('accueil.hero.indice')}</p>
     </div>
     <div class="hero-bas" data-anime="gsap">
       <p class="hero-texte">${c.t('accueil.hero.texte')}</p>
@@ -66,7 +67,7 @@ export default (c) => {
 <section class="tracklist" id="tracklist">
   <div class="conteneur tracklist-tete">
     <p class="kicker">${c.t('accueil.tracklist.kicker')}</p>
-    <h2 data-anime="lignes">${c.t('accueil.tracklist.titre')}</h2>
+    <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('accueil.tracklist.titre')}</h2>
     <p>${c.t('accueil.tracklist.texte')}</p>
   </div>
   <div class="conteneur tracklist-grille">
@@ -90,22 +91,30 @@ export default (c) => {
   <p class="conteneur tracklist-pied">${c.lien('boutique', { classe: 'bouton bouton--contour', texte: c.t('accueil.tracklist.tout'), attrs: 'data-survol="magnetique"' })}</p>
 </section>
 
-<section class="bac ecran epingle" id="bac" data-entete-cache data-fx="galerie" style="--teinte:${P[BAC[0]].teinte}">
-  <div class="conteneur bac-tete">
-    <h2 data-anime="lignes">${c.t('accueil.bac.titre')}</h2>
-    <p>${c.t('accueil.bac.texte')} <span class="indice-tactile">${c.t('accueil.bac.glisser')}</span></p>
-  </div>
-  <div class="piste bac-piste" data-galerie tabindex="0" role="region" aria-label="${c.s('accueil.bac.region')}">
-    ${BAC.map((id) => { const p = P[id]; return html`<article class="pochette" data-effet="pochette" data-teinte="${p.teinte}" data-tient>
-      <div class="pochette-cadre">
-        <span class="pochette-disque" aria-hidden="true">${disqueSvg({ id: 'bac-' + id })}</span>
-        ${photo(p, 0, { classe: 'pochette-media', sizes: '(max-width: 760px) 72vw, 34vh' })}
+<section class="bac ecran epingle" id="bac" data-entete-cache style="--teinte:${P[BAC[0]].teinte}">
+  <div class="conteneur bac-grille">
+    <div class="bac-tete">
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('accueil.bac.titre')}</h2>
+      <p>${c.t('accueil.bac.texte')} <span class="indice-tactile">${c.t('accueil.bac.glisser')}</span></p>
+      <p class="bac-compteur" aria-hidden="true"><b data-bac-num>01</b><span> / ${String(BAC.length).padStart(2, '0')}</span></p>
+      <div class="galerie-progres" aria-hidden="true"><span></span></div>
+    </div>
+    <div class="bac-caisse" data-effet="caisse">
+      <div class="piste bac-piste" data-bac-pile data-tient tabindex="0" role="region" aria-label="${c.s('accueil.bac.region')}">
+        ${BAC.map((id, i) => { const p = P[id]; return html`<article class="pochette" data-effet="pochette" data-teinte="${p.teinte}" style="--i:${i}">
+          <div class="pochette-cadre">
+            <span class="pochette-disque" aria-hidden="true">${disqueSvg({ id: 'bac-' + id })}</span>
+            ${photo(p, 0, { classe: 'pochette-media', sizes: '(max-width: 760px) 70vw, 40vh' })}
+          </div>
+          <div class="pochette-legende">
+            <h3><a href="${c.url('boutique', '', `piece=${id}`)}" data-libelle="${c.libelle('boutique')}"><span class="pochette-num">${piste(p.piste)}</span> ${p.nom}</a></h3>
+            <p><span data-prix>${chf(p.prix)}</span>${p.taille ? ` · ${p.taille}` : ''}</p>
+          </div>
+        </article>`; })}
       </div>
-      <h3><a href="${c.url('boutique', '', `piece=${id}`)}" data-libelle="${c.libelle('boutique')}"><span class="pochette-num">${piste(p.piste)}</span> ${p.nom}</a></h3>
-      <p><span data-prix>${chf(p.prix)}</span>${p.taille ? ` · ${p.taille}` : ''}</p>
-    </article>`; })}
+      <div class="bac-bois" aria-hidden="true" data-audit-ignorer></div>
+    </div>
   </div>
-  <div class="galerie-progres" aria-hidden="true"><span></span></div>
 </section>
 
 <section class="bascule" id="bascule" data-effet="bascule">
@@ -153,7 +162,7 @@ export default (c) => {
     ${c.media({ nom: 'grok/univers-musique', alt: c.donnees.images.images['grok/univers-musique'].alt, classe: 'designer-collage', sizes: '(max-width: 760px) 100vw, 40vw', attrs: 'data-anime="rideau"' })}
     <div>
       <p class="kicker">${c.t('accueil.designer.kicker')}</p>
-      <h2 data-anime="lignes">${c.t('accueil.designer.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('accueil.designer.titre')}</h2>
       <p data-anime>${c.t('accueil.designer.texte')}</p>
       <dl class="notes" data-anime="cascade">
         <div><dt>${c.t('accueil.designer.formation')}</dt><dd>${c.t('accueil.designer.formationV')}</dd></div>
@@ -169,7 +178,7 @@ export default (c) => {
   <div class="conteneur teaser-grille">
     <div class="teaser-texte">
       <p class="kicker">${c.t('accueil.surmesure.kicker')}</p>
-      <h2 data-anime="lignes">${c.t('accueil.surmesure.titre')}</h2>
+      <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('accueil.surmesure.titre')}</h2>
       <p data-anime>${c.t('accueil.surmesure.texte')}</p>
       <p data-anime>${c.lien('sur-mesure', { ancre: 'rendez-vous', classe: 'bouton bouton--noir', texte: c.t('accueil.surmesure.action'), attrs: 'data-survol="magnetique"' })}</p>
     </div>
@@ -189,7 +198,7 @@ export default (c) => {
     <button type="button" class="ruban-pause" data-pause-pour="ruban" data-libelle-pause="${c.s('commun.pause')}" data-libelle-lecture="${c.s('commun.lecture')}"><span data-libelle-bouton>${c.t('commun.pause')}</span></button>
   </div>
   <div class="conteneur atelier-texte">
-    <h2 data-anime="lignes">${c.t('accueil.atelier.titre')}</h2>
+    <h2 data-anime="lignes" data-effet="sage-sauvage">${c.t('accueil.atelier.titre')}</h2>
     <p data-anime>${c.t('accueil.atelier.texte')}</p>
     <p class="atelier-actions" data-anime>
       ${c.lien('sur-mesure', { ancre: 'rendez-vous', classe: 'bouton bouton--rose', texte: c.t('accueil.atelier.action'), attrs: 'data-survol="magnetique"' })}
