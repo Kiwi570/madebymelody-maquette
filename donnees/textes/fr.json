@@ -1,0 +1,477 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "English version",
+    "actionEntete": "Rendez-vous",
+    "actionEnteteLong": "Prendre rendez-vous",
+    "appeler": "Appeler",
+    "calmeReduire": "Réduire les animations",
+    "calmeRetablir": "Rétablir les animations",
+    "calmeSysteme": "Animations réduites par le réglage de votre appareil",
+    "sommaire": "Sommaire",
+    "confort": "Confort de lecture",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette : les informations marquées « à compléter » seront fournies par madebymelody.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Face A",
+    "aCompleter": "à compléter",
+    "mentions": "Mentions légales : à compléter",
+    "confidentialite": "Politique de confidentialité : à compléter",
+    "instagram": "Instagram",
+    "instagramLong": "Suivre @madebymelody.ch sur Instagram",
+    "nouvelOnglet": "(nouvel onglet)",
+    "panier": "Panier",
+    "pied": {
+      "atelier": "L'atelier",
+      "faceB": "Face B",
+      "lettre": "Ne manquez pas les nouvelles collections",
+      "lettreTexte": "Abonnez-vous à la lettre d'information.",
+      "email": "Votre e-mail",
+      "envoyer": "S'abonner",
+      "mention": "Votre adresse sert uniquement à recevoir la lettre (nLPD). Politique de confidentialité : à compléter.",
+      "fin": "Fin de la face B"
+    },
+    "actionEnteteCourt": "Rendez-vous"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "madebymelody : pièces uniques et sur mesure à Nyon",
+      "description": "Créatrice de mode à Nyon : pièces uniques et numérotées pour femmes et enfants, faites main, et atelier sur mesure pour vos robes de mariée.",
+      "nav": "Accueil",
+      "partageAlt": "madebymelody, sage et sauvage : un disque dont l'étiquette est une robe portée",
+      "accroche": "Sage et sauvage : pièces uniques faites main à Nyon"
+    },
+    "univers": {
+      "titre": "L'univers : madebymelody",
+      "description": "Rock, fleurs et Baby Doll : la marque, l'attitude et la designer de madebymelody, à Nyon.",
+      "nav": "L'univers",
+      "partageAlt": "L'univers madebymelody : imprimé de papillons de la robe SUPERNATURE",
+      "accroche": "Du rose au noir : sage et sauvage à la fois"
+    },
+    "sur-mesure": {
+      "titre": "Sur mesure et robes de mariée : madebymelody",
+      "description": "Atelier sur mesure à Nyon : robes de mariée, demoiselles d'honneur, enfants, costumes de scène. Prenez rendez-vous.",
+      "nav": "Sur mesure",
+      "partageAlt": "Atelier sur mesure madebymelody : robe bustier rouge sur un buste",
+      "accroche": "Un espace pour toutes vos idées"
+    },
+    "boutique": {
+      "titre": "Boutique : 29 pièces uniques, madebymelody",
+      "description": "29 pièces uniques faites main à Nyon, de 50 à 220 CHF : robes, hauts, jupes, shorts, vestes, pantalons.",
+      "nav": "Boutique",
+      "partageAlt": "La boutique madebymelody : un bac de pochettes",
+      "accroche": "29 pièces uniques, de 50 à 220 CHF"
+    },
+    "contact": {
+      "titre": "Contact : madebymelody, Nyon",
+      "description": "Atelier madebymelody, Ch. de Crève-Cœur 3, 1260 Nyon. Téléphone, e-mail et formulaire.",
+      "nav": "Contact",
+      "partageAlt": "Contact madebymelody : veste JAVANAISE portée, dos nu",
+      "accroche": "Parlons de votre projet"
+    },
+    "404": {
+      "titre": "Page introuvable : madebymelody",
+      "description": "Le diamant a sauté : cette page n'existe pas.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Le diamant a sauté"
+    }
+  },
+  "intro": {
+    "passer": "Touchez pour passer"
+  },
+  "accueil": {
+    "hero": {
+      "kicker": "madebymelody · Nyon",
+      "titre1": "Sage",
+      "titre2": "et sauvage",
+      "texte": "Des pièces uniques et numérotées, faites main à Nyon, pour femmes et enfants.",
+      "action": "Écouter la tracklist",
+      "rdv": "Prendre rendez-vous",
+      "info": "29 pièces uniques, de 50 à 220 CHF",
+      "face": "Face",
+      "disque": "Disque dont l'étiquette montre une robe portée ; il tourne et se scratche au défilement."
+    },
+    "manifeste": {
+      "titre": "Des pièces uniques parce que vous êtes uniques.",
+      "texte": "madebymelody propose des pièces uniques et numérotées pour femmes et enfants, entièrement made in Nyon en Suisse. Chacune des collections représente une envie, un état d'esprit. Elle aborde la mode de manière intemporelle, en s'inspirant des années 60, 70 et 90, de la musique, de l'attitude et de la nature.",
+      "lien": "Découvrir l'univers"
+    },
+    "tracklist": {
+      "kicker": "Face A, face B",
+      "titre": "La tracklist",
+      "texte": "29 pistes, 29 pièces uniques. Une sélection de huit.",
+      "piste": "Piste",
+      "ecouter": "Voir la pièce",
+      "tout": "Toute la tracklist",
+      "pochette": "Pochette de la piste en cours"
+    },
+    "bac": {
+      "titre": "Dans le bac",
+      "texte": "Feuilletez les pochettes : chaque pièce existe en un seul exemplaire.",
+      "region": "Pochettes à feuilleter",
+      "glisser": "Faites glisser",
+      "voir": "Voir la pièce"
+    },
+    "bascule": {
+      "faceA": "Face A",
+      "faceB": "Face B",
+      "sage": "Sage",
+      "sauvage": "Sauvage",
+      "texteA": "Rose poudré, tulle et dentelle ivoire.",
+      "texteB": "Rock, dentelle noire, insectes et paons radieux.",
+      "fader": "Faites glisser de la face A à la face B",
+      "pieceA": "LOVE ME TWO, robe jaune à petites fleurs blanches",
+      "pieceB": "FLASH, jupe noire plissée à fils métalliques"
+    },
+    "unique": {
+      "kicker": "Une seule prise",
+      "chiffre": "1/1",
+      "citation": "Je ne réalise jamais deux fois le même vêtement.",
+      "auteur": "Melody",
+      "f1": "Réalisée à la main dans son intégralité",
+      "f2": "Made in Nyon, en Suisse",
+      "f3": "Des tissus en grande majorité naturels",
+      "numero": "Chaque pièce est numérotée : numéros à compléter.",
+      "detail": "Détail de MARY L : fleur dorée en dentelle"
+    },
+    "designer": {
+      "kicker": "Notes de pochette",
+      "titre": "La designer",
+      "texte": "Créatrice de mode suisse basée à Nyon, dans le canton de Vaud, Melody a créé la marque à l'âge de 25 ans, après sa formation dans des écoles de mode entre Paris et Genève et un stage chez John Galliano à Paris en 2009.",
+      "formation": "Formation",
+      "formationV": "LISAA Paris · HEAD Genève",
+      "stage": "Stage",
+      "stageV": "John Galliano, Paris, 2009",
+      "creation": "La marque",
+      "creationV": "Créée par Melody à 25 ans",
+      "influences": "Influences",
+      "influencesV": "Gainsbourg, les Doors, Yves Simon",
+      "lien": "Son parcours",
+      "portrait": "Portrait de Melody : à fournir"
+    },
+    "surmesure": {
+      "kicker": "Atelier sur mesure",
+      "titre": "Pour un événement ou votre quotidien",
+      "texte": "Vous souhaitez porter la tenue de vos rêves, et surtout être unique pour ce grand jour ? Vous avez un projet en tête, ou pas encore ? madebymelody crée votre envie sur mesure, dans son atelier.",
+      "mariees": "Robes de mariée",
+      "mariees2": "Rétro, bohème chic ou glamour",
+      "enfants": "Les enfants",
+      "enfants2": "Des pièces uniques pour les petits",
+      "costumes": "Costumière",
+      "costumes2": "Défilés, théâtre et cinéma",
+      "action": "Parlons-en"
+    },
+    "atelier": {
+      "ruban": "MADLY · STRANGE DAYS · SUNSHINE · JULIETTE · LOVE ME TWO · FLASH · GRAPEVINE · THREE LITTLE BIRDS · PEACOCK · SUPERNATURE · FEVER · ENVOLEZ-MOI · JEKYLL · JAVANAISE · AQUARIUS · HURRICANE · FLESH · CMinor · MARY L · PLAYGROUND · GHOST · MARCHE À L'OMBRE · REQUIEM · BALLADE · MARILOU · BONNIE · PAINT IT BLACK · MUSTANG · CLOUDS UP ·",
+      "titre": "Venez parler de votre pièce",
+      "texte": "L'atelier accueille toutes vos envies, des projets les plus fous aux plus créatifs. Ch. de Crève-Cœur 3, 1260 Nyon.",
+      "action": "Prendre rendez-vous",
+      "acces": "Venir à l'atelier"
+    }
+  },
+  "univers": {
+    "tete": {
+      "kicker": "La marque",
+      "titre": "Rock, fleurs et Baby Doll",
+      "texte": "Sage et sauvage à la fois : une mode intemporelle, inspirée des années 60, 70 et 90, de la musique, de l'attitude et de la nature.",
+      "action": "Voir les pièces",
+      "info": "Pièces uniques et numérotées, made in Nyon",
+      "pochette": "Pochette : collage madebymelody",
+      "titre1": "Du rose",
+      "titre2": "au noir"
+    },
+    "univers": {
+      "titre": "Un univers",
+      "texte": "Rock, fleurs, Baby Doll et couleurs allant du rose au noir. Gainsbourg, les Doors, Yves Simon. Des mélanges de dentelles et d'insectes, de tulle léger et de paons radieux, de silencieux et de revendicateur.",
+      "d1": "Dentelle : détail de MARY L, fleurs dorées en dentelle",
+      "d2": "Insectes : SUPERNATURE, imprimé de papillons",
+      "d3": "Paon : PEACOCK, paon doré en dentelle appliqué"
+    },
+    "melangeur": {
+      "kicker": "Le mélangeur",
+      "titre": "Trois faders, un univers",
+      "texte": "Faites glisser chaque fader : la matière fond dans l'autre, et la lettre passe du sage au sauvage.",
+      "p1a": "Dentelle",
+      "p1b": "Insectes",
+      "p2a": "Tulle",
+      "p2b": "Paons",
+      "p3a": "Silencieux",
+      "p3b": "Revendicateur",
+      "fader": "Mélange entre {a} et {b}"
+    },
+    "attitude": {
+      "titre": "Une attitude",
+      "texte": "Une attitude qui voudrait se conformer mais sans cesse, cette envie de s'échapper l'en empêche. Sage et sauvage à la fois, en contradiction permanente avec elle-même.",
+      "alt": "BALLADE, pantalon marine à rayures tennis, porté"
+    },
+    "concept": {
+      "titre": "Un concept",
+      "texte": "Créée dans des tissus en grande majorité naturels, chaque pièce est unique et reflète un voyage, une rencontre, une attitude. C'est cela que vous retrouverez dans les histoires qui accompagnent les créations madebymelody.",
+      "alt": "Détail de PLAYGROUND : moustiques blancs sérigraphiés à la main"
+    },
+    "designer": {
+      "kicker": "Notes de pochette",
+      "titre": "La designer",
+      "texte1": "Melody a créé la marque à l'âge de 25 ans. Après sa formation dans des écoles de mode entre Paris et Genève, elle a suivi un stage chez John Galliano à Paris, où elle a perfectionné ses compétences et sa connaissance de la couture.",
+      "texte2": "Son inspiration provient du monde qui l'entoure, des arts de la nature, de l'Histoire moderne ainsi que de sa passion de toujours pour la musique. Chaque pièce est réalisée à la main dans son intégralité et avec passion, car vous êtes unique et elle le sait.",
+      "portrait": "Portrait de Melody : à fournir",
+      "musique": "Tourne-disque et pochettes : la musique, passion de toujours"
+    },
+    "experience": {
+      "titre": "L'expérience mode",
+      "t1": "Livraison gratuite",
+      "d1": "Offerte pour toute commande au-delà d'un montant : à compléter.",
+      "t2": "Retours simples",
+      "d2": "Si vous n'êtes pas satisfaite de votre achat, la politique de retour est simple et rapide : conditions à compléter.",
+      "t3": "Du style en pièces uniques",
+      "d3": "Vous êtes toujours sûre de porter une pièce unique : Melody ne réalise jamais deux fois le même vêtement.",
+      "alt": "Collage : portrait en noir et blanc sur un papier dessiné d’insectes"
+    },
+    "fin": {
+      "titre": "Trouver sa pièce, ou créer la sienne",
+      "boutique": "Voir la boutique",
+      "mesure": "L'atelier sur mesure",
+      "alt": "BONNIE, combinaison marine à rayures tennis, portée"
+    }
+  },
+  "surmesure": {
+    "tete": {
+      "kicker": "Atelier sur mesure",
+      "titre": "Un espace pour toutes vos idées",
+      "texte": "Imaginez un endroit où vous pourriez confier à quelqu'un vos envies, vos goûts, votre silhouette. Quelque part où les projets uniques prennent forme.",
+      "action": "Prendre rendez-vous",
+      "info": "Des délais qui s'adaptent à vos besoins",
+      "alt": "Robe bustier rouge sur mesure, sur un buste de couture",
+      "titre1": "Un espace pour",
+      "titre2": "toutes vos idées"
+    },
+    "atelier": {
+      "titre": "Je vous conseille",
+      "texte": "Ensemble, nous évoluons au gré de vos envies. Je vous accompagne du choix de la forme à celui de la matière, selon vos envies et vos besoins.",
+      "alt": "Veste JAVANAISE sur un buste de couture"
+    },
+    "mariees": {
+      "kicker": "Le grand jour",
+      "titre": "Robes de mariée",
+      "texte": "Se sentir unique, belle, désirée, remplie de bonheur et naturelle… La robe est le reflet de celle qui la porte et fait vivre la magie d'un moment exceptionnel. Afin que ce moment éphémère dure éternellement, madebymelody vous accueille dans son atelier pour vous conseiller et réaliser la robe de vos rêves.",
+      "matieresT": "Matières et confection",
+      "matieres": "Que vous cherchiez une robe de mariée à l'esprit rétro, bohème chic ou glamour, les matières nobles sont choisies avec soin pour former votre robe unique, confectionnée à la main dans l'atelier.",
+      "styles": "Rétro · Bohème chic · Glamour",
+      "action": "Parler de ma robe",
+      "demoiselles": "La création sur mesure donne aussi vie à vos désirs de demoiselle d'honneur, de princesse d'un soir, ou simplement de femme active dans un quotidien qui donne envie de quelque chose de spécial."
+    },
+    "deroule": {
+      "kicker": "La set-list",
+      "titre": "Votre pièce, en quatre temps",
+      "e1": "La rencontre",
+      "d1": "C'est ici que naît le fruit d'une rencontre, d'un partage, pour saisir vos rêves et votre personnalité.",
+      "e2": "La forme et la matière",
+      "d2": "Des matières nobles, sélectionnées avec soin pour votre pièce.",
+      "e3": "La confection à la main",
+      "d3": "Chaque pièce est réalisée à la main dans son intégralité, dans l'atelier.",
+      "e4": "À votre rythme",
+      "d4": "Tout est réalisé sur mesure, dans des délais qui s'adaptent à vos besoins.",
+      "alt": "Robe ENVOLEZ-MOI en soie rouge imprimée d'hirondelles, sur un buste de couture"
+    },
+    "enfants": {
+      "titre": "Les enfants",
+      "texte": "Un monde d'insouciance, un univers léger qui observe les petits gestes et qui font grandir les petits riens en de grandes idées… madebymelody crée des pièces uniques pour que chaque instant leur appartienne."
+    },
+    "scene": {
+      "kicker": "Autres services personnalisés",
+      "titre": "Sur scène et à l'écran",
+      "t1": "Costumière",
+      "d1": "madebymelody est présente sur scène lors de défilés, et accompagne les acteurs dans leurs personnages pour le théâtre et le cinéma.",
+      "t2": "Théâtre, cinéma…",
+      "d2": "Le bonheur de se plonger dans une atmosphère, de chercher et de créer des personnages.",
+      "t3": "Recherche de style",
+      "d3": "Comprendre et accompagner l'humain dans son environnement, par son apparence et son comportement."
+    },
+    "brode": {
+      "kicker": "L'étiquette",
+      "titre": "Brodez votre prénom",
+      "texte": "Chaque création sur mesure est faite pour une seule personne. Écrivez un prénom : il se brode point par point sur l'étiquette.",
+      "label": "Prénom à broder",
+      "defaut": "Votre prénom",
+      "etiquette": "Étiquette tissée madebymelody brodée du prénom choisi",
+      "note": "Aperçu ludique : les étiquettes réelles sont à définir avec Melody."
+    },
+    "rdv": {
+      "kicker": "Rendez-vous",
+      "titre": "Racontez-moi votre pièce",
+      "texte": "Trois étapes : votre projet, votre message, vos coordonnées.",
+      "etape": "Étape {n} sur 3",
+      "q1": "Quel est votre projet ?",
+      "o1": "Robe de mariée",
+      "o2": "Demoiselle d'honneur",
+      "o3": "Pièce pour un enfant",
+      "o4": "Tenue du quotidien",
+      "o5": "Scène, théâtre ou cinéma",
+      "date": "Date de l'événement (facultatif)",
+      "message": "Votre message",
+      "messageAide": "Vos envies, vos goûts, une forme, une matière…",
+      "prenom": "Prénom",
+      "nom": "Nom",
+      "email": "E-mail",
+      "tel": "Téléphone (facultatif)",
+      "suivant": "Suivant",
+      "precedent": "Précédent",
+      "envoyer": "Envoyer la demande",
+      "recap": "Votre demande",
+      "mention": "Vos coordonnées servent uniquement à répondre à votre demande (nLPD). Politique de confidentialité : à compléter.",
+      "alt": "Robe ENVOLEZ-MOI portée dans un jardin",
+      "o6": "Recherche de style"
+    }
+  },
+  "boutique": {
+    "tete": {
+      "kicker": "La boutique",
+      "titre": "Le bac à pièces uniques",
+      "texte": "Chaque pochette cache une pièce qui n'existe qu'une fois.",
+      "info": "29 pièces uniques, de 50 à 220 CHF",
+      "action": "Lecture aléatoire",
+      "catalogue": "Voir les 29 pièces",
+      "alt": "Carton kraft"
+    },
+    "filtres": {
+      "titre": "Filtrer les pièces",
+      "type": "Type",
+      "tout": "Tout",
+      "robe": "Robes",
+      "haut": "Hauts",
+      "jupe": "Jupes",
+      "short": "Shorts",
+      "veste": "Vestes",
+      "pantalon": "Pantalons",
+      "autre": "Gilet, pull, combinaison",
+      "face": "Face",
+      "faceTout": "Les deux",
+      "faceA": "A · sage",
+      "faceB": "B · sauvage",
+      "faceNote": "Classement en face A et face B : proposition à valider par Melody. Les numéros de piste suivent l'ordre de la boutique actuelle ; les numéros des pièces sont à compléter.",
+      "resultat": "{n} pièces",
+      "resultat1": "1 pièce",
+      "vide": "Aucune pièce dans cette sélection."
+    },
+    "carte": {
+      "piste": "Piste",
+      "ajouter": "Ajouter",
+      "ajoute": "Dans le panier",
+      "voir": "Voir {nom}",
+      "tailleAC": "Taille à compléter"
+    },
+    "fiche": {
+      "fermer": "Fermer la fiche",
+      "unique": "Pièce unique : un seul exemplaire",
+      "numero": "N° de la pièce : à compléter",
+      "taille": "Taille",
+      "matiere": "Matière",
+      "mesures": "Mesures",
+      "aCompleter": "à compléter",
+      "descriptionACompleter": "Description à compléter : la fiche du site actuel n'a pas pu être lue.",
+      "ajouter": "Ajouter au panier",
+      "ajoute": "Dans le panier",
+      "precedente": "Pièce précédente",
+      "suivante": "Pièce suivante",
+      "photos": "Photos de la pièce",
+      "lien": "Lien de cette pièce"
+    },
+    "panier": {
+      "titre": "Votre panier",
+      "vide": "Le panier est vide.",
+      "retirer": "Retirer",
+      "total": "Total",
+      "livraison": "Livraison gratuite au-delà d'un montant à compléter.",
+      "paiement": "Moyens de paiement : à compléter.",
+      "commander": "Commander (simulé)",
+      "simule": "Commande simulée : rien n'a été payé ni envoyé. Le panier a été vidé.",
+      "fermer": "Fermer le panier",
+      "ouvrir": "Ouvrir le panier",
+      "articles": "{n} pièce(s)",
+      "prixTva": "Prix en CHF ; mention de la TVA à compléter."
+    },
+    "infos": {
+      "titre": "Bon à savoir",
+      "texte": "Chaque pièce n'existe qu'en un seul exemplaire.",
+      "alt": "Robe rouge portée, allongée dans l'herbe"
+    },
+    "types": {
+      "robe": "Robe",
+      "haut": "Haut",
+      "jupe": "Jupe",
+      "short": "Short",
+      "veste": "Veste",
+      "pantalon": "Pantalon",
+      "gilet": "Gilet",
+      "combinaison": "Combinaison",
+      "pull": "Pull",
+      "piece": "Pièce"
+    },
+    "mesure": {
+      "titre": "Créons la vôtre",
+      "texte": "Une pièce sur mesure, imaginée avec vous à l'atelier.",
+      "action": "L'atelier sur mesure"
+    }
+  },
+  "contact": {
+    "tete": {
+      "kicker": "Contact",
+      "titre": "Parlons de votre projet",
+      "info": "Ch. de Crève-Cœur 3, 1260 Nyon",
+      "action": "Appeler l'atelier",
+      "cercle": "CH. DE CRÈVE-CŒUR 3 · 1260 NYON · SUISSE · MADEBYMELODY · ATELIER ET PIÈCES UNIQUES · ",
+      "alt": "Coin d'atelier à l'heure dorée",
+      "numero1": "+41 76",
+      "numero2": "396 91 74"
+    },
+    "canaux": {
+      "titre": "Une question, une envie ?",
+      "texte": "Une question, une suggestion ou l'envie d'en savoir plus sur l'atelier sur mesure ? Remplissez le formulaire ou utilisez l'un des canaux.",
+      "adresse": "Adresse",
+      "telephone": "Téléphone",
+      "email": "E-mail",
+      "horaires": "Horaires",
+      "horairesV": "Horaires et modalités de rendez-vous : à compléter.",
+      "alt": "SUPERNATURE, robe longue imprimée de papillons, portée dans un jardin"
+    },
+    "form": {
+      "titre": "Envoyez un message",
+      "prenom": "Prénom",
+      "nom": "Nom",
+      "email": "E-mail",
+      "sujet": "Sujet",
+      "s1": "Une pièce de la boutique",
+      "s2": "Un projet sur mesure",
+      "s3": "Autre question",
+      "message": "Message",
+      "envoyer": "Envoyer",
+      "mention": "Vos coordonnées servent uniquement à répondre à votre message (nLPD). Politique de confidentialité : à compléter."
+    },
+    "acces": {
+      "titre": "Venir à l'atelier",
+      "texte": "L'atelier se trouve à Nyon, au bord du Léman. Plan schématique, à titre indicatif.",
+      "itineraire": "Ouvrir l'itinéraire",
+      "lac": "Le Léman",
+      "nyon": "Nyon",
+      "atelier": "L'atelier",
+      "plan": "Plan schématique : Nyon au bord du Léman et l'atelier, Ch. de Crève-Cœur 3"
+    },
+    "insta": {
+      "titre": "Suivez l'atelier",
+      "texte": "Les nouvelles pièces et les coulisses de l'atelier, sur Instagram.",
+      "alt": "Veste marine à rayures tennis portée dans une bibliothèque"
+    }
+  },
+  "introuvable": {
+    "titre": "Le diamant a sauté",
+    "texte": "Cette page n'existe pas, ou plus. Reposons le bras au début du disque.",
+    "retour": "Revenir à l'accueil",
+    "boutique": "Voir la boutique"
+  }
+}

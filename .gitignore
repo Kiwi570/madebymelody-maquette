@@ -1,0 +1,5 @@
+recu/
+.vercel
+.DS_Store
+_audit/rapport/films/
+_audit/rapport/comparaisons/

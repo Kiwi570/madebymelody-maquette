@@ -1,0 +1,1901 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-page="boutique" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boutique : 29 pièces uniques, madebymelody</title>
+<meta name="description" content="29 pièces uniques faites main à Nyon, de 50 à 220 CHF : robes, hauts, jupes, shorts, vestes, pantalons.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://madebymelody-maquette.vercel.app/boutique">
+<style>:root{--fond:#141113;--texte:#f3ebdd;--voile-fond:#f4c6cf;--ouverture-fond:#141113;--menu-fond:#141113}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#141113">
+<link rel="icon" href="/assets/images/favicon-64.png" type="image/png" sizes="64x64">
+<link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="madebymelody">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:title" content="Boutique : 29 pièces uniques, madebymelody">
+<meta property="og:description" content="29 pièces uniques faites main à Nyon, de 50 à 220 CHF : robes, hauts, jupes, shorts, vestes, pantalons.">
+<meta property="og:url" content="https://madebymelody-maquette.vercel.app/boutique">
+<meta property="og:image" content="https://madebymelody-maquette.vercel.app/assets/partage/boutique-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La boutique madebymelody : un bac de pochettes">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"madebymelody","url":"https://madebymelody-maquette.vercel.app/","telephone":"+41763969174","email":"melody_j8@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"Ch. de Crève-Cœur 3","postalCode":"1260","addressLocality":"Nyon","addressRegion":"VD","addressCountry":"CH"},"sameAs":["https://www.instagram.com/madebymelody.ch/"],"founder":{"@type":"Person","name":"Melody"},"currenciesAccepted":"CHF","description":{"fr":"Créatrice de mode à Nyon : pièces uniques et numérotées pour femmes et enfants, faites main, et atelier sur mesure (robes de mariée, costumes de scène).","en":"Fashion designer in Nyon: one-of-a-kind numbered pieces for women and children, handmade, and a made-to-measure atelier."}}</script>
+</head>
+<body id="haut" class="page-boutique">
+<div data-voile aria-hidden="true"><div class="voile-contenu">
+  <svg class="disque-svg voile-disque" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+  <defs><path id="voile-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
+  <circle cx="100" cy="100" r="98" class="disque-vinyle" />
+  <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
+  <path class="disque-reflet" d="M100 2 A98 98 0 0 1 169 31 L100 100 Z" />
+  <path class="disque-reflet" d="M100 198 A98 98 0 0 1 31 169 L100 100 Z" />
+  <circle cx="100" cy="100" r="38" class="disque-etiquette" />
+  <circle cx="100" cy="100" r="3" class="disque-trou" />
+</svg>
+  <span data-voile-libelle>Boutique</span>
+</div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="platine">
+    <div class="platine-disque"><svg class="disque-svg intro-disque" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+  <defs><path id="intro-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
+  <circle cx="100" cy="100" r="98" class="disque-vinyle" />
+  <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
+  <path class="disque-reflet" d="M100 2 A98 98 0 0 1 169 31 L100 100 Z" />
+  <path class="disque-reflet" d="M100 198 A98 98 0 0 1 31 169 L100 100 Z" />
+  <circle cx="100" cy="100" r="38" class="disque-etiquette" />
+  <image href="/assets/images/logo-noir.png" x="70" y="96" width="60" height="8.4" class="intro-logo" />
+  <circle cx="100" cy="100" r="3" class="disque-trou" />
+</svg></div>
+    <svg class="platine-bras" viewBox="0 0 120 220" aria-hidden="true" focusable="false">
+      <circle cx="96" cy="22" r="14" class="bras-pivot" /><circle cx="96" cy="22" r="5" class="bras-axe" />
+      <path d="M96 22 L92 150 Q90 176 70 192" class="bras-tige" />
+      <rect x="56" y="186" width="22" height="12" rx="2" transform="rotate(-38 67 192)" class="bras-tete" />
+    </svg>
+    <p class="intro-face"><span>Face A</span></p>
+  </div>
+  <p class="intro-passer">Touchez pour passer</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="madebymelody, Accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-creme.png" alt="madebymelody" width="1200" height="167">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/univers" data-libelle="L&#39;univers">L&#39;univers</a></li><li><a href="/sur-mesure" data-libelle="Sur mesure">Sur mesure</a></li><li><a href="/boutique" data-libelle="Boutique" aria-current="page">Boutique</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <button type="button" class="bouton bouton--creme entete-panier" data-panier-bouton aria-controls="panier" aria-expanded="false"><span>Panier</span> <b data-panier-compte>0</b></button>
+      <a class="bouton bouton--rose" href="/sur-mesure#rendez-vous" data-libelle="Sur mesure" aria-label="Prendre rendez-vous">Rendez-vous</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><span class="menu-num" aria-hidden="true">01</span><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><span class="menu-num" aria-hidden="true">02</span><a href="/univers" class="menu-lien" data-libelle="L&#39;univers">L&#39;univers</a></li><li style="--i:2"><span class="menu-num" aria-hidden="true">03</span><a href="/sur-mesure" class="menu-lien" data-libelle="Sur mesure">Sur mesure</a></li><li style="--i:3"><span class="menu-num" aria-hidden="true">04</span><a href="/boutique" class="menu-lien" data-libelle="Boutique" aria-current="page">Boutique</a></li><li style="--i:4"><span class="menu-num" aria-hidden="true">05</span><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p class="menu-actions"><a class="bouton bouton--rose" href="/sur-mesure#rendez-vous" data-libelle="Sur mesure">Prendre rendez-vous</a>
+  <a class="bouton bouton--contour" href="tel:+41763969174">Appeler +41 76 396 91 74</a></p>
+  <p><a class="lien-externe" href="https://www.instagram.com/madebymelody.ch/" target="_blank" rel="noopener">Suivre @madebymelody.ch sur Instagram <span class="visuellement-cache">(nouvel onglet)</span></a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="b-tete" id="debut">
+  <figure class="media b-tete-fond" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/boutique-fond-mobile-480.webp 480w, /assets/images/grok/boutique-fond-mobile-720.webp 720w" sizes="100vw">
+    <img src="/assets/images/grok/boutique-fond-1280.webp" srcset="/assets/images/grok/boutique-fond-640.webp 640w, /assets/images/grok/boutique-fond-1280.webp 1280w, /assets/images/grok/boutique-fond-1600.webp 1600w" sizes="100vw" alt="Carton kraft" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur b-tete-grille">
+    <div class="b-tete-texte">
+      <p class="kicker">La boutique</p>
+      <h1 class="b-titre" data-anime="gsap">Le bac à pièces uniques</h1>
+      <p data-anime="gsap" class="b-intro">Chaque pochette cache une pièce qui n&#39;existe qu&#39;une fois.</p>
+      <p class="b-info" data-info-cle>29 pièces uniques, de 50 à 220 CHF</p>
+      <p class="b-actions" data-anime="gsap">
+        <button type="button" class="bouton bouton--noir" data-aleatoire data-action-principale>Lecture aléatoire</button>
+        <a class="bouton bouton--contour" href="#catalogue">Voir les 29 pièces</a>
+      </p>
+    </div>
+    <div class="bac3d" data-effet="bac" aria-hidden="true">
+      <div class="bac3d-pochettes">
+        <div class="bac3d-pochette" style="--i:0"><figure class="media " style="--cadrage:61% 56%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-1-1200.webp" srcset="/assets/images/pieces/javanaise-1-480.webp 480w, /assets/images/pieces/javanaise-1-800.webp 800w, /assets/images/pieces/javanaise-1-1200.webp 1200w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div class="bac3d-pochette" style="--i:1"><figure class="media " style="--cadrage:58% 32%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-1-1200.webp" srcset="/assets/images/pieces/supernature-1-480.webp 480w, /assets/images/pieces/supernature-1-800.webp 800w, /assets/images/pieces/supernature-1-1200.webp 1200w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div class="bac3d-pochette" style="--i:2"><figure class="media " style="--cadrage:56% 41%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-1-1200.webp" srcset="/assets/images/pieces/envolez-moi-1-480.webp 480w, /assets/images/pieces/envolez-moi-1-800.webp 800w, /assets/images/pieces/envolez-moi-1-1200.webp 1200w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div class="bac3d-pochette" style="--i:3"><figure class="media " style="--cadrage:64% 33%">
+  <picture>
+    <img src="/assets/images/pieces/peacock-1-1200.webp" srcset="/assets/images/pieces/peacock-1-480.webp 480w, /assets/images/pieces/peacock-1-800.webp 800w, /assets/images/pieces/peacock-1-1200.webp 1200w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="1200" height="2133" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure></div><div class="bac3d-pochette" style="--i:4"><figure class="media " style="--cadrage:54% 37%">
+  <picture>
+    <img src="/assets/images/pieces/playground-1-1200.webp" srcset="/assets/images/pieces/playground-1-480.webp 480w, /assets/images/pieces/playground-1-800.webp 800w, /assets/images/pieces/playground-1-1200.webp 1200w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="1200" height="900" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure></div>
+      </div>
+      <div class="bac3d-caisse"><span>madebymelody · 29</span></div>
+    </div>
+  </div>
+</section>
+<section class="catalogue theme-creme" id="catalogue">
+  <div class="conteneur">
+    <div class="filtres" role="group" aria-label="Filtrer les pièces">
+      <div class="filtre-groupe" data-filtre="type">
+        <span class="filtre-nom">Type</span>
+        <button type="button" class="puce" data-valeur="" aria-pressed="true">Tout</button>
+        <button type="button" class="puce" data-valeur="robe" aria-pressed="false">Robes <small>11</small></button><button type="button" class="puce" data-valeur="haut" aria-pressed="false">Hauts <small>4</small></button><button type="button" class="puce" data-valeur="jupe" aria-pressed="false">Jupes <small>2</small></button><button type="button" class="puce" data-valeur="short" aria-pressed="false">Shorts <small>4</small></button><button type="button" class="puce" data-valeur="veste" aria-pressed="false">Vestes <small>3</small></button><button type="button" class="puce" data-valeur="pantalon" aria-pressed="false">Pantalons <small>2</small></button><button type="button" class="puce" data-valeur="autre" aria-pressed="false">Gilet, pull, combinaison <small>3</small></button>
+      </div>
+      <div class="filtre-groupe" data-filtre="face">
+        <span class="filtre-nom">Face</span>
+        <button type="button" class="puce" data-valeur="" aria-pressed="true">Les deux</button>
+        <button type="button" class="puce" data-valeur="A" aria-pressed="false">A · sage</button>
+        <button type="button" class="puce" data-valeur="B" aria-pressed="false">B · sauvage</button>
+      </div>
+      <p class="filtres-resultat" aria-live="polite" data-resultat data-un="1 pièce" data-plusieurs="{n} pièces">29 pièces</p>
+    </div>
+    <p class="note">Classement en face A et face B : proposition à valider par Melody. Les numéros de piste suivent l&#39;ordre de la boutique actuelle ; les numéros des pièces sont à compléter.</p>
+    <ul class="grille-pieces" data-grille data-anime="cascade">
+      <li class="carte-piece" data-id="madly" data-type="short" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=madly" data-sans-transition data-ouvrir-fiche="madly" aria-label="Voir MADLY">
+          <figure class="media carte-piece-media" style="--cadrage:52% 16%">
+  <picture>
+    <img src="/assets/images/pieces/madly-1-1200.webp" srcset="/assets/images/pieces/madly-1-480.webp 480w, /assets/images/pieces/madly-1-800.webp 800w, /assets/images/pieces/madly-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="MADLY, short madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 01</p>
+          <h2 class="carte-piece-nom">MADLY</h2>
+          <p class="carte-piece-meta">Short · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>50 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="madly" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="strange-days" data-type="short" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=strange-days" data-sans-transition data-ouvrir-fiche="strange-days" aria-label="Voir STRANGE DAYS">
+          <figure class="media carte-piece-media" style="--cadrage:17% 21%">
+  <picture>
+    <img src="/assets/images/pieces/strange-days-1-1200.webp" srcset="/assets/images/pieces/strange-days-1-480.webp 480w, /assets/images/pieces/strange-days-1-800.webp 800w, /assets/images/pieces/strange-days-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="STRANGE DAYS, short madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 02</p>
+          <h2 class="carte-piece-nom">STRANGE DAYS</h2>
+          <p class="carte-piece-meta">Short · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>50 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="strange-days" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="sunshine" data-type="robe" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=sunshine" data-sans-transition data-ouvrir-fiche="sunshine" aria-label="Voir SUNSHINE">
+          <figure class="media carte-piece-media" style="--cadrage:50% 25%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-1-1200.webp" srcset="/assets/images/pieces/sunshine-1-480.webp 480w, /assets/images/pieces/sunshine-1-800.webp 800w, /assets/images/pieces/sunshine-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="SUNSHINE, robe madebymelody" width="1200" height="1958" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 03</p>
+          <h2 class="carte-piece-nom">SUNSHINE</h2>
+          <p class="carte-piece-meta">Robe · XS/S</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>110 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="sunshine" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="juliette" data-type="haut" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=juliette" data-sans-transition data-ouvrir-fiche="juliette" aria-label="Voir JULIETTE">
+          <figure class="media carte-piece-media" style="--cadrage:38% 18%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-1-1200.webp" srcset="/assets/images/pieces/juliette-1-480.webp 480w, /assets/images/pieces/juliette-1-800.webp 800w, /assets/images/pieces/juliette-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="JULIETTE, haut madebymelody" width="1200" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 04</p>
+          <h2 class="carte-piece-nom">JULIETTE</h2>
+          <p class="carte-piece-meta">Haut · XS/S</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>55 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="juliette" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="love-me-two" data-type="robe" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=love-me-two" data-sans-transition data-ouvrir-fiche="love-me-two" aria-label="Voir LOVE ME TWO">
+          <figure class="media carte-piece-media" style="--cadrage:50% 42%">
+  <picture>
+    <img src="/assets/images/pieces/love-me-two-1-1200.webp" srcset="/assets/images/pieces/love-me-two-1-480.webp 480w, /assets/images/pieces/love-me-two-1-800.webp 800w, /assets/images/pieces/love-me-two-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="LOVE ME TWO, robe madebymelody" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 05</p>
+          <h2 class="carte-piece-nom">LOVE ME TWO</h2>
+          <p class="carte-piece-meta">Robe · XS</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>85 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="love-me-two" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="flash" data-type="jupe" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=flash" data-sans-transition data-ouvrir-fiche="flash" aria-label="Voir FLASH">
+          <figure class="media carte-piece-media" style="--cadrage:49% 41%">
+  <picture>
+    <img src="/assets/images/pieces/flash-1-1200.webp" srcset="/assets/images/pieces/flash-1-480.webp 480w, /assets/images/pieces/flash-1-800.webp 800w, /assets/images/pieces/flash-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="FLASH, jupe madebymelody" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 06</p>
+          <h2 class="carte-piece-nom">FLASH</h2>
+          <p class="carte-piece-meta">Jupe · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>80 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="flash" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="grapevine" data-type="haut" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=grapevine" data-sans-transition data-ouvrir-fiche="grapevine" aria-label="Voir GRAPEVINE">
+          <figure class="media carte-piece-media" style="--cadrage:52% 46%">
+  <picture>
+    <img src="/assets/images/pieces/grapevine-1-1200.webp" srcset="/assets/images/pieces/grapevine-1-480.webp 480w, /assets/images/pieces/grapevine-1-800.webp 800w, /assets/images/pieces/grapevine-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="GRAPEVINE, haut madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 07</p>
+          <h2 class="carte-piece-nom">GRAPEVINE</h2>
+          <p class="carte-piece-meta">Haut · M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>55 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="grapevine" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="three-little-birds" data-type="jupe" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=three-little-birds" data-sans-transition data-ouvrir-fiche="three-little-birds" aria-label="Voir THREE LITTLE BIRDS">
+          <figure class="media carte-piece-media" style="--cadrage:49% 36%">
+  <picture>
+    <img src="/assets/images/pieces/three-little-birds-1-1200.webp" srcset="/assets/images/pieces/three-little-birds-1-480.webp 480w, /assets/images/pieces/three-little-birds-1-800.webp 800w, /assets/images/pieces/three-little-birds-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="THREE LITTLE BIRDS, jupe madebymelody" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 08</p>
+          <h2 class="carte-piece-nom">THREE LITTLE BIRDS</h2>
+          <p class="carte-piece-meta">Jupe · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>55 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="three-little-birds" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="peacock" data-type="robe" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=peacock" data-sans-transition data-ouvrir-fiche="peacock" aria-label="Voir PEACOCK">
+          <figure class="media carte-piece-media" style="--cadrage:64% 33%">
+  <picture>
+    <img src="/assets/images/pieces/peacock-1-1200.webp" srcset="/assets/images/pieces/peacock-1-480.webp 480w, /assets/images/pieces/peacock-1-800.webp 800w, /assets/images/pieces/peacock-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="PEACOCK, robe madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 09</p>
+          <h2 class="carte-piece-nom">PEACOCK</h2>
+          <p class="carte-piece-meta">Robe · M/L</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>80 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="peacock" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="supernature" data-type="robe" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=supernature" data-sans-transition data-ouvrir-fiche="supernature" aria-label="Voir SUPERNATURE">
+          <figure class="media carte-piece-media" style="--cadrage:58% 32%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-1-1200.webp" srcset="/assets/images/pieces/supernature-1-480.webp 480w, /assets/images/pieces/supernature-1-800.webp 800w, /assets/images/pieces/supernature-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="SUPERNATURE, robe madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 10</p>
+          <h2 class="carte-piece-nom">SUPERNATURE</h2>
+          <p class="carte-piece-meta">Robe · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>150 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="supernature" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="fever" data-type="robe" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=fever" data-sans-transition data-ouvrir-fiche="fever" aria-label="Voir FEVER">
+          <figure class="media carte-piece-media" style="--cadrage:47% 34%">
+  <picture>
+    <img src="/assets/images/pieces/fever-1-1200.webp" srcset="/assets/images/pieces/fever-1-480.webp 480w, /assets/images/pieces/fever-1-800.webp 800w, /assets/images/pieces/fever-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="FEVER, robe madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 11</p>
+          <h2 class="carte-piece-nom">FEVER</h2>
+          <p class="carte-piece-meta">Robe · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>150 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="fever" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="envolez-moi" data-type="robe" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=envolez-moi" data-sans-transition data-ouvrir-fiche="envolez-moi" aria-label="Voir ENVOLEZ-MOI">
+          <figure class="media carte-piece-media" style="--cadrage:56% 41%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-1-1200.webp" srcset="/assets/images/pieces/envolez-moi-1-480.webp 480w, /assets/images/pieces/envolez-moi-1-800.webp 800w, /assets/images/pieces/envolez-moi-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="ENVOLEZ-MOI, robe madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 12</p>
+          <h2 class="carte-piece-nom">ENVOLEZ-MOI</h2>
+          <p class="carte-piece-meta">Robe · S/M/L</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>160 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="envolez-moi" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="jekyll" data-type="short" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=jekyll" data-sans-transition data-ouvrir-fiche="jekyll" aria-label="Voir JEKYLL">
+          <figure class="media carte-piece-media" style="--cadrage:47% 51%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-1-1200.webp" srcset="/assets/images/pieces/jekyll-1-480.webp 480w, /assets/images/pieces/jekyll-1-800.webp 800w, /assets/images/pieces/jekyll-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="JEKYLL, short madebymelody" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 13</p>
+          <h2 class="carte-piece-nom">JEKYLL</h2>
+          <p class="carte-piece-meta">Short · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>50 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="jekyll" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="javanaise" data-type="veste" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=javanaise" data-sans-transition data-ouvrir-fiche="javanaise" aria-label="Voir JAVANAISE">
+          <figure class="media carte-piece-media" style="--cadrage:61% 56%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-1-1200.webp" srcset="/assets/images/pieces/javanaise-1-480.webp 480w, /assets/images/pieces/javanaise-1-800.webp 800w, /assets/images/pieces/javanaise-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="JAVANAISE, veste madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 14</p>
+          <h2 class="carte-piece-nom">JAVANAISE</h2>
+          <p class="carte-piece-meta">Veste · M/L</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>220 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="javanaise" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="aquarius" data-type="robe" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=aquarius" data-sans-transition data-ouvrir-fiche="aquarius" aria-label="Voir AQUARIUS">
+          <figure class="media carte-piece-media" style="--cadrage:52% 43%">
+  <picture>
+    <img src="/assets/images/pieces/aquarius-1-1200.webp" srcset="/assets/images/pieces/aquarius-1-480.webp 480w, /assets/images/pieces/aquarius-1-800.webp 800w, /assets/images/pieces/aquarius-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="AQUARIUS, robe madebymelody" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 15</p>
+          <h2 class="carte-piece-nom">AQUARIUS</h2>
+          <p class="carte-piece-meta">Robe · M/L</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>90 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="aquarius" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="hurricane" data-type="veste" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=hurricane" data-sans-transition data-ouvrir-fiche="hurricane" aria-label="Voir HURRICANE">
+          <figure class="media carte-piece-media" style="--cadrage:51% 41%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-1-1200.webp" srcset="/assets/images/pieces/hurricane-1-480.webp 480w, /assets/images/pieces/hurricane-1-800.webp 800w, /assets/images/pieces/hurricane-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="HURRICANE, veste madebymelody" width="1200" height="1496" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 16</p>
+          <h2 class="carte-piece-nom">HURRICANE</h2>
+          <p class="carte-piece-meta">Veste · Taille à compléter</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>150 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="hurricane" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="flesh" data-type="haut" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=flesh" data-sans-transition data-ouvrir-fiche="flesh" aria-label="Voir FLESH">
+          <figure class="media carte-piece-media" style="--cadrage:49% 40%">
+  <picture>
+    <img src="/assets/images/pieces/flesh-1-1200.webp" srcset="/assets/images/pieces/flesh-1-480.webp 480w, /assets/images/pieces/flesh-1-800.webp 800w, /assets/images/pieces/flesh-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="FLESH, haut madebymelody" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 17</p>
+          <h2 class="carte-piece-nom">FLESH</h2>
+          <p class="carte-piece-meta">Haut · M/L</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>90 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="flesh" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="cminor" data-type="robe" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=cminor" data-sans-transition data-ouvrir-fiche="cminor" aria-label="Voir CMinor">
+          <figure class="media carte-piece-media" style="--cadrage:59% 46%">
+  <picture>
+    <img src="/assets/images/pieces/cminor-1-1200.webp" srcset="/assets/images/pieces/cminor-1-480.webp 480w, /assets/images/pieces/cminor-1-800.webp 800w, /assets/images/pieces/cminor-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="CMinor, robe madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 18</p>
+          <h2 class="carte-piece-nom">CMinor</h2>
+          <p class="carte-piece-meta">Robe · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>145 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="cminor" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="mary-l" data-type="robe" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=mary-l" data-sans-transition data-ouvrir-fiche="mary-l" aria-label="Voir MARY L">
+          <figure class="media carte-piece-media" style="--cadrage:60% 43%">
+  <picture>
+    <img src="/assets/images/pieces/mary-l-1-1200.webp" srcset="/assets/images/pieces/mary-l-1-480.webp 480w, /assets/images/pieces/mary-l-1-800.webp 800w, /assets/images/pieces/mary-l-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="MARY L, robe madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 19</p>
+          <h2 class="carte-piece-nom">MARY L</h2>
+          <p class="carte-piece-meta">Robe · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>145 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="mary-l" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="playground" data-type="robe" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=playground" data-sans-transition data-ouvrir-fiche="playground" aria-label="Voir PLAYGROUND">
+          <figure class="media carte-piece-media" style="--cadrage:54% 37%">
+  <picture>
+    <img src="/assets/images/pieces/playground-1-1200.webp" srcset="/assets/images/pieces/playground-1-480.webp 480w, /assets/images/pieces/playground-1-800.webp 800w, /assets/images/pieces/playground-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="PLAYGROUND, robe madebymelody" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 20</p>
+          <h2 class="carte-piece-nom">PLAYGROUND</h2>
+          <p class="carte-piece-meta">Robe · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>160 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="playground" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="ghost" data-type="pantalon" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=ghost" data-sans-transition data-ouvrir-fiche="ghost" aria-label="Voir GHOST">
+          <figure class="media carte-piece-media" style="--cadrage:54% 38%">
+  <picture>
+    <img src="/assets/images/pieces/ghost-1-1200.webp" srcset="/assets/images/pieces/ghost-1-480.webp 480w, /assets/images/pieces/ghost-1-800.webp 800w, /assets/images/pieces/ghost-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="GHOST, pantalon madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 21</p>
+          <h2 class="carte-piece-nom">GHOST</h2>
+          <p class="carte-piece-meta">Pantalon · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>80 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="ghost" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="marche-a-l-ombre" data-type="short" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=marche-a-l-ombre" data-sans-transition data-ouvrir-fiche="marche-a-l-ombre" aria-label="Voir MARCHE À L&#39;OMBRE">
+          <figure class="media carte-piece-media" style="--cadrage:49% 45%">
+  <picture>
+    <img src="/assets/images/pieces/marche-a-l-ombre-1-1200.webp" srcset="/assets/images/pieces/marche-a-l-ombre-1-480.webp 480w, /assets/images/pieces/marche-a-l-ombre-1-800.webp 800w, /assets/images/pieces/marche-a-l-ombre-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="MARCHE À L&#39;OMBRE, short madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 22</p>
+          <h2 class="carte-piece-nom">MARCHE À L&#39;OMBRE</h2>
+          <p class="carte-piece-meta">Short · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>90 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="marche-a-l-ombre" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="requiem" data-type="haut" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=requiem" data-sans-transition data-ouvrir-fiche="requiem" aria-label="Voir REQUIEM">
+          <figure class="media carte-piece-media" style="--cadrage:59% 46%">
+  <picture>
+    <img src="/assets/images/pieces/requiem-1-1200.webp" srcset="/assets/images/pieces/requiem-1-480.webp 480w, /assets/images/pieces/requiem-1-800.webp 800w, /assets/images/pieces/requiem-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="REQUIEM, haut madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 23</p>
+          <h2 class="carte-piece-nom">REQUIEM</h2>
+          <p class="carte-piece-meta">Haut · M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>50 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="requiem" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="ballade" data-type="pantalon" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=ballade" data-sans-transition data-ouvrir-fiche="ballade" aria-label="Voir BALLADE">
+          <figure class="media carte-piece-media" style="--cadrage:53% 35%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-1-1200.webp" srcset="/assets/images/pieces/ballade-1-480.webp 480w, /assets/images/pieces/ballade-1-800.webp 800w, /assets/images/pieces/ballade-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="BALLADE, pantalon madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 24</p>
+          <h2 class="carte-piece-nom">BALLADE</h2>
+          <p class="carte-piece-meta">Pantalon · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>150 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="ballade" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="marilou" data-type="autre" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=marilou" data-sans-transition data-ouvrir-fiche="marilou" aria-label="Voir MARILOU">
+          <figure class="media carte-piece-media" style="--cadrage:49% 48%">
+  <picture>
+    <img src="/assets/images/pieces/marilou-1-1200.webp" srcset="/assets/images/pieces/marilou-1-480.webp 480w, /assets/images/pieces/marilou-1-800.webp 800w, /assets/images/pieces/marilou-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="MARILOU, gilet madebymelody" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 25</p>
+          <h2 class="carte-piece-nom">MARILOU</h2>
+          <p class="carte-piece-meta">Gilet · Taille à compléter</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>95 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="marilou" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="bonnie" data-type="autre" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=bonnie" data-sans-transition data-ouvrir-fiche="bonnie" aria-label="Voir BONNIE">
+          <figure class="media carte-piece-media" style="--cadrage:36% 33%">
+  <picture>
+    <img src="/assets/images/pieces/bonnie-1-1200.webp" srcset="/assets/images/pieces/bonnie-1-480.webp 480w, /assets/images/pieces/bonnie-1-800.webp 800w, /assets/images/pieces/bonnie-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="BONNIE, combinaison madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 26</p>
+          <h2 class="carte-piece-nom">BONNIE</h2>
+          <p class="carte-piece-meta">Combinaison · S/M</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>220 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="bonnie" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="paint-it-black" data-type="robe" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=paint-it-black" data-sans-transition data-ouvrir-fiche="paint-it-black" aria-label="Voir PAINT IT BLACK">
+          <figure class="media carte-piece-media" style="--cadrage:49% 34%">
+  <picture>
+    <img src="/assets/images/pieces/paint-it-black-1-1200.webp" srcset="/assets/images/pieces/paint-it-black-1-480.webp 480w, /assets/images/pieces/paint-it-black-1-800.webp 800w, /assets/images/pieces/paint-it-black-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="PAINT IT BLACK, robe madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 27</p>
+          <h2 class="carte-piece-nom">PAINT IT BLACK</h2>
+          <p class="carte-piece-meta">Robe · Taille à compléter</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>140 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="paint-it-black" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="mustang" data-type="veste" data-face="B" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=mustang" data-sans-transition data-ouvrir-fiche="mustang" aria-label="Voir MUSTANG">
+          <figure class="media carte-piece-media" style="--cadrage:52% 31%">
+  <picture>
+    <img src="/assets/images/pieces/mustang-1-1200.webp" srcset="/assets/images/pieces/mustang-1-480.webp 480w, /assets/images/pieces/mustang-1-800.webp 800w, /assets/images/pieces/mustang-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="MUSTANG, veste madebymelody" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 28</p>
+          <h2 class="carte-piece-nom">MUSTANG</h2>
+          <p class="carte-piece-meta">Veste · XS/S</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>190 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="mustang" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li><li class="carte-piece" data-id="clouds-up" data-type="autre" data-face="A" data-survol="incline" data-survol-force="4">
+        <a class="carte-lien" href="/boutique?piece=clouds-up" data-sans-transition data-ouvrir-fiche="clouds-up" aria-label="Voir CLOUDS UP">
+          <figure class="media carte-piece-media" style="--cadrage:55% 34%">
+  <picture>
+    <img src="/assets/images/pieces/clouds-up-1-1200.webp" srcset="/assets/images/pieces/clouds-up-1-480.webp 480w, /assets/images/pieces/clouds-up-1-800.webp 800w, /assets/images/pieces/clouds-up-1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 1100px) 30vw, 22vw" alt="CLOUDS UP, pull madebymelody" width="1200" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </a>
+        <div class="carte-piece-texte">
+          <p class="carte-piece-num">Piste 29</p>
+          <h2 class="carte-piece-nom">CLOUDS UP</h2>
+          <p class="carte-piece-meta">Pull · Taille à compléter</p>
+          <p class="carte-piece-bas"><span class="carte-piece-prix" data-prix>85 CHF</span>
+          <button type="button" class="bouton bouton--petit" data-ajouter="clouds-up" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter">Ajouter</button></p>
+        </div>
+      </li>
+      <li class="carte-mesure"><a href="/sur-mesure#rendez-vous" class="carte-mesure-lien" data-libelle="Sur mesure"><span class="carte-mesure-titre">Créons la vôtre</span><span>Une pièce sur mesure, imaginée avec vous à l&#39;atelier.</span><span class="bouton bouton--rose">L&#39;atelier sur mesure</span></a></li>
+    </ul>
+    <p class="grille-vide" data-vide hidden>Aucune pièce dans cette sélection.</p>
+  </div>
+</section>
+<section class="b-infos" id="infos">
+  <div class="conteneur u-duo">
+    <div>
+      <h2 data-anime="lignes">Bon à savoir</h2>
+      <p class="u-grand" data-anime>Chaque pièce n&#39;existe qu&#39;en un seul exemplaire.</p>
+      <ul class="b-infos-liste" data-anime="cascade">
+        <li>Offerte pour toute commande au-delà d&#39;un montant : à compléter.</li><li>Si vous n&#39;êtes pas satisfaite de votre achat, la politique de retour est simple et rapide : conditions à compléter.</li><li>Moyens de paiement : à compléter.</li><li>Prix en CHF ; mention de la TVA à compléter.</li>
+      </ul>
+    </div>
+    <figure class="media b-infos-media" data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/site/robe-rouge-herbe-1280.webp" srcset="/assets/images/site/robe-rouge-herbe-640.webp 640w, /assets/images/site/robe-rouge-herbe-1280.webp 1280w, /assets/images/site/robe-rouge-herbe-1688.webp 1688w" sizes="(max-width: 760px) 90vw, 44vw" alt="Robe rouge portée, allongée dans l&#39;herbe" width="1280" height="569" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<div class="fiches" hidden>
+  <article class="fiche-contenu" data-fiche="madly">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/madly-1-1200.webp" srcset="/assets/images/pieces/madly-1-480.webp 480w, /assets/images/pieces/madly-1-800.webp 800w, /assets/images/pieces/madly-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MADLY, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/madly-2-1200.webp" srcset="/assets/images/pieces/madly-2-480.webp 480w, /assets/images/pieces/madly-2-800.webp 800w, /assets/images/pieces/madly-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MADLY, vue 2" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/madly-3-1200.webp" srcset="/assets/images/pieces/madly-3-480.webp 480w, /assets/images/pieces/madly-3-800.webp 800w, /assets/images/pieces/madly-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MADLY, vue 3" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="MADLY, vue 1" aria-current="true"><figure class="media " style="--cadrage:52% 16%">
+  <picture>
+    <img src="/assets/images/pieces/madly-1-1200.webp" srcset="/assets/images/pieces/madly-1-480.webp 480w, /assets/images/pieces/madly-1-800.webp 800w, /assets/images/pieces/madly-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="MADLY, vue 2"><figure class="media " style="--cadrage:48% 49%">
+  <picture>
+    <img src="/assets/images/pieces/madly-2-1200.webp" srcset="/assets/images/pieces/madly-2-480.webp 480w, /assets/images/pieces/madly-2-800.webp 800w, /assets/images/pieces/madly-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="MADLY, vue 3"><figure class="media " style="--cadrage:48% 48%">
+  <picture>
+    <img src="/assets/images/pieces/madly-3-1200.webp" srcset="/assets/images/pieces/madly-3-480.webp 480w, /assets/images/pieces/madly-3-800.webp 800w, /assets/images/pieces/madly-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 01 · Face A</p>
+      <h2 class="fiche-nom">MADLY</h2>
+      <p class="fiche-prix" data-prix>50 CHF</p>
+      <p class="fiche-description">Short fleuri inspiré des années 1970, rose, orange et vert.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="madly" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="strange-days">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/strange-days-1-1200.webp" srcset="/assets/images/pieces/strange-days-1-480.webp 480w, /assets/images/pieces/strange-days-1-800.webp 800w, /assets/images/pieces/strange-days-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="STRANGE DAYS, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/strange-days-2-1200.webp" srcset="/assets/images/pieces/strange-days-2-480.webp 480w, /assets/images/pieces/strange-days-2-800.webp 800w, /assets/images/pieces/strange-days-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="STRANGE DAYS, vue 2" width="1200" height="675" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="STRANGE DAYS, vue 1" aria-current="true"><figure class="media " style="--cadrage:17% 21%">
+  <picture>
+    <img src="/assets/images/pieces/strange-days-1-1200.webp" srcset="/assets/images/pieces/strange-days-1-480.webp 480w, /assets/images/pieces/strange-days-1-800.webp 800w, /assets/images/pieces/strange-days-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="STRANGE DAYS, vue 2"><figure class="media " style="--cadrage:51% 48%">
+  <picture>
+    <img src="/assets/images/pieces/strange-days-2-1200.webp" srcset="/assets/images/pieces/strange-days-2-480.webp 480w, /assets/images/pieces/strange-days-2-800.webp 800w, /assets/images/pieces/strange-days-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="675" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 02 · Face A</p>
+      <h2 class="fiche-nom">STRANGE DAYS</h2>
+      <p class="fiche-prix" data-prix>50 CHF</p>
+      <p class="fiche-description">Short vert inspiré des années 1970, biais vert foncé sur les côtés.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="strange-days" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="sunshine">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-1-1200.webp" srcset="/assets/images/pieces/sunshine-1-480.webp 480w, /assets/images/pieces/sunshine-1-800.webp 800w, /assets/images/pieces/sunshine-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="SUNSHINE, vue 1" width="1200" height="1958" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-2-1200.webp" srcset="/assets/images/pieces/sunshine-2-480.webp 480w, /assets/images/pieces/sunshine-2-800.webp 800w, /assets/images/pieces/sunshine-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="SUNSHINE, vue 2" width="1200" height="1782" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-3-1200.webp" srcset="/assets/images/pieces/sunshine-3-480.webp 480w, /assets/images/pieces/sunshine-3-800.webp 800w, /assets/images/pieces/sunshine-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="SUNSHINE, vue 3" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-4-1200.webp" srcset="/assets/images/pieces/sunshine-4-480.webp 480w, /assets/images/pieces/sunshine-4-800.webp 800w, /assets/images/pieces/sunshine-4-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="SUNSHINE, vue 4" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="SUNSHINE, vue 1" aria-current="true"><figure class="media " style="--cadrage:50% 25%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-1-1200.webp" srcset="/assets/images/pieces/sunshine-1-480.webp 480w, /assets/images/pieces/sunshine-1-800.webp 800w, /assets/images/pieces/sunshine-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1958" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="SUNSHINE, vue 2"><figure class="media " style="--cadrage:61% 26%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-2-1200.webp" srcset="/assets/images/pieces/sunshine-2-480.webp 480w, /assets/images/pieces/sunshine-2-800.webp 800w, /assets/images/pieces/sunshine-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1782" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="SUNSHINE, vue 3"><figure class="media " style="--cadrage:50% 41%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-3-1200.webp" srcset="/assets/images/pieces/sunshine-3-480.webp 480w, /assets/images/pieces/sunshine-3-800.webp 800w, /assets/images/pieces/sunshine-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="3" aria-label="SUNSHINE, vue 4"><figure class="media " style="--cadrage:49% 35%">
+  <picture>
+    <img src="/assets/images/pieces/sunshine-4-1200.webp" srcset="/assets/images/pieces/sunshine-4-480.webp 480w, /assets/images/pieces/sunshine-4-800.webp 800w, /assets/images/pieces/sunshine-4-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 03 · Face A</p>
+      <h2 class="fiche-nom">SUNSHINE</h2>
+      <p class="fiche-prix" data-prix>110 CHF</p>
+      <p class="fiche-description">Robe en jean bleu à reflets dorés, ornée de deux boutons dorés à motif ancre sur l&#39;épaule. Elle se ferme grâce à des pressions invisibles.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>XS/S</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton denim</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="sunshine" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="juliette">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-1-1200.webp" srcset="/assets/images/pieces/juliette-1-480.webp 480w, /assets/images/pieces/juliette-1-800.webp 800w, /assets/images/pieces/juliette-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JULIETTE, vue 1" width="1200" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-2-1200.webp" srcset="/assets/images/pieces/juliette-2-480.webp 480w, /assets/images/pieces/juliette-2-800.webp 800w, /assets/images/pieces/juliette-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JULIETTE, vue 2" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-3-1200.webp" srcset="/assets/images/pieces/juliette-3-480.webp 480w, /assets/images/pieces/juliette-3-800.webp 800w, /assets/images/pieces/juliette-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JULIETTE, vue 3" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-4-800.webp" srcset="/assets/images/pieces/juliette-4-480.webp 480w, /assets/images/pieces/juliette-4-800.webp 800w" sizes="(max-width: 760px) 92vw, 46vw" alt="JULIETTE, vue 4" width="800" height="1067" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="JULIETTE, vue 1" aria-current="true"><figure class="media " style="--cadrage:38% 18%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-1-1200.webp" srcset="/assets/images/pieces/juliette-1-480.webp 480w, /assets/images/pieces/juliette-1-800.webp 800w, /assets/images/pieces/juliette-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="JULIETTE, vue 2"><figure class="media " style="--cadrage:51% 45%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-2-1200.webp" srcset="/assets/images/pieces/juliette-2-480.webp 480w, /assets/images/pieces/juliette-2-800.webp 800w, /assets/images/pieces/juliette-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="JULIETTE, vue 3"><figure class="media " style="--cadrage:47% 59%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-3-1200.webp" srcset="/assets/images/pieces/juliette-3-480.webp 480w, /assets/images/pieces/juliette-3-800.webp 800w, /assets/images/pieces/juliette-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="3" aria-label="JULIETTE, vue 4"><figure class="media " style="--cadrage:47% 45%">
+  <picture>
+    <img src="/assets/images/pieces/juliette-4-800.webp" srcset="/assets/images/pieces/juliette-4-480.webp 480w, /assets/images/pieces/juliette-4-800.webp 800w" sizes="80px" alt="" width="800" height="1067" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 04 · Face A</p>
+      <h2 class="fiche-nom">JULIETTE</h2>
+      <p class="fiche-prix" data-prix>55 CHF</p>
+      <p class="fiche-description">Top marine imprimé de coquelicots rouges. Les bretelles sont ajustables.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>XS/S</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="juliette" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="love-me-two">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/love-me-two-1-1200.webp" srcset="/assets/images/pieces/love-me-two-1-480.webp 480w, /assets/images/pieces/love-me-two-1-800.webp 800w, /assets/images/pieces/love-me-two-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="LOVE ME TWO, vue 1" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/love-me-two-2-1200.webp" srcset="/assets/images/pieces/love-me-two-2-480.webp 480w, /assets/images/pieces/love-me-two-2-800.webp 800w, /assets/images/pieces/love-me-two-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="LOVE ME TWO, vue 2" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/love-me-two-3-1200.webp" srcset="/assets/images/pieces/love-me-two-3-480.webp 480w, /assets/images/pieces/love-me-two-3-800.webp 800w, /assets/images/pieces/love-me-two-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="LOVE ME TWO, vue 3" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="LOVE ME TWO, vue 1" aria-current="true"><figure class="media " style="--cadrage:50% 42%">
+  <picture>
+    <img src="/assets/images/pieces/love-me-two-1-1200.webp" srcset="/assets/images/pieces/love-me-two-1-480.webp 480w, /assets/images/pieces/love-me-two-1-800.webp 800w, /assets/images/pieces/love-me-two-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="LOVE ME TWO, vue 2"><figure class="media " style="--cadrage:51% 40%">
+  <picture>
+    <img src="/assets/images/pieces/love-me-two-2-1200.webp" srcset="/assets/images/pieces/love-me-two-2-480.webp 480w, /assets/images/pieces/love-me-two-2-800.webp 800w, /assets/images/pieces/love-me-two-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="LOVE ME TWO, vue 3"><figure class="media " style="--cadrage:49% 41%">
+  <picture>
+    <img src="/assets/images/pieces/love-me-two-3-1200.webp" srcset="/assets/images/pieces/love-me-two-3-480.webp 480w, /assets/images/pieces/love-me-two-3-800.webp 800w, /assets/images/pieces/love-me-two-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 05 · Face A</p>
+      <h2 class="fiche-nom">LOVE ME TWO</h2>
+      <p class="fiche-prix" data-prix>85 CHF</p>
+      <p class="fiche-description">Robe jaune imprimée de petites fleurs blanches. Boutons en trompe-l&#39;œil dans le dos.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>XS</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="love-me-two" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="flash">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/flash-1-1200.webp" srcset="/assets/images/pieces/flash-1-480.webp 480w, /assets/images/pieces/flash-1-800.webp 800w, /assets/images/pieces/flash-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="FLASH, vue 1" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 06 · Face B</p>
+      <h2 class="fiche-nom">FLASH</h2>
+      <p class="fiche-prix" data-prix>80 CHF</p>
+      <p class="fiche-description">Jupe noire plissée avec fils métalliques incrustés. S&#39;attache avec un zip au dos.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>coton, polyester et fils métalliques</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="flash" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="grapevine">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/grapevine-1-1200.webp" srcset="/assets/images/pieces/grapevine-1-480.webp 480w, /assets/images/pieces/grapevine-1-800.webp 800w, /assets/images/pieces/grapevine-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="GRAPEVINE, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/grapevine-2-1200.webp" srcset="/assets/images/pieces/grapevine-2-480.webp 480w, /assets/images/pieces/grapevine-2-800.webp 800w, /assets/images/pieces/grapevine-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="GRAPEVINE, vue 2" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="GRAPEVINE, vue 1" aria-current="true"><figure class="media " style="--cadrage:52% 46%">
+  <picture>
+    <img src="/assets/images/pieces/grapevine-1-1200.webp" srcset="/assets/images/pieces/grapevine-1-480.webp 480w, /assets/images/pieces/grapevine-1-800.webp 800w, /assets/images/pieces/grapevine-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="GRAPEVINE, vue 2"><figure class="media " style="--cadrage:40% 55%">
+  <picture>
+    <img src="/assets/images/pieces/grapevine-2-1200.webp" srcset="/assets/images/pieces/grapevine-2-480.webp 480w, /assets/images/pieces/grapevine-2-800.webp 800w, /assets/images/pieces/grapevine-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 07 · Face B</p>
+      <h2 class="fiche-nom">GRAPEVINE</h2>
+      <p class="fiche-prix" data-prix>55 CHF</p>
+      <p class="fiche-description">Top noir transparent avec motifs de tissus africains appliqués.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>M</dd></div>
+        <div><dt>Matière</dt><dd>100 % tulle de coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="grapevine" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="three-little-birds">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/three-little-birds-1-1200.webp" srcset="/assets/images/pieces/three-little-birds-1-480.webp 480w, /assets/images/pieces/three-little-birds-1-800.webp 800w, /assets/images/pieces/three-little-birds-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="THREE LITTLE BIRDS, vue 1" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/three-little-birds-2-1200.webp" srcset="/assets/images/pieces/three-little-birds-2-480.webp 480w, /assets/images/pieces/three-little-birds-2-800.webp 800w, /assets/images/pieces/three-little-birds-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="THREE LITTLE BIRDS, vue 2" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="THREE LITTLE BIRDS, vue 1" aria-current="true"><figure class="media " style="--cadrage:49% 36%">
+  <picture>
+    <img src="/assets/images/pieces/three-little-birds-1-1200.webp" srcset="/assets/images/pieces/three-little-birds-1-480.webp 480w, /assets/images/pieces/three-little-birds-1-800.webp 800w, /assets/images/pieces/three-little-birds-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="THREE LITTLE BIRDS, vue 2"><figure class="media " style="--cadrage:66% 35%">
+  <picture>
+    <img src="/assets/images/pieces/three-little-birds-2-1200.webp" srcset="/assets/images/pieces/three-little-birds-2-480.webp 480w, /assets/images/pieces/three-little-birds-2-800.webp 800w, /assets/images/pieces/three-little-birds-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 08 · Face B</p>
+      <h2 class="fiche-nom">THREE LITTLE BIRDS</h2>
+      <p class="fiche-prix" data-prix>55 CHF</p>
+      <p class="fiche-description">Jupe noire à taille élastique, légèrement transparente, avec motifs de tissus africains appliqués.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % tulle de coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="three-little-birds" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="peacock">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/peacock-1-1200.webp" srcset="/assets/images/pieces/peacock-1-480.webp 480w, /assets/images/pieces/peacock-1-800.webp 800w, /assets/images/pieces/peacock-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="PEACOCK, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/peacock-2-1200.webp" srcset="/assets/images/pieces/peacock-2-480.webp 480w, /assets/images/pieces/peacock-2-800.webp 800w, /assets/images/pieces/peacock-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="PEACOCK, vue 2" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/peacock-3-1200.webp" srcset="/assets/images/pieces/peacock-3-480.webp 480w, /assets/images/pieces/peacock-3-800.webp 800w, /assets/images/pieces/peacock-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="PEACOCK, vue 3" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="PEACOCK, vue 1" aria-current="true"><figure class="media " style="--cadrage:64% 33%">
+  <picture>
+    <img src="/assets/images/pieces/peacock-1-1200.webp" srcset="/assets/images/pieces/peacock-1-480.webp 480w, /assets/images/pieces/peacock-1-800.webp 800w, /assets/images/pieces/peacock-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="PEACOCK, vue 2"><figure class="media " style="--cadrage:59% 34%">
+  <picture>
+    <img src="/assets/images/pieces/peacock-2-1200.webp" srcset="/assets/images/pieces/peacock-2-480.webp 480w, /assets/images/pieces/peacock-2-800.webp 800w, /assets/images/pieces/peacock-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="PEACOCK, vue 3"><figure class="media " style="--cadrage:51% 42%">
+  <picture>
+    <img src="/assets/images/pieces/peacock-3-1200.webp" srcset="/assets/images/pieces/peacock-3-480.webp 480w, /assets/images/pieces/peacock-3-800.webp 800w, /assets/images/pieces/peacock-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 09 · Face B</p>
+      <h2 class="fiche-nom">PEACOCK</h2>
+      <p class="fiche-prix" data-prix>80 CHF</p>
+      <p class="fiche-description">Robe bustier noire ornée d&#39;un paon doré en dentelle appliqué sur le devant. Les côtés sont soulignés par un passepoil doré. Un élastique noir au bustier permet de la porter en robe ou en jupe si la longueur est ajustée.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>M/L</dd></div>
+        <div><dt>Matière</dt><dd>à compléter</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="peacock" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="supernature">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-1-1200.webp" srcset="/assets/images/pieces/supernature-1-480.webp 480w, /assets/images/pieces/supernature-1-800.webp 800w, /assets/images/pieces/supernature-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="SUPERNATURE, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-2-1200.webp" srcset="/assets/images/pieces/supernature-2-480.webp 480w, /assets/images/pieces/supernature-2-800.webp 800w, /assets/images/pieces/supernature-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="SUPERNATURE, vue 2" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-3-1200.webp" srcset="/assets/images/pieces/supernature-3-480.webp 480w, /assets/images/pieces/supernature-3-800.webp 800w, /assets/images/pieces/supernature-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="SUPERNATURE, vue 3" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-4-1200.webp" srcset="/assets/images/pieces/supernature-4-480.webp 480w, /assets/images/pieces/supernature-4-800.webp 800w, /assets/images/pieces/supernature-4-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="SUPERNATURE, vue 4" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="SUPERNATURE, vue 1" aria-current="true"><figure class="media " style="--cadrage:58% 32%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-1-1200.webp" srcset="/assets/images/pieces/supernature-1-480.webp 480w, /assets/images/pieces/supernature-1-800.webp 800w, /assets/images/pieces/supernature-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="SUPERNATURE, vue 2"><figure class="media " style="--cadrage:58% 29%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-2-1200.webp" srcset="/assets/images/pieces/supernature-2-480.webp 480w, /assets/images/pieces/supernature-2-800.webp 800w, /assets/images/pieces/supernature-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="SUPERNATURE, vue 3"><figure class="media " style="--cadrage:50% 67%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-3-1200.webp" srcset="/assets/images/pieces/supernature-3-480.webp 480w, /assets/images/pieces/supernature-3-800.webp 800w, /assets/images/pieces/supernature-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="3" aria-label="SUPERNATURE, vue 4"><figure class="media " style="--cadrage:45% 51%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-4-1200.webp" srcset="/assets/images/pieces/supernature-4-480.webp 480w, /assets/images/pieces/supernature-4-800.webp 800w, /assets/images/pieces/supernature-4-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 10 · Face B</p>
+      <h2 class="fiche-nom">SUPERNATURE</h2>
+      <p class="fiche-prix" data-prix>150 CHF</p>
+      <p class="fiche-description">Robe longue imprimée de papillons de toutes les couleurs. Les bretelles sont croisées dans le dos.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>à compléter</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="supernature" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="fever">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/fever-1-1200.webp" srcset="/assets/images/pieces/fever-1-480.webp 480w, /assets/images/pieces/fever-1-800.webp 800w, /assets/images/pieces/fever-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="FEVER, vue 1" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/fever-2-1200.webp" srcset="/assets/images/pieces/fever-2-480.webp 480w, /assets/images/pieces/fever-2-800.webp 800w, /assets/images/pieces/fever-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="FEVER, vue 2" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/fever-3-1200.webp" srcset="/assets/images/pieces/fever-3-480.webp 480w, /assets/images/pieces/fever-3-800.webp 800w, /assets/images/pieces/fever-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="FEVER, vue 3" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="FEVER, vue 1" aria-current="true"><figure class="media " style="--cadrage:47% 34%">
+  <picture>
+    <img src="/assets/images/pieces/fever-1-1200.webp" srcset="/assets/images/pieces/fever-1-480.webp 480w, /assets/images/pieces/fever-1-800.webp 800w, /assets/images/pieces/fever-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="FEVER, vue 2"><figure class="media " style="--cadrage:35% 60%">
+  <picture>
+    <img src="/assets/images/pieces/fever-2-1200.webp" srcset="/assets/images/pieces/fever-2-480.webp 480w, /assets/images/pieces/fever-2-800.webp 800w, /assets/images/pieces/fever-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="FEVER, vue 3"><figure class="media " style="--cadrage:44% 33%">
+  <picture>
+    <img src="/assets/images/pieces/fever-3-1200.webp" srcset="/assets/images/pieces/fever-3-480.webp 480w, /assets/images/pieces/fever-3-800.webp 800w, /assets/images/pieces/fever-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 11 · Face B</p>
+      <h2 class="fiche-nom">FEVER</h2>
+      <p class="fiche-prix" data-prix>150 CHF</p>
+      <p class="fiche-description">Robe bustier gris foncé inspirée des années 1950. Des fleurs dorées en dentelle ornent le bustier et la jupe. Fermeture éclair invisible dans le dos.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>coton et élasthanne</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="fever" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="envolez-moi">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-1-1200.webp" srcset="/assets/images/pieces/envolez-moi-1-480.webp 480w, /assets/images/pieces/envolez-moi-1-800.webp 800w, /assets/images/pieces/envolez-moi-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="ENVOLEZ-MOI, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-2-1200.webp" srcset="/assets/images/pieces/envolez-moi-2-480.webp 480w, /assets/images/pieces/envolez-moi-2-800.webp 800w, /assets/images/pieces/envolez-moi-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="ENVOLEZ-MOI, vue 2" width="1200" height="1598" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-3-1200.webp" srcset="/assets/images/pieces/envolez-moi-3-480.webp 480w, /assets/images/pieces/envolez-moi-3-800.webp 800w, /assets/images/pieces/envolez-moi-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="ENVOLEZ-MOI, vue 3" width="1200" height="930" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-4-1200.webp" srcset="/assets/images/pieces/envolez-moi-4-480.webp 480w, /assets/images/pieces/envolez-moi-4-800.webp 800w, /assets/images/pieces/envolez-moi-4-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="ENVOLEZ-MOI, vue 4" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="ENVOLEZ-MOI, vue 1" aria-current="true"><figure class="media " style="--cadrage:56% 41%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-1-1200.webp" srcset="/assets/images/pieces/envolez-moi-1-480.webp 480w, /assets/images/pieces/envolez-moi-1-800.webp 800w, /assets/images/pieces/envolez-moi-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="ENVOLEZ-MOI, vue 2"><figure class="media " style="--cadrage:48% 44%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-2-1200.webp" srcset="/assets/images/pieces/envolez-moi-2-480.webp 480w, /assets/images/pieces/envolez-moi-2-800.webp 800w, /assets/images/pieces/envolez-moi-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1598" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="ENVOLEZ-MOI, vue 3"><figure class="media " style="--cadrage:46% 44%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-3-1200.webp" srcset="/assets/images/pieces/envolez-moi-3-480.webp 480w, /assets/images/pieces/envolez-moi-3-800.webp 800w, /assets/images/pieces/envolez-moi-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="930" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="3" aria-label="ENVOLEZ-MOI, vue 4"><figure class="media " style="--cadrage:51% 44%">
+  <picture>
+    <img src="/assets/images/pieces/envolez-moi-4-1200.webp" srcset="/assets/images/pieces/envolez-moi-4-480.webp 480w, /assets/images/pieces/envolez-moi-4-800.webp 800w, /assets/images/pieces/envolez-moi-4-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 12 · Face B</p>
+      <h2 class="fiche-nom">ENVOLEZ-MOI</h2>
+      <p class="fiche-prix" data-prix>160 CHF</p>
+      <p class="fiche-description">Robe en soie rouge foncé imprimée d&#39;hirondelles. Une petite chaînette en métal à l&#39;avant et à l&#39;arrière règle le décolleté. Doublure noire.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M/L</dd></div>
+        <div><dt>Matière</dt><dd>100 % soie, doublure 100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="envolez-moi" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="jekyll">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-1-1200.webp" srcset="/assets/images/pieces/jekyll-1-480.webp 480w, /assets/images/pieces/jekyll-1-800.webp 800w, /assets/images/pieces/jekyll-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JEKYLL, vue 1" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-2-1200.webp" srcset="/assets/images/pieces/jekyll-2-480.webp 480w, /assets/images/pieces/jekyll-2-800.webp 800w, /assets/images/pieces/jekyll-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JEKYLL, vue 2" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-3-1200.webp" srcset="/assets/images/pieces/jekyll-3-480.webp 480w, /assets/images/pieces/jekyll-3-800.webp 800w, /assets/images/pieces/jekyll-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JEKYLL, vue 3" width="1200" height="1812" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-4-1200.webp" srcset="/assets/images/pieces/jekyll-4-480.webp 480w, /assets/images/pieces/jekyll-4-800.webp 800w, /assets/images/pieces/jekyll-4-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JEKYLL, vue 4" width="1200" height="1812" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="JEKYLL, vue 1" aria-current="true"><figure class="media " style="--cadrage:47% 51%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-1-1200.webp" srcset="/assets/images/pieces/jekyll-1-480.webp 480w, /assets/images/pieces/jekyll-1-800.webp 800w, /assets/images/pieces/jekyll-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="JEKYLL, vue 2"><figure class="media " style="--cadrage:51% 51%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-2-1200.webp" srcset="/assets/images/pieces/jekyll-2-480.webp 480w, /assets/images/pieces/jekyll-2-800.webp 800w, /assets/images/pieces/jekyll-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="JEKYLL, vue 3"><figure class="media " style="--cadrage:46% 19%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-3-1200.webp" srcset="/assets/images/pieces/jekyll-3-480.webp 480w, /assets/images/pieces/jekyll-3-800.webp 800w, /assets/images/pieces/jekyll-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1812" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="3" aria-label="JEKYLL, vue 4"><figure class="media " style="--cadrage:51% 52%">
+  <picture>
+    <img src="/assets/images/pieces/jekyll-4-1200.webp" srcset="/assets/images/pieces/jekyll-4-480.webp 480w, /assets/images/pieces/jekyll-4-800.webp 800w, /assets/images/pieces/jekyll-4-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1812" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 13 · Face A</p>
+      <h2 class="fiche-nom">JEKYLL</h2>
+      <p class="fiche-prix" data-prix>50 CHF</p>
+      <p class="fiche-description">Shorty blanc effet jupe à l&#39;avant, avec un double boutonnage de boutons vintage en trompe-l&#39;œil. Petit élastique au dos.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="jekyll" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="javanaise">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-1-1200.webp" srcset="/assets/images/pieces/javanaise-1-480.webp 480w, /assets/images/pieces/javanaise-1-800.webp 800w, /assets/images/pieces/javanaise-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JAVANAISE, vue 1" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-2-1200.webp" srcset="/assets/images/pieces/javanaise-2-480.webp 480w, /assets/images/pieces/javanaise-2-800.webp 800w, /assets/images/pieces/javanaise-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JAVANAISE, vue 2" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-3-1200.webp" srcset="/assets/images/pieces/javanaise-3-480.webp 480w, /assets/images/pieces/javanaise-3-800.webp 800w, /assets/images/pieces/javanaise-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JAVANAISE, vue 3" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-4-1200.webp" srcset="/assets/images/pieces/javanaise-4-480.webp 480w, /assets/images/pieces/javanaise-4-800.webp 800w, /assets/images/pieces/javanaise-4-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="JAVANAISE, vue 4" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="JAVANAISE, vue 1" aria-current="true"><figure class="media " style="--cadrage:61% 56%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-1-1200.webp" srcset="/assets/images/pieces/javanaise-1-480.webp 480w, /assets/images/pieces/javanaise-1-800.webp 800w, /assets/images/pieces/javanaise-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="JAVANAISE, vue 2"><figure class="media " style="--cadrage:53% 33%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-2-1200.webp" srcset="/assets/images/pieces/javanaise-2-480.webp 480w, /assets/images/pieces/javanaise-2-800.webp 800w, /assets/images/pieces/javanaise-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="JAVANAISE, vue 3"><figure class="media " style="--cadrage:53% 33%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-3-1200.webp" srcset="/assets/images/pieces/javanaise-3-480.webp 480w, /assets/images/pieces/javanaise-3-800.webp 800w, /assets/images/pieces/javanaise-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="3" aria-label="JAVANAISE, vue 4"><figure class="media " style="--cadrage:34% 49%">
+  <picture>
+    <img src="/assets/images/pieces/javanaise-4-1200.webp" srcset="/assets/images/pieces/javanaise-4-480.webp 480w, /assets/images/pieces/javanaise-4-800.webp 800w, /assets/images/pieces/javanaise-4-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 14 · Face B</p>
+      <h2 class="fiche-nom">JAVANAISE</h2>
+      <p class="fiche-prix" data-prix>220 CHF</p>
+      <p class="fiche-description">Veste inspirée de l&#39;univers Gainsbourg, avec un dos nu renversé à l&#39;arrière. La couleur marine à fines lignes blanches rappelle les tenues de Gainsbourg.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>M/L</dd></div>
+        <div><dt>Matière</dt><dd>100 % laine</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="javanaise" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="aquarius">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/aquarius-1-1200.webp" srcset="/assets/images/pieces/aquarius-1-480.webp 480w, /assets/images/pieces/aquarius-1-800.webp 800w, /assets/images/pieces/aquarius-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="AQUARIUS, vue 1" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/aquarius-2-1200.webp" srcset="/assets/images/pieces/aquarius-2-480.webp 480w, /assets/images/pieces/aquarius-2-800.webp 800w, /assets/images/pieces/aquarius-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="AQUARIUS, vue 2" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="AQUARIUS, vue 1" aria-current="true"><figure class="media " style="--cadrage:52% 43%">
+  <picture>
+    <img src="/assets/images/pieces/aquarius-1-1200.webp" srcset="/assets/images/pieces/aquarius-1-480.webp 480w, /assets/images/pieces/aquarius-1-800.webp 800w, /assets/images/pieces/aquarius-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="AQUARIUS, vue 2"><figure class="media " style="--cadrage:52% 38%">
+  <picture>
+    <img src="/assets/images/pieces/aquarius-2-1200.webp" srcset="/assets/images/pieces/aquarius-2-480.webp 480w, /assets/images/pieces/aquarius-2-800.webp 800w, /assets/images/pieces/aquarius-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 15 · Face A</p>
+      <h2 class="fiche-nom">AQUARIUS</h2>
+      <p class="fiche-prix" data-prix>90 CHF</p>
+      <p class="fiche-description">Robe marine avec une petite ancre appliquée sur le devant. Le col au dos est plissé.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>M/L</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="aquarius" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="hurricane">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-1-1200.webp" srcset="/assets/images/pieces/hurricane-1-480.webp 480w, /assets/images/pieces/hurricane-1-800.webp 800w, /assets/images/pieces/hurricane-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="HURRICANE, vue 1" width="1200" height="1496" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-2-1200.webp" srcset="/assets/images/pieces/hurricane-2-480.webp 480w, /assets/images/pieces/hurricane-2-800.webp 800w, /assets/images/pieces/hurricane-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="HURRICANE, vue 2" width="1200" height="675" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-3-1200.webp" srcset="/assets/images/pieces/hurricane-3-480.webp 480w, /assets/images/pieces/hurricane-3-800.webp 800w, /assets/images/pieces/hurricane-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="HURRICANE, vue 3" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-4-800.webp" srcset="/assets/images/pieces/hurricane-4-480.webp 480w, /assets/images/pieces/hurricane-4-800.webp 800w" sizes="(max-width: 760px) 92vw, 46vw" alt="HURRICANE, vue 4" width="800" height="1004" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="HURRICANE, vue 1" aria-current="true"><figure class="media " style="--cadrage:51% 41%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-1-1200.webp" srcset="/assets/images/pieces/hurricane-1-480.webp 480w, /assets/images/pieces/hurricane-1-800.webp 800w, /assets/images/pieces/hurricane-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1496" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="HURRICANE, vue 2"><figure class="media " style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-2-1200.webp" srcset="/assets/images/pieces/hurricane-2-480.webp 480w, /assets/images/pieces/hurricane-2-800.webp 800w, /assets/images/pieces/hurricane-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="675" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="HURRICANE, vue 3"><figure class="media " style="--cadrage:48% 48%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-3-1200.webp" srcset="/assets/images/pieces/hurricane-3-480.webp 480w, /assets/images/pieces/hurricane-3-800.webp 800w, /assets/images/pieces/hurricane-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="3" aria-label="HURRICANE, vue 4"><figure class="media " style="--cadrage:33% 34%">
+  <picture>
+    <img src="/assets/images/pieces/hurricane-4-800.webp" srcset="/assets/images/pieces/hurricane-4-480.webp 480w, /assets/images/pieces/hurricane-4-800.webp 800w" sizes="80px" alt="" width="800" height="1004" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 16 · Face B</p>
+      <h2 class="fiche-nom">HURRICANE</h2>
+      <p class="fiche-prix" data-prix>150 CHF</p>
+      <p class="fiche-description">Description à compléter : la fiche du site actuel n&#39;a pas pu être lue.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>à compléter</dd></div>
+        <div><dt>Matière</dt><dd>à compléter</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="hurricane" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="flesh">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/flesh-1-1200.webp" srcset="/assets/images/pieces/flesh-1-480.webp 480w, /assets/images/pieces/flesh-1-800.webp 800w, /assets/images/pieces/flesh-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="FLESH, vue 1" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/flesh-2-1200.webp" srcset="/assets/images/pieces/flesh-2-480.webp 480w, /assets/images/pieces/flesh-2-800.webp 800w, /assets/images/pieces/flesh-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="FLESH, vue 2" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/flesh-3-1200.webp" srcset="/assets/images/pieces/flesh-3-480.webp 480w, /assets/images/pieces/flesh-3-800.webp 800w, /assets/images/pieces/flesh-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="FLESH, vue 3" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="FLESH, vue 1" aria-current="true"><figure class="media " style="--cadrage:49% 40%">
+  <picture>
+    <img src="/assets/images/pieces/flesh-1-1200.webp" srcset="/assets/images/pieces/flesh-1-480.webp 480w, /assets/images/pieces/flesh-1-800.webp 800w, /assets/images/pieces/flesh-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="FLESH, vue 2"><figure class="media " style="--cadrage:47% 36%">
+  <picture>
+    <img src="/assets/images/pieces/flesh-2-1200.webp" srcset="/assets/images/pieces/flesh-2-480.webp 480w, /assets/images/pieces/flesh-2-800.webp 800w, /assets/images/pieces/flesh-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="FLESH, vue 3"><figure class="media " style="--cadrage:49% 40%">
+  <picture>
+    <img src="/assets/images/pieces/flesh-3-1200.webp" srcset="/assets/images/pieces/flesh-3-480.webp 480w, /assets/images/pieces/flesh-3-800.webp 800w, /assets/images/pieces/flesh-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 17 · Face B</p>
+      <h2 class="fiche-nom">FLESH</h2>
+      <p class="fiche-prix" data-prix>90 CHF</p>
+      <p class="fiche-description">Petit haut rose imprimé de moustiques sérigraphiés à la main. Dos nu, il s&#39;attache par une petite chaînette métallique derrière le cou.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>M/L</dd></div>
+        <div><dt>Matière</dt><dd>100 % soie</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="flesh" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="cminor">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/cminor-1-1200.webp" srcset="/assets/images/pieces/cminor-1-480.webp 480w, /assets/images/pieces/cminor-1-800.webp 800w, /assets/images/pieces/cminor-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="CMinor, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/cminor-2-1200.webp" srcset="/assets/images/pieces/cminor-2-480.webp 480w, /assets/images/pieces/cminor-2-800.webp 800w, /assets/images/pieces/cminor-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="CMinor, vue 2" width="1200" height="1784" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/cminor-3-1200.webp" srcset="/assets/images/pieces/cminor-3-480.webp 480w, /assets/images/pieces/cminor-3-800.webp 800w, /assets/images/pieces/cminor-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="CMinor, vue 3" width="1200" height="1824" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="CMinor, vue 1" aria-current="true"><figure class="media " style="--cadrage:59% 46%">
+  <picture>
+    <img src="/assets/images/pieces/cminor-1-1200.webp" srcset="/assets/images/pieces/cminor-1-480.webp 480w, /assets/images/pieces/cminor-1-800.webp 800w, /assets/images/pieces/cminor-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="CMinor, vue 2"><figure class="media " style="--cadrage:64% 25%">
+  <picture>
+    <img src="/assets/images/pieces/cminor-2-1200.webp" srcset="/assets/images/pieces/cminor-2-480.webp 480w, /assets/images/pieces/cminor-2-800.webp 800w, /assets/images/pieces/cminor-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1784" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="CMinor, vue 3"><figure class="media " style="--cadrage:58% 44%">
+  <picture>
+    <img src="/assets/images/pieces/cminor-3-1200.webp" srcset="/assets/images/pieces/cminor-3-480.webp 480w, /assets/images/pieces/cminor-3-800.webp 800w, /assets/images/pieces/cminor-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1824" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 18 · Face A</p>
+      <h2 class="fiche-nom">CMinor</h2>
+      <p class="fiche-prix" data-prix>145 CHF</p>
+      <p class="fiche-description">Robe rose à col rouge, bretelles ajustables.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % soie</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="cminor" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="mary-l">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/mary-l-1-1200.webp" srcset="/assets/images/pieces/mary-l-1-480.webp 480w, /assets/images/pieces/mary-l-1-800.webp 800w, /assets/images/pieces/mary-l-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MARY L, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/mary-l-2-1200.webp" srcset="/assets/images/pieces/mary-l-2-480.webp 480w, /assets/images/pieces/mary-l-2-800.webp 800w, /assets/images/pieces/mary-l-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MARY L, vue 2" width="1200" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/mary-l-3-1200.webp" srcset="/assets/images/pieces/mary-l-3-480.webp 480w, /assets/images/pieces/mary-l-3-800.webp 800w, /assets/images/pieces/mary-l-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MARY L, vue 3" width="1200" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="MARY L, vue 1" aria-current="true"><figure class="media " style="--cadrage:60% 43%">
+  <picture>
+    <img src="/assets/images/pieces/mary-l-1-1200.webp" srcset="/assets/images/pieces/mary-l-1-480.webp 480w, /assets/images/pieces/mary-l-1-800.webp 800w, /assets/images/pieces/mary-l-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="MARY L, vue 2"><figure class="media " style="--cadrage:60% 43%">
+  <picture>
+    <img src="/assets/images/pieces/mary-l-2-1200.webp" srcset="/assets/images/pieces/mary-l-2-480.webp 480w, /assets/images/pieces/mary-l-2-800.webp 800w, /assets/images/pieces/mary-l-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="MARY L, vue 3"><figure class="media " style="--cadrage:49% 47%">
+  <picture>
+    <img src="/assets/images/pieces/mary-l-3-1200.webp" srcset="/assets/images/pieces/mary-l-3-480.webp 480w, /assets/images/pieces/mary-l-3-800.webp 800w, /assets/images/pieces/mary-l-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 19 · Face A</p>
+      <h2 class="fiche-nom">MARY L</h2>
+      <p class="fiche-prix" data-prix>145 CHF</p>
+      <p class="fiche-description">Robe beige à col rose ; des fleurs dorées en dentelle ornent le bas de la robe. Bretelles beiges transparentes ajustables par un nœud.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % soie</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="mary-l" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="playground">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/playground-1-1200.webp" srcset="/assets/images/pieces/playground-1-480.webp 480w, /assets/images/pieces/playground-1-800.webp 800w, /assets/images/pieces/playground-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="PLAYGROUND, vue 1" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/playground-2-1200.webp" srcset="/assets/images/pieces/playground-2-480.webp 480w, /assets/images/pieces/playground-2-800.webp 800w, /assets/images/pieces/playground-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="PLAYGROUND, vue 2" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="PLAYGROUND, vue 1" aria-current="true"><figure class="media " style="--cadrage:54% 37%">
+  <picture>
+    <img src="/assets/images/pieces/playground-1-1200.webp" srcset="/assets/images/pieces/playground-1-480.webp 480w, /assets/images/pieces/playground-1-800.webp 800w, /assets/images/pieces/playground-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="PLAYGROUND, vue 2"><figure class="media " style="--cadrage:44% 30%">
+  <picture>
+    <img src="/assets/images/pieces/playground-2-1200.webp" srcset="/assets/images/pieces/playground-2-480.webp 480w, /assets/images/pieces/playground-2-800.webp 800w, /assets/images/pieces/playground-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 20 · Face B</p>
+      <h2 class="fiche-nom">PLAYGROUND</h2>
+      <p class="fiche-prix" data-prix>160 CHF</p>
+      <p class="fiche-description">Robe rouge vigne à col rose, imprimée de moustiques blancs sérigraphiés à la main en atelier. Bretelles ajustables.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % viscose</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="playground" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="ghost">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/ghost-1-1200.webp" srcset="/assets/images/pieces/ghost-1-480.webp 480w, /assets/images/pieces/ghost-1-800.webp 800w, /assets/images/pieces/ghost-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="GHOST, vue 1" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/ghost-2-1200.webp" srcset="/assets/images/pieces/ghost-2-480.webp 480w, /assets/images/pieces/ghost-2-800.webp 800w, /assets/images/pieces/ghost-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="GHOST, vue 2" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="GHOST, vue 1" aria-current="true"><figure class="media " style="--cadrage:54% 38%">
+  <picture>
+    <img src="/assets/images/pieces/ghost-1-1200.webp" srcset="/assets/images/pieces/ghost-1-480.webp 480w, /assets/images/pieces/ghost-1-800.webp 800w, /assets/images/pieces/ghost-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="GHOST, vue 2"><figure class="media " style="--cadrage:51% 36%">
+  <picture>
+    <img src="/assets/images/pieces/ghost-2-1200.webp" srcset="/assets/images/pieces/ghost-2-480.webp 480w, /assets/images/pieces/ghost-2-800.webp 800w, /assets/images/pieces/ghost-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 21 · Face B</p>
+      <h2 class="fiche-nom">GHOST</h2>
+      <p class="fiche-prix" data-prix>80 CHF</p>
+      <p class="fiche-description">Pantalon droit gris avec poches fermées au boutonnage marine, de chaque côté.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>à compléter</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="ghost" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="marche-a-l-ombre">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/marche-a-l-ombre-1-1200.webp" srcset="/assets/images/pieces/marche-a-l-ombre-1-480.webp 480w, /assets/images/pieces/marche-a-l-ombre-1-800.webp 800w, /assets/images/pieces/marche-a-l-ombre-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MARCHE À L&#39;OMBRE, vue 1" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 22 · Face A</p>
+      <h2 class="fiche-nom">MARCHE À L&#39;OMBRE</h2>
+      <p class="fiche-prix" data-prix>90 CHF</p>
+      <p class="fiche-description">Short en jean bleu ciel, boutons façon marin sur le devant et biais à motif d&#39;ancres marines à la taille.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="marche-a-l-ombre" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="requiem">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/requiem-1-1200.webp" srcset="/assets/images/pieces/requiem-1-480.webp 480w, /assets/images/pieces/requiem-1-800.webp 800w, /assets/images/pieces/requiem-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="REQUIEM, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 23 · Face B</p>
+      <h2 class="fiche-nom">REQUIEM</h2>
+      <p class="fiche-prix" data-prix>50 CHF</p>
+      <p class="fiche-description">Petit haut transparent couleur corail, sur lequel est appliqué un paon doré en dentelle. Emmanchures bordées d&#39;un biais de soie rose.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>M</dd></div>
+        <div><dt>Matière</dt><dd>100 % tulle de coton</dd></div>
+        <div><dt>Mesures</dt><dd>longueur depuis l&#39;épaule 60 cm, largeur 100 cm</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="requiem" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="ballade">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-1-1200.webp" srcset="/assets/images/pieces/ballade-1-480.webp 480w, /assets/images/pieces/ballade-1-800.webp 800w, /assets/images/pieces/ballade-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="BALLADE, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-2-1200.webp" srcset="/assets/images/pieces/ballade-2-480.webp 480w, /assets/images/pieces/ballade-2-800.webp 800w, /assets/images/pieces/ballade-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="BALLADE, vue 2" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-3-1200.webp" srcset="/assets/images/pieces/ballade-3-480.webp 480w, /assets/images/pieces/ballade-3-800.webp 800w, /assets/images/pieces/ballade-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="BALLADE, vue 3" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-4-1200.webp" srcset="/assets/images/pieces/ballade-4-480.webp 480w, /assets/images/pieces/ballade-4-800.webp 800w, /assets/images/pieces/ballade-4-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="BALLADE, vue 4" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="BALLADE, vue 1" aria-current="true"><figure class="media " style="--cadrage:53% 35%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-1-1200.webp" srcset="/assets/images/pieces/ballade-1-480.webp 480w, /assets/images/pieces/ballade-1-800.webp 800w, /assets/images/pieces/ballade-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="BALLADE, vue 2"><figure class="media " style="--cadrage:43% 45%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-2-1200.webp" srcset="/assets/images/pieces/ballade-2-480.webp 480w, /assets/images/pieces/ballade-2-800.webp 800w, /assets/images/pieces/ballade-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="BALLADE, vue 3"><figure class="media " style="--cadrage:64% 33%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-3-1200.webp" srcset="/assets/images/pieces/ballade-3-480.webp 480w, /assets/images/pieces/ballade-3-800.webp 800w, /assets/images/pieces/ballade-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="3" aria-label="BALLADE, vue 4"><figure class="media " style="--cadrage:48% 16%">
+  <picture>
+    <img src="/assets/images/pieces/ballade-4-1200.webp" srcset="/assets/images/pieces/ballade-4-480.webp 480w, /assets/images/pieces/ballade-4-800.webp 800w, /assets/images/pieces/ballade-4-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 24 · Face B</p>
+      <h2 class="fiche-nom">BALLADE</h2>
+      <p class="fiche-prix" data-prix>150 CHF</p>
+      <p class="fiche-description">Pantalon droit inspiré de l&#39;univers Gainsbourg, ceinture en cuir noir. Couleur marine à rayures tennis blanches.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % laine</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="ballade" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="marilou">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/marilou-1-1200.webp" srcset="/assets/images/pieces/marilou-1-480.webp 480w, /assets/images/pieces/marilou-1-800.webp 800w, /assets/images/pieces/marilou-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MARILOU, vue 1" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/marilou-2-1200.webp" srcset="/assets/images/pieces/marilou-2-480.webp 480w, /assets/images/pieces/marilou-2-800.webp 800w, /assets/images/pieces/marilou-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MARILOU, vue 2" width="1200" height="1672" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/marilou-3-1200.webp" srcset="/assets/images/pieces/marilou-3-480.webp 480w, /assets/images/pieces/marilou-3-800.webp 800w, /assets/images/pieces/marilou-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MARILOU, vue 3" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="MARILOU, vue 1" aria-current="true"><figure class="media " style="--cadrage:49% 48%">
+  <picture>
+    <img src="/assets/images/pieces/marilou-1-1200.webp" srcset="/assets/images/pieces/marilou-1-480.webp 480w, /assets/images/pieces/marilou-1-800.webp 800w, /assets/images/pieces/marilou-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="MARILOU, vue 2"><figure class="media " style="--cadrage:54% 25%">
+  <picture>
+    <img src="/assets/images/pieces/marilou-2-1200.webp" srcset="/assets/images/pieces/marilou-2-480.webp 480w, /assets/images/pieces/marilou-2-800.webp 800w, /assets/images/pieces/marilou-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1672" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="MARILOU, vue 3"><figure class="media " style="--cadrage:50% 51%">
+  <picture>
+    <img src="/assets/images/pieces/marilou-3-1200.webp" srcset="/assets/images/pieces/marilou-3-480.webp 480w, /assets/images/pieces/marilou-3-800.webp 800w, /assets/images/pieces/marilou-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="2133" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 25 · Face A</p>
+      <h2 class="fiche-nom">MARILOU</h2>
+      <p class="fiche-prix" data-prix>95 CHF</p>
+      <p class="fiche-description">Description à compléter : la fiche du site actuel n&#39;a pas pu être lue.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>à compléter</dd></div>
+        <div><dt>Matière</dt><dd>à compléter</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="marilou" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="bonnie">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/bonnie-1-1200.webp" srcset="/assets/images/pieces/bonnie-1-480.webp 480w, /assets/images/pieces/bonnie-1-800.webp 800w, /assets/images/pieces/bonnie-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="BONNIE, vue 1" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/bonnie-2-1200.webp" srcset="/assets/images/pieces/bonnie-2-480.webp 480w, /assets/images/pieces/bonnie-2-800.webp 800w, /assets/images/pieces/bonnie-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="BONNIE, vue 2" width="1200" height="1500" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/bonnie-3-1200.webp" srcset="/assets/images/pieces/bonnie-3-480.webp 480w, /assets/images/pieces/bonnie-3-800.webp 800w, /assets/images/pieces/bonnie-3-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="BONNIE, vue 3" width="1200" height="876" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="BONNIE, vue 1" aria-current="true"><figure class="media " style="--cadrage:36% 33%">
+  <picture>
+    <img src="/assets/images/pieces/bonnie-1-1200.webp" srcset="/assets/images/pieces/bonnie-1-480.webp 480w, /assets/images/pieces/bonnie-1-800.webp 800w, /assets/images/pieces/bonnie-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="BONNIE, vue 2"><figure class="media " style="--cadrage:48% 38%">
+  <picture>
+    <img src="/assets/images/pieces/bonnie-2-1200.webp" srcset="/assets/images/pieces/bonnie-2-480.webp 480w, /assets/images/pieces/bonnie-2-800.webp 800w, /assets/images/pieces/bonnie-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1500" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="2" aria-label="BONNIE, vue 3"><figure class="media " style="--cadrage:52% 40%">
+  <picture>
+    <img src="/assets/images/pieces/bonnie-3-1200.webp" srcset="/assets/images/pieces/bonnie-3-480.webp 480w, /assets/images/pieces/bonnie-3-800.webp 800w, /assets/images/pieces/bonnie-3-1200.webp 1200w" sizes="80px" alt="" width="1200" height="876" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 26 · Face B</p>
+      <h2 class="fiche-nom">BONNIE</h2>
+      <p class="fiche-prix" data-prix>220 CHF</p>
+      <p class="fiche-description">Combinaison inspirée de l&#39;univers Gainsbourg, avec l&#39;effet d&#39;un gilet et d&#39;un short-jupe assemblés. Croisée et doublement boutonnée à l&#39;avant, elle se ferme à l&#39;intérieur par des pressions. Marine à rayures tennis blanches.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>S/M</dd></div>
+        <div><dt>Matière</dt><dd>100 % laine</dd></div>
+        <div><dt>Mesures</dt><dd>longueur de l&#39;épaule à l&#39;entrejambe 75 cm</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="bonnie" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="paint-it-black">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/paint-it-black-1-1200.webp" srcset="/assets/images/pieces/paint-it-black-1-480.webp 480w, /assets/images/pieces/paint-it-black-1-800.webp 800w, /assets/images/pieces/paint-it-black-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="PAINT IT BLACK, vue 1" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 27 · Face B</p>
+      <h2 class="fiche-nom">PAINT IT BLACK</h2>
+      <p class="fiche-prix" data-prix>140 CHF</p>
+      <p class="fiche-description">Description à compléter : la fiche du site actuel n&#39;a pas pu être lue.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>à compléter</dd></div>
+        <div><dt>Matière</dt><dd>à compléter</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="paint-it-black" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="mustang">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/mustang-1-1200.webp" srcset="/assets/images/pieces/mustang-1-480.webp 480w, /assets/images/pieces/mustang-1-800.webp 800w, /assets/images/pieces/mustang-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MUSTANG, vue 1" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/mustang-2-1200.webp" srcset="/assets/images/pieces/mustang-2-480.webp 480w, /assets/images/pieces/mustang-2-800.webp 800w, /assets/images/pieces/mustang-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="MUSTANG, vue 2" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="MUSTANG, vue 1" aria-current="true"><figure class="media " style="--cadrage:52% 31%">
+  <picture>
+    <img src="/assets/images/pieces/mustang-1-1200.webp" srcset="/assets/images/pieces/mustang-1-480.webp 480w, /assets/images/pieces/mustang-1-800.webp 800w, /assets/images/pieces/mustang-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="MUSTANG, vue 2"><figure class="media " style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/pieces/mustang-2-1200.webp" srcset="/assets/images/pieces/mustang-2-480.webp 480w, /assets/images/pieces/mustang-2-800.webp 800w, /assets/images/pieces/mustang-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 28 · Face B</p>
+      <h2 class="fiche-nom">MUSTANG</h2>
+      <p class="fiche-prix" data-prix>190 CHF</p>
+      <p class="fiche-description">Veste droite double face noire en coton ciré.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>XS/S</dd></div>
+        <div><dt>Matière</dt><dd>coton ciré</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="mustang" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article><article class="fiche-contenu" data-fiche="clouds-up">
+    <div class="fiche-photos">
+      <div class="fiche-photo-principale"><figure class="media fiche-photo est-active" data-vue="0" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/clouds-up-1-1200.webp" srcset="/assets/images/pieces/clouds-up-1-480.webp 480w, /assets/images/pieces/clouds-up-1-800.webp 800w, /assets/images/pieces/clouds-up-1-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="CLOUDS UP, vue 1" width="1200" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-photo" data-vue="1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pieces/clouds-up-2-1200.webp" srcset="/assets/images/pieces/clouds-up-2-480.webp 480w, /assets/images/pieces/clouds-up-2-800.webp 800w, /assets/images/pieces/clouds-up-2-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 46vw" alt="CLOUDS UP, vue 2" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="fiche-vignettes" role="group" aria-label="Photos de la pièce"><button type="button" class="fiche-vignette" data-vue-bouton="0" aria-label="CLOUDS UP, vue 1" aria-current="true"><figure class="media " style="--cadrage:55% 34%">
+  <picture>
+    <img src="/assets/images/pieces/clouds-up-1-1200.webp" srcset="/assets/images/pieces/clouds-up-1-480.webp 480w, /assets/images/pieces/clouds-up-1-800.webp 800w, /assets/images/pieces/clouds-up-1-1200.webp 1200w" sizes="80px" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure></button><button type="button" class="fiche-vignette" data-vue-bouton="1" aria-label="CLOUDS UP, vue 2"><figure class="media " style="--cadrage:52% 46%">
+  <picture>
+    <img src="/assets/images/pieces/clouds-up-2-1200.webp" srcset="/assets/images/pieces/clouds-up-2-480.webp 480w, /assets/images/pieces/clouds-up-2-800.webp 800w, /assets/images/pieces/clouds-up-2-1200.webp 1200w" sizes="80px" alt="" width="1200" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure></button></div>
+    </div>
+    <div class="fiche-texte">
+      <p class="kicker">Piste 29 · Face A</p>
+      <h2 class="fiche-nom">CLOUDS UP</h2>
+      <p class="fiche-prix" data-prix>85 CHF</p>
+      <p class="fiche-description">Pull imprimé de nuages bleus, beiges et crème.</p>
+      <dl class="notes">
+        <div><dt>Taille</dt><dd>à compléter</dd></div>
+        <div><dt>Matière</dt><dd>100 % coton</dd></div>
+        <div><dt>Mesures</dt><dd>à compléter</dd></div>
+      </dl>
+      <p class="fiche-unique">Pièce unique : un seul exemplaire</p>
+      <p class="note">N° de la pièce : à compléter</p>
+      <p class="fiche-actions"><button type="button" class="bouton bouton--rose" data-ajouter="clouds-up" data-libelle-ajoute="Dans le panier" data-libelle-ajouter="Ajouter au panier">Ajouter au panier</button></p>
+    </div>
+  </article>
+</div>
+<div class="fiche" id="fiche" role="dialog" aria-modal="true" aria-labelledby="fiche-titre" data-recouvrement hidden>
+  <div class="fiche-fond" data-fermer-fiche></div>
+  <div class="fiche-pochette">
+    <div class="fiche-volet fiche-volet--g" aria-hidden="true"><svg class="disque-svg " viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+  <defs><path id="fiche-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
+  <circle cx="100" cy="100" r="98" class="disque-vinyle" />
+  <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
+  <path class="disque-reflet" d="M100 2 A98 98 0 0 1 169 31 L100 100 Z" />
+  <path class="disque-reflet" d="M100 198 A98 98 0 0 1 31 169 L100 100 Z" />
+  <circle cx="100" cy="100" r="38" class="disque-etiquette" />
+  <circle cx="100" cy="100" r="3" class="disque-trou" />
+</svg></div>
+    <div class="fiche-corps" data-fiche-corps></div>
+    <div class="fiche-nav">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-fiche-pas="-1">← Pièce précédente</button>
+      <button type="button" class="bouton bouton--contour bouton--petit" data-fiche-pas="1">Pièce suivante →</button>
+    </div>
+    <button type="button" class="fiche-fermer" data-fermer-fiche aria-label="Fermer la fiche">×</button>
+    <h2 id="fiche-titre" class="visuellement-cache" data-fiche-titre></h2>
+  </div>
+</div>
+<aside class="panier" id="panier" role="dialog" aria-modal="true" aria-labelledby="panier-titre" data-recouvrement hidden>
+  <div class="panier-fond" data-fermer-panier></div>
+  <div class="panier-tiroir">
+    <h2 id="panier-titre">Votre panier</h2>
+    <button type="button" class="fiche-fermer" data-fermer-panier aria-label="Fermer le panier">×</button>
+    <ul class="panier-liste" data-panier-liste data-retirer="Retirer"></ul>
+    <p class="panier-vide" data-panier-vide>Le panier est vide.</p>
+    <p class="panier-total"><span>Total</span> <b data-prix data-panier-total aria-live="polite">0 CHF</b></p>
+    <p class="note">Livraison gratuite au-delà d&#39;un montant à compléter.<br>Moyens de paiement : à compléter.<br>Prix en CHF ; mention de la TVA à compléter.</p>
+    <button type="button" class="bouton bouton--rose" data-commander>Commander (simulé)</button>
+    <p class="panier-message" data-panier-message hidden tabindex="-1">Commande simulée : rien n&#39;a été payé ni envoyé. Le panier a été vidé.</p>
+  </div>
+</aside>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-haut">
+    <div class="pied-disque" data-effet="face-b">
+      <svg class="disque-svg pied-disque-svg" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+  <defs><path id="pied-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
+  <circle cx="100" cy="100" r="98" class="disque-vinyle" />
+  <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
+  <path class="disque-reflet" d="M100 2 A98 98 0 0 1 169 31 L100 100 Z" />
+  <path class="disque-reflet" d="M100 198 A98 98 0 0 1 31 169 L100 100 Z" />
+  <circle cx="100" cy="100" r="38" class="disque-etiquette" />
+  <text class="disque-texte"><textPath href="#pied-arc" startOffset="0">FIN DE LA FACE B · MADEBYMELODY · </textPath></text>
+  <circle cx="100" cy="100" r="3" class="disque-trou" />
+</svg>
+      <span class="pied-face" aria-hidden="true">Face B</span>
+    </div>
+    <form class="pied-lettre" data-formulaire novalidate>
+      <p class="pied-titre">Ne manquez pas les nouvelles collections</p>
+      <p>Abonnez-vous à la lettre d&#39;information.</p>
+      <div class="champ champ--ligne"><label for="lettre-email">Votre e-mail</label>
+        <span class="champ-rangee"><input id="lettre-email" name="email" type="email" autocomplete="email" required><button class="bouton bouton--rose" type="submit">S&#39;abonner</button></span></div>
+      <p class="mention-donnees">Votre adresse sert uniquement à recevoir la lettre (nLPD). Politique de confidentialité : à compléter.</p>
+      <p data-message-envoi hidden></p>
+    </form>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-titre">L&#39;atelier</p>
+      <p>Ch. de Crève-Cœur 3, 1260 Nyon, Suisse<br><a href="tel:+41763969174">+41 76 396 91 74</a><br><a href="mailto:melody_j8@hotmail.com">melody_j8@hotmail.com</a></p>
+      <p><a class="lien-externe" href="https://www.instagram.com/madebymelody.ch/" target="_blank" rel="noopener">Instagram @madebymelody.ch <span class="visuellement-cache">(nouvel onglet)</span></a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/univers" data-libelle="L&#39;univers">L&#39;univers</a></li><li><a href="/sur-mesure" data-libelle="Sur mesure">Sur mesure</a></li><li><a href="/boutique" data-libelle="Boutique" aria-current="page">Boutique</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Confort de lecture</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette : les informations marquées « à compléter » seront fournies par madebymelody.</p>
+    <p>© madebymelody</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <button type="button" class="bouton bouton--creme" data-panier-bouton aria-controls="panier" aria-expanded="false"><span>Panier</span> <b data-panier-compte>0</b> <span data-panier-total-court>0 CHF</span></button>
+  <a class="bouton bouton--rose" href="/sur-mesure#rendez-vous" data-libelle="Sur mesure" aria-label="Prendre rendez-vous">Rendez-vous</a>
+</div>
+</body>
+</html>

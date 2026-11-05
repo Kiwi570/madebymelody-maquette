@@ -1,0 +1,1256 @@
+{
+ "images": {
+  "grok/accueil-ouverture": {
+   "alt": "Velours noir dans la pénombre, halo de lumière rose et voiles de tulle",
+   "largeurs": [
+    640,
+    1280,
+    1600
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 657",
+   "grok": true,
+   "mobile": [
+    480,
+    720
+   ]
+  },
+  "grok/accueil-sage": {
+   "alt": "Tulle rose poudré et dentelle ivoire superposés",
+   "largeurs": [
+    640,
+    1168
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 784",
+   "grok": true
+  },
+  "grok/accueil-sauvage": {
+   "alt": "Dentelle noire sur velours froissé, reflets rouge cerise",
+   "largeurs": [
+    640,
+    1168
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 784",
+   "grok": true
+  },
+  "grok/accueil-matiere": {
+   "alt": "Tissage de laine et de lin écru, en gros plan",
+   "largeurs": [
+    640,
+    1168
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 784",
+   "grok": true
+  },
+  "grok/accueil-atelier": {
+   "alt": "Table de coupe au crépuscule : tissus pliés, ciseaux de tailleur et bobines",
+   "largeurs": [
+    640,
+    1168
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 784",
+   "grok": true
+  },
+  "grok/univers-dentelle": {
+   "alt": "Dentelle ivoire à motif floral posée sur une soie rose",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/univers-insectes": {
+   "alt": "Aile irisée bleu-vert posée sur un tulle rose et de la dentelle",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/univers-tulle": {
+   "alt": "Volutes de tulle rose en contre-jour",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/univers-paon": {
+   "alt": "Œil d'une plume de paon, sarcelle, or et émeraude",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/univers-silence": {
+   "alt": "Satin rose pâle, plis calmes dans une lumière douce",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/univers-revendication": {
+   "alt": "Cuir noir brut clouté d'argent",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/univers-musique": {
+   "alt": "Tourne-disque rose ouvert sur une commode, une rose séchée sur une pile de pochettes",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/surmesure-ouverture": {
+   "alt": "Voile de tulle ivoire suspendu dans un studio rose pâle",
+   "largeurs": [
+    640,
+    1280,
+    1600
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 657",
+   "grok": true,
+   "mobile": [
+    480,
+    720
+   ]
+  },
+  "grok/surmesure-mariee": {
+   "alt": "Échantillons de satin, dentelle et tulle ivoire, épingles à tête nacrée",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/surmesure-confection": {
+   "alt": "Bobines de fil rose, rouge et crème, craie de tailleur, pelote d'épingles et ciseaux sur du lin",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/surmesure-enfants": {
+   "alt": "Chutes de coton pastel découpées en nuages",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/surmesure-costumiere": {
+   "alt": "Coulisses de théâtre : portant de cintres vides sous un projecteur, rideau de velours rouge",
+   "largeurs": [
+    480,
+    784
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "784 / 1168",
+   "grok": true
+  },
+  "grok/boutique-fond": {
+   "alt": "Carton kraft",
+   "largeurs": [
+    640,
+    1280,
+    1600
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 657",
+   "grok": true,
+   "mobile": [
+    480,
+    720
+   ]
+  },
+  "grok/contact-ouverture": {
+   "alt": "Coin d'atelier à l'heure dorée : chaise, tissus pliés et bouquet de fleurs des champs",
+   "largeurs": [
+    640,
+    1280,
+    1600
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 657",
+   "grok": true,
+   "mobile": [
+    480,
+    720
+   ]
+  },
+  "grok/page-404": {
+   "alt": "Platine vinyle, le bras de lecture relevé du disque",
+   "largeurs": [
+    640,
+    1168
+   ],
+   "cadrage": "50% 50%",
+   "ratio": "1168 / 657",
+   "grok": true
+  },
+  "pieces/madly-1": {
+   "alt": "MADLY, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "52% 16%",
+   "ratio": "1953 / 3472",
+   "grok": false
+  },
+  "pieces/madly-2": {
+   "alt": "MADLY, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "48% 49%",
+   "ratio": "1152 / 2048",
+   "grok": false
+  },
+  "pieces/madly-3": {
+   "alt": "MADLY, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "48% 48%",
+   "ratio": "1152 / 2048",
+   "grok": false
+  },
+  "pieces/strange-days-1": {
+   "alt": "STRANGE DAYS, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "17% 21%",
+   "ratio": "1438 / 2556",
+   "grok": false
+  },
+  "pieces/strange-days-2": {
+   "alt": "STRANGE DAYS, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 48%",
+   "ratio": "2048 / 1152",
+   "grok": false
+  },
+  "pieces/sunshine-1": {
+   "alt": "SUNSHINE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "50% 25%",
+   "ratio": "1687 / 2753",
+   "grok": false
+  },
+  "pieces/sunshine-2": {
+   "alt": "SUNSHINE, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "61% 26%",
+   "ratio": "1688 / 2507",
+   "grok": false
+  },
+  "pieces/sunshine-3": {
+   "alt": "SUNSHINE, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "50% 41%",
+   "ratio": "4032 / 3024",
+   "grok": false
+  },
+  "pieces/sunshine-4": {
+   "alt": "SUNSHINE, vue 4",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 35%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/juliette-1": {
+   "alt": "JULIETTE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "38% 18%",
+   "ratio": "1565 / 1565",
+   "grok": false
+  },
+  "pieces/juliette-2": {
+   "alt": "JULIETTE, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 45%",
+   "ratio": "3024 / 4032",
+   "grok": false
+  },
+  "pieces/juliette-3": {
+   "alt": "JULIETTE, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "47% 59%",
+   "ratio": "2250 / 3000",
+   "grok": false
+  },
+  "pieces/juliette-4": {
+   "alt": "JULIETTE, vue 4",
+   "largeurs": [
+    480,
+    800
+   ],
+   "cadrage": "47% 45%",
+   "ratio": "750 / 1000",
+   "grok": false
+  },
+  "pieces/love-me-two-1": {
+   "alt": "LOVE ME TWO, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "50% 42%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/love-me-two-2": {
+   "alt": "LOVE ME TWO, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 40%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/love-me-two-3": {
+   "alt": "LOVE ME TWO, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 41%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/flash-1": {
+   "alt": "FLASH, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 41%",
+   "ratio": "4032 / 3024",
+   "grok": false
+  },
+  "pieces/grapevine-1": {
+   "alt": "GRAPEVINE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "52% 46%",
+   "ratio": "1688 / 3000",
+   "grok": false
+  },
+  "pieces/grapevine-2": {
+   "alt": "GRAPEVINE, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "40% 55%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/three-little-birds-1": {
+   "alt": "THREE LITTLE BIRDS, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 36%",
+   "ratio": "3024 / 2268",
+   "grok": false
+  },
+  "pieces/three-little-birds-2": {
+   "alt": "THREE LITTLE BIRDS, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "66% 35%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/peacock-1": {
+   "alt": "PEACOCK, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "64% 33%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/peacock-2": {
+   "alt": "PEACOCK, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "59% 34%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/peacock-3": {
+   "alt": "PEACOCK, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 42%",
+   "ratio": "1152 / 2048",
+   "grok": false
+  },
+  "pieces/supernature-1": {
+   "alt": "SUPERNATURE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "58% 32%",
+   "ratio": "3156 / 5610",
+   "grok": false
+  },
+  "pieces/supernature-2": {
+   "alt": "SUPERNATURE, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "58% 29%",
+   "ratio": "2951 / 4426",
+   "grok": false
+  },
+  "pieces/supernature-3": {
+   "alt": "SUPERNATURE, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "50% 67%",
+   "ratio": "1536 / 2048",
+   "grok": false
+  },
+  "pieces/supernature-4": {
+   "alt": "SUPERNATURE, vue 4",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "45% 51%",
+   "ratio": "1152 / 2048",
+   "grok": false
+  },
+  "pieces/fever-1": {
+   "alt": "FEVER, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "47% 34%",
+   "ratio": "1688 / 2532",
+   "grok": false
+  },
+  "pieces/fever-2": {
+   "alt": "FEVER, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "35% 60%",
+   "ratio": "3024 / 4032",
+   "grok": false
+  },
+  "pieces/fever-3": {
+   "alt": "FEVER, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "44% 33%",
+   "ratio": "1152 / 2048",
+   "grok": false
+  },
+  "pieces/envolez-moi-1": {
+   "alt": "ENVOLEZ-MOI, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "56% 41%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/envolez-moi-2": {
+   "alt": "ENVOLEZ-MOI, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "48% 44%",
+   "ratio": "3448 / 4592",
+   "grok": false
+  },
+  "pieces/envolez-moi-3": {
+   "alt": "ENVOLEZ-MOI, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "46% 44%",
+   "ratio": "1599 / 1239",
+   "grok": false
+  },
+  "pieces/envolez-moi-4": {
+   "alt": "ENVOLEZ-MOI, vue 4",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 44%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/jekyll-1": {
+   "alt": "JEKYLL, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "47% 51%",
+   "ratio": "1536 / 2048",
+   "grok": false
+  },
+  "pieces/jekyll-2": {
+   "alt": "JEKYLL, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 51%",
+   "ratio": "1536 / 2048",
+   "grok": false
+  },
+  "pieces/jekyll-3": {
+   "alt": "JEKYLL, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "46% 19%",
+   "ratio": "1081 / 1632",
+   "grok": false
+  },
+  "pieces/jekyll-4": {
+   "alt": "JEKYLL, vue 4",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 52%",
+   "ratio": "1081 / 1632",
+   "grok": false
+  },
+  "pieces/javanaise-1": {
+   "alt": "JAVANAISE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "61% 56%",
+   "ratio": "2624 / 3936",
+   "grok": false
+  },
+  "pieces/javanaise-2": {
+   "alt": "JAVANAISE, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "53% 33%",
+   "ratio": "4032 / 3024",
+   "grok": false
+  },
+  "pieces/javanaise-3": {
+   "alt": "JAVANAISE, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "53% 33%",
+   "ratio": "4032 / 3024",
+   "grok": false
+  },
+  "pieces/javanaise-4": {
+   "alt": "JAVANAISE, vue 4",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "34% 49%",
+   "ratio": "2624 / 3936",
+   "grok": false
+  },
+  "pieces/aquarius-1": {
+   "alt": "AQUARIUS, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "52% 43%",
+   "ratio": "2048 / 1536",
+   "grok": false
+  },
+  "pieces/aquarius-2": {
+   "alt": "AQUARIUS, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "52% 38%",
+   "ratio": "1152 / 2048",
+   "grok": false
+  },
+  "pieces/hurricane-1": {
+   "alt": "HURRICANE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 41%",
+   "ratio": "1688 / 2105",
+   "grok": false
+  },
+  "pieces/hurricane-2": {
+   "alt": "HURRICANE, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "50% 45%",
+   "ratio": "2048 / 1152",
+   "grok": false
+  },
+  "pieces/hurricane-3": {
+   "alt": "HURRICANE, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "48% 48%",
+   "ratio": "1152 / 2048",
+   "grok": false
+  },
+  "pieces/hurricane-4": {
+   "alt": "HURRICANE, vue 4",
+   "largeurs": [
+    480,
+    800
+   ],
+   "cadrage": "33% 34%",
+   "ratio": "705 / 885",
+   "grok": false
+  },
+  "pieces/flesh-1": {
+   "alt": "FLESH, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 40%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/flesh-2": {
+   "alt": "FLESH, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "47% 36%",
+   "ratio": "3168 / 4752",
+   "grok": false
+  },
+  "pieces/flesh-3": {
+   "alt": "FLESH, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 40%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/cminor-1": {
+   "alt": "CMinor, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "59% 46%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/cminor-2": {
+   "alt": "CMinor, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "64% 25%",
+   "ratio": "1044 / 1552",
+   "grok": false
+  },
+  "pieces/cminor-3": {
+   "alt": "CMinor, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "58% 44%",
+   "ratio": "1050 / 1596",
+   "grok": false
+  },
+  "pieces/mary-l-1": {
+   "alt": "MARY L, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "60% 43%",
+   "ratio": "2982 / 5301",
+   "grok": false
+  },
+  "pieces/mary-l-2": {
+   "alt": "MARY L, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "60% 43%",
+   "ratio": "3024 / 3024",
+   "grok": false
+  },
+  "pieces/mary-l-3": {
+   "alt": "MARY L, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 47%",
+   "ratio": "3024 / 3024",
+   "grok": false
+  },
+  "pieces/playground-1": {
+   "alt": "PLAYGROUND, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "54% 37%",
+   "ratio": "4032 / 3024",
+   "grok": false
+  },
+  "pieces/playground-2": {
+   "alt": "PLAYGROUND, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "44% 30%",
+   "ratio": "2268 / 4032",
+   "grok": false
+  },
+  "pieces/ghost-1": {
+   "alt": "GHOST, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "54% 38%",
+   "ratio": "2796 / 4194",
+   "grok": false
+  },
+  "pieces/ghost-2": {
+   "alt": "GHOST, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "51% 36%",
+   "ratio": "832 / 1248",
+   "grok": false
+  },
+  "pieces/marche-a-l-ombre-1": {
+   "alt": "MARCHE À L'OMBRE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 45%",
+   "ratio": "832 / 1248",
+   "grok": false
+  },
+  "pieces/requiem-1": {
+   "alt": "REQUIEM, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "59% 46%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/ballade-1": {
+   "alt": "BALLADE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "53% 35%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/ballade-2": {
+   "alt": "BALLADE, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "43% 45%",
+   "ratio": "3024 / 4032",
+   "grok": false
+  },
+  "pieces/ballade-3": {
+   "alt": "BALLADE, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "64% 33%",
+   "ratio": "3168 / 4752",
+   "grok": false
+  },
+  "pieces/ballade-4": {
+   "alt": "BALLADE, vue 4",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "48% 16%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/marilou-1": {
+   "alt": "MARILOU, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 48%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/marilou-2": {
+   "alt": "MARILOU, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "54% 25%",
+   "ratio": "1108 / 1544",
+   "grok": false
+  },
+  "pieces/marilou-3": {
+   "alt": "MARILOU, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "50% 51%",
+   "ratio": "3213 / 5712",
+   "grok": false
+  },
+  "pieces/bonnie-1": {
+   "alt": "BONNIE, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "36% 33%",
+   "ratio": "2279 / 3419",
+   "grok": false
+  },
+  "pieces/bonnie-2": {
+   "alt": "BONNIE, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "48% 38%",
+   "ratio": "1080 / 1350",
+   "grok": false
+  },
+  "pieces/bonnie-3": {
+   "alt": "BONNIE, vue 3",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "52% 40%",
+   "ratio": "1118 / 816",
+   "grok": false
+  },
+  "pieces/paint-it-black-1": {
+   "alt": "PAINT IT BLACK, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "49% 34%",
+   "ratio": "832 / 1248",
+   "grok": false
+  },
+  "pieces/mustang-1": {
+   "alt": "MUSTANG, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "52% 31%",
+   "ratio": "2589 / 3883",
+   "grok": false
+  },
+  "pieces/mustang-2": {
+   "alt": "MUSTANG, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "50% 45%",
+   "ratio": "2268 / 3024",
+   "grok": false
+  },
+  "pieces/clouds-up-1": {
+   "alt": "CLOUDS UP, pièce madebymelody",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "55% 34%",
+   "ratio": "4285 / 2857",
+   "grok": false
+  },
+  "pieces/clouds-up-2": {
+   "alt": "CLOUDS UP, vue 2",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "52% 46%",
+   "ratio": "4032 / 3024",
+   "grok": false
+  },
+  "site/etiquette-a": {
+   "alt": "Robe beige portée dans l’herbe au soleil",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "57% 30%",
+   "ratio": "1688 / 1688",
+   "grok": false
+  },
+  "site/etiquette-b": {
+   "alt": "Robe rouge portée sur une chaise longue dans l’herbe",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "42% 36%",
+   "ratio": "1688 / 1688",
+   "grok": false
+  },
+  "site/collage-marque": {
+   "alt": "Collage madebymelody : photos, croquis d’insectes et rubans adhésifs",
+   "largeurs": [
+    800,
+    1400,
+    2000
+   ],
+   "cadrage": "76% 29%",
+   "ratio": "2200 / 762",
+   "grok": false
+  },
+  "site/collage-portrait": {
+   "alt": "Collage madebymelody autour d’un portrait en noir et blanc",
+   "largeurs": [
+    480,
+    800,
+    1200
+   ],
+   "cadrage": "38% 52%",
+   "ratio": "1200 / 1117",
+   "grok": false
+  },
+  "site/collage-bandeau": {
+   "alt": "Bandeau de collages : photos, dessins et pochettes",
+   "largeurs": [
+    800,
+    1400,
+    1900
+   ],
+   "cadrage": "51% 44%",
+   "ratio": "1900 / 650",
+   "grok": false
+  },
+  "site/collage-collections": {
+   "alt": "Collage : portrait en noir et blanc sur un papier dessiné d’insectes",
+   "largeurs": [
+    480,
+    800,
+    1120
+   ],
+   "cadrage": "45% 55%",
+   "ratio": "1120 / 743",
+   "grok": false
+  },
+  "site/collage-concept": {
+   "alt": "Collage : portrait et croquis de libellule",
+   "largeurs": [
+    480,
+    741
+   ],
+   "cadrage": "40% 54%",
+   "ratio": "741 / 465",
+   "grok": false
+  },
+  "site/collage-enfants": {
+   "alt": "Collage de l’univers madebymelody pour les enfants",
+   "largeurs": [
+    480,
+    800,
+    1080
+   ],
+   "cadrage": "76% 57%",
+   "ratio": "1080 / 1080",
+   "grok": false
+  },
+  "site/robe-sur-mesure": {
+   "alt": "Robe bustier rouge sur mesure, sur un buste de couture",
+   "largeurs": [
+    480,
+    800,
+    1400
+   ],
+   "cadrage": "52% 39%",
+   "ratio": "2736 / 3648",
+   "grok": false
+  },
+  "site/rayures-tennis": {
+   "alt": "Veste marine à rayures tennis portée dans une bibliothèque",
+   "largeurs": [
+    640,
+    1280,
+    2000
+   ],
+   "cadrage": "36% 39%",
+   "ratio": "2000 / 1319",
+   "grok": false
+  },
+  "site/robe-rouge-herbe": {
+   "alt": "Robe rouge portée, allongée dans l’herbe",
+   "largeurs": [
+    640,
+    1280,
+    1688
+   ],
+   "cadrage": "37% 27%",
+   "ratio": "1688 / 750",
+   "grok": false
+  },
+  "logo-noir": {
+   "alt": "madebymelody",
+   "largeur": 1200,
+   "hauteur": 167,
+   "role": "logo"
+  },
+  "logo-creme": {
+   "alt": "madebymelody",
+   "largeur": 1200,
+   "hauteur": 167,
+   "role": "logo"
+  }
+ },
+ "avertissements": [
+  "A REGARDER agrandissement 1.10x : assets/images/grok/accueil-ouverture-1280.webp",
+  "A REGARDER agrandissement 1.37x : assets/images/grok/accueil-ouverture-1600.webp",
+  "A REGARDER agrandissement 1.10x : assets/images/grok/accueil-ouverture-mobile-720.webp",
+  "A REGARDER agrandissement 1.10x : assets/images/grok/surmesure-ouverture-1280.webp",
+  "A REGARDER agrandissement 1.37x : assets/images/grok/surmesure-ouverture-1600.webp",
+  "A REGARDER agrandissement 1.10x : assets/images/grok/surmesure-ouverture-mobile-720.webp",
+  "A REGARDER agrandissement 1.10x : assets/images/grok/boutique-fond-1280.webp",
+  "A REGARDER agrandissement 1.37x : assets/images/grok/boutique-fond-1600.webp",
+  "A REGARDER agrandissement 1.10x : assets/images/grok/boutique-fond-mobile-720.webp",
+  "A REGARDER agrandissement 1.10x : assets/images/grok/contact-ouverture-1280.webp",
+  "A REGARDER agrandissement 1.37x : assets/images/grok/contact-ouverture-1600.webp",
+  "A REGARDER agrandissement 1.10x : assets/images/grok/contact-ouverture-mobile-720.webp",
+  "A REGARDER agrandissement 1.04x : assets/images/pieces/madly-2-1200.webp",
+  "A REGARDER agrandissement 1.04x : assets/images/pieces/madly-3-1200.webp",
+  "A REGARDER agrandissement 1.07x : assets/images/pieces/juliette-4-800.webp",
+  "A REGARDER agrandissement 1.04x : assets/images/pieces/peacock-3-1200.webp",
+  "A REGARDER agrandissement 1.04x : assets/images/pieces/supernature-4-1200.webp",
+  "A REGARDER agrandissement 1.04x : assets/images/pieces/fever-3-1200.webp",
+  "A REGARDER agrandissement 1.11x : assets/images/pieces/jekyll-3-1200.webp",
+  "A REGARDER agrandissement 1.11x : assets/images/pieces/jekyll-4-1200.webp",
+  "A REGARDER agrandissement 1.04x : assets/images/pieces/aquarius-2-1200.webp",
+  "A REGARDER agrandissement 1.04x : assets/images/pieces/hurricane-3-1200.webp",
+  "A REGARDER agrandissement 1.13x : assets/images/pieces/hurricane-4-800.webp",
+  "A REGARDER agrandissement 1.15x : assets/images/pieces/cminor-2-1200.webp",
+  "A REGARDER agrandissement 1.14x : assets/images/pieces/cminor-3-1200.webp",
+  "A REGARDER agrandissement 1.44x : assets/images/pieces/ghost-2-1200.webp",
+  "A REGARDER agrandissement 1.44x : assets/images/pieces/marche-a-l-ombre-1-1200.webp",
+  "A REGARDER agrandissement 1.08x : assets/images/pieces/marilou-2-1200.webp",
+  "A REGARDER agrandissement 1.11x : assets/images/pieces/bonnie-2-1200.webp",
+  "A REGARDER agrandissement 1.07x : assets/images/pieces/bonnie-3-1200.webp",
+  "A REGARDER agrandissement 1.44x : assets/images/pieces/paint-it-black-1-1200.webp"
+ ]
+}

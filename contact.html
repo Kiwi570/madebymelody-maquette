@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-page="contact" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact : madebymelody, Nyon</title>
+<meta name="description" content="Atelier madebymelody, Ch. de Crève-Cœur 3, 1260 Nyon. Téléphone, e-mail et formulaire.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://madebymelody-maquette.vercel.app/contact">
+<style>:root{--fond:#141113;--texte:#f3ebdd;--voile-fond:#f4c6cf;--ouverture-fond:#141113;--menu-fond:#141113}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#141113">
+<link rel="icon" href="/assets/images/favicon-64.png" type="image/png" sizes="64x64">
+<link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="madebymelody">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:title" content="Contact : madebymelody, Nyon">
+<meta property="og:description" content="Atelier madebymelody, Ch. de Crève-Cœur 3, 1260 Nyon. Téléphone, e-mail et formulaire.">
+<meta property="og:url" content="https://madebymelody-maquette.vercel.app/contact">
+<meta property="og:image" content="https://madebymelody-maquette.vercel.app/assets/partage/contact-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Contact madebymelody : veste JAVANAISE portée, dos nu">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"madebymelody","url":"https://madebymelody-maquette.vercel.app/","telephone":"+41763969174","email":"melody_j8@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"Ch. de Crève-Cœur 3","postalCode":"1260","addressLocality":"Nyon","addressRegion":"VD","addressCountry":"CH"},"sameAs":["https://www.instagram.com/madebymelody.ch/"],"founder":{"@type":"Person","name":"Melody"},"currenciesAccepted":"CHF","description":{"fr":"Créatrice de mode à Nyon : pièces uniques et numérotées pour femmes et enfants, faites main, et atelier sur mesure (robes de mariée, costumes de scène).","en":"Fashion designer in Nyon: one-of-a-kind numbered pieces for women and children, handmade, and a made-to-measure atelier."}}</script>
+</head>
+<body id="haut" class="page-contact">
+<div data-voile aria-hidden="true"><div class="voile-contenu">
+  <svg class="disque-svg voile-disque" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+  <defs><path id="voile-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
+  <circle cx="100" cy="100" r="98" class="disque-vinyle" />
+  <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
+  <path class="disque-reflet" d="M100 2 A98 98 0 0 1 169 31 L100 100 Z" />
+  <path class="disque-reflet" d="M100 198 A98 98 0 0 1 31 169 L100 100 Z" />
+  <circle cx="100" cy="100" r="38" class="disque-etiquette" />
+  <circle cx="100" cy="100" r="3" class="disque-trou" />
+</svg>
+  <span data-voile-libelle>Contact</span>
+</div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="platine">
+    <div class="platine-disque"><svg class="disque-svg intro-disque" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+  <defs><path id="intro-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
+  <circle cx="100" cy="100" r="98" class="disque-vinyle" />
+  <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
+  <path class="disque-reflet" d="M100 2 A98 98 0 0 1 169 31 L100 100 Z" />
+  <path class="disque-reflet" d="M100 198 A98 98 0 0 1 31 169 L100 100 Z" />
+  <circle cx="100" cy="100" r="38" class="disque-etiquette" />
+  <image href="/assets/images/logo-noir.png" x="70" y="96" width="60" height="8.4" class="intro-logo" />
+  <circle cx="100" cy="100" r="3" class="disque-trou" />
+</svg></div>
+    <svg class="platine-bras" viewBox="0 0 120 220" aria-hidden="true" focusable="false">
+      <circle cx="96" cy="22" r="14" class="bras-pivot" /><circle cx="96" cy="22" r="5" class="bras-axe" />
+      <path d="M96 22 L92 150 Q90 176 70 192" class="bras-tige" />
+      <rect x="56" y="186" width="22" height="12" rx="2" transform="rotate(-38 67 192)" class="bras-tete" />
+    </svg>
+    <p class="intro-face"><span>Face A</span></p>
+  </div>
+  <p class="intro-passer">Touchez pour passer</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="madebymelody, Accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-creme.png" alt="madebymelody" width="1200" height="167">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/univers" data-libelle="L&#39;univers">L&#39;univers</a></li><li><a href="/sur-mesure" data-libelle="Sur mesure">Sur mesure</a></li><li><a href="/boutique" data-libelle="Boutique">Boutique</a></li><li><a href="/contact" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--rose" href="/sur-mesure#rendez-vous" data-libelle="Sur mesure" aria-label="Prendre rendez-vous">Rendez-vous</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><span class="menu-num" aria-hidden="true">01</span><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><span class="menu-num" aria-hidden="true">02</span><a href="/univers" class="menu-lien" data-libelle="L&#39;univers">L&#39;univers</a></li><li style="--i:2"><span class="menu-num" aria-hidden="true">03</span><a href="/sur-mesure" class="menu-lien" data-libelle="Sur mesure">Sur mesure</a></li><li style="--i:3"><span class="menu-num" aria-hidden="true">04</span><a href="/boutique" class="menu-lien" data-libelle="Boutique">Boutique</a></li><li style="--i:4"><span class="menu-num" aria-hidden="true">05</span><a href="/contact" class="menu-lien" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+  <p class="menu-actions"><a class="bouton bouton--rose" href="/sur-mesure#rendez-vous" data-libelle="Sur mesure">Prendre rendez-vous</a>
+  <a class="bouton bouton--contour" href="tel:+41763969174">Appeler +41 76 396 91 74</a></p>
+  <p><a class="lien-externe" href="https://www.instagram.com/madebymelody.ch/" target="_blank" rel="noopener">Suivre @madebymelody.ch sur Instagram <span class="visuellement-cache">(nouvel onglet)</span></a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="c-tete theme-cerise" id="debut">
+  <div class="conteneur c-tete-grille">
+    <div class="c-tete-texte">
+      <p class="kicker">Contact</p>
+      <h1 class="c-titre" data-anime="gsap">Parlons de votre projet</h1>
+      <p class="c-info" data-info-cle>Ch. de Crève-Cœur 3, 1260 Nyon</p>
+      <p class="c-actions" data-anime="gsap">
+        <a class="bouton bouton--creme" href="tel:+41763969174" data-action-principale>Appeler l&#39;atelier</a>
+        <a class="bouton bouton--contour" href="mailto:melody_j8@hotmail.com">melody_j8@hotmail.com</a>
+      </p>
+    </div>
+    <div class="etiquette-geante" data-effet="etiquette">
+      <svg class="etiquette-cercle" viewBox="0 0 400 400" aria-hidden="true" focusable="false" data-audit-ignorer>
+        <defs><path id="c-arc" d="M200 200 m-160 0 a160 160 0 1 1 320 0 a160 160 0 1 1 -320 0" /></defs>
+        <circle cx="200" cy="200" r="196" class="etiquette-fond" />
+        <circle cx="200" cy="200" r="186" class="etiquette-filet" /><circle cx="200" cy="200" r="180" class="etiquette-filet" /><circle cx="200" cy="200" r="174" class="etiquette-filet" />
+        <text class="etiquette-texte"><textPath href="#c-arc" textLength="1000" lengthAdjust="spacing">CH. DE CRÈVE-CŒUR 3 · 1260 NYON · SUISSE · MADEBYMELODY · ATELIER ET PIÈCES UNIQUES · </textPath></text>
+        <circle cx="200" cy="200" r="5" class="disque-trou" />
+      </svg>
+      <a class="etiquette-numero" href="tel:+41763969174"><span>+41 76</span><span>396 91 74</span></a>
+    </div>
+  </div>
+  <figure class="media c-bandeau" data-grok data-fx="parallaxe" data-fx-force="12" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/contact-ouverture-mobile-480.webp 480w, /assets/images/grok/contact-ouverture-mobile-720.webp 720w" sizes="100vw">
+    <img src="/assets/images/grok/contact-ouverture-1280.webp" srcset="/assets/images/grok/contact-ouverture-640.webp 640w, /assets/images/grok/contact-ouverture-1280.webp 1280w, /assets/images/grok/contact-ouverture-1600.webp 1600w" sizes="100vw" alt="Coin d&#39;atelier à l&#39;heure dorée" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+</section>
+<section class="c-canaux theme-creme" id="message">
+  <div class="conteneur c-canaux-grille">
+    <div>
+      <h2 data-anime="lignes">Une question, une envie ?</h2>
+      <p data-anime>Une question, une suggestion ou l&#39;envie d&#39;en savoir plus sur l&#39;atelier sur mesure ? Remplissez le formulaire ou utilisez l&#39;un des canaux.</p>
+      <dl class="notes notes--clair" data-anime="cascade">
+        <div><dt>Adresse</dt><dd>Ch. de Crève-Cœur 3, 1260 Nyon, Suisse</dd></div>
+        <div><dt>Téléphone</dt><dd><a href="tel:+41763969174">+41 76 396 91 74</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:melody_j8@hotmail.com">melody_j8@hotmail.com</a></dd></div>
+        <div><dt>Horaires</dt><dd>Horaires et modalités de rendez-vous : à compléter.</dd></div>
+      </dl>
+      <figure class="media c-canaux-media" data-anime="rideau" style="--cadrage:58% 29%">
+  <picture>
+    <img src="/assets/images/pieces/supernature-2-1200.webp" srcset="/assets/images/pieces/supernature-2-480.webp 480w, /assets/images/pieces/supernature-2-800.webp 800w, /assets/images/pieces/supernature-2-1200.webp 1200w" sizes="(max-width: 760px) 90vw, 40vw" alt="SUPERNATURE, robe longue imprimée de papillons, portée dans un jardin" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <form class="c-form" data-formulaire novalidate>
+      <h2 class="c-form-titre">Envoyez un message</h2>
+      <div class="champs-2">
+        <div class="champ"><label for="c-prenom">Prénom</label><input id="c-prenom" name="prenom" autocomplete="given-name" required></div>
+        <div class="champ"><label for="c-nom">Nom</label><input id="c-nom" name="nom" autocomplete="family-name" required></div>
+      </div>
+      <div class="champ"><label for="c-email">E-mail</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="champ"><label for="c-sujet">Sujet</label><select id="c-sujet" name="sujet"><option value="boutique">Une pièce de la boutique</option><option value="sur-mesure">Un projet sur mesure</option><option value="autre">Autre question</option></select></div>
+      <div class="champ"><label for="c-message">Message</label><textarea id="c-message" name="message" rows="6" required></textarea></div>
+      <p class="mention-donnees">Vos coordonnées servent uniquement à répondre à votre message (nLPD). Politique de confidentialité : à compléter.</p>
+      <p><button type="submit" class="bouton bouton--noir">Envoyer</button></p>
+      <p data-message-envoi hidden tabindex="-1"></p>
+    </form>
+  </div>
+</section>
+<section class="c-acces" id="acces">
+  <div class="conteneur c-acces-grille">
+    <div>
+      <h2 data-anime="lignes">Venir à l&#39;atelier</h2>
+      <p data-anime>L&#39;atelier se trouve à Nyon, au bord du Léman. Plan schématique, à titre indicatif.</p>
+      <p data-anime><a class="bouton bouton--rose" href="https://www.google.com/maps/search/?api=1&amp;query=Ch.%20de%20Cr%C3%A8ve-C%C5%93ur%203%2C%201260%20Nyon" target="_blank" rel="noopener">Ouvrir l&#39;itinéraire <span class="visuellement-cache">(nouvel onglet)</span></a></p>
+      <div class="c-insta">
+        <figure class="media c-insta-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/site/rayures-tennis-1280.webp" srcset="/assets/images/site/rayures-tennis-640.webp 640w, /assets/images/site/rayures-tennis-1280.webp 1280w, /assets/images/site/rayures-tennis-2000.webp 2000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Veste marine à rayures tennis portée dans une bibliothèque" width="1280" height="844" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div><h3>Suivez l&#39;atelier</h3><p>Les nouvelles pièces et les coulisses de l&#39;atelier, sur Instagram.</p>
+        <p><a class="lien-fleche" href="https://www.instagram.com/madebymelody.ch/" target="_blank" rel="noopener">@madebymelody.ch <span class="visuellement-cache">(nouvel onglet)</span></a></p></div>
+      </div>
+    </div>
+    <figure class="plan" data-visuel>
+      <svg viewBox="0 0 600 440" role="img" aria-label="Plan schématique : Nyon au bord du Léman et l&#39;atelier, Ch. de Crève-Cœur 3" data-fx="trace">
+        <path class="plan-lac" d="M0 300 C 90 280, 160 330, 250 300 S 420 250, 600 210 L 600 440 L 0 440 Z" />
+        <path class="plan-rive" d="M0 300 C 90 280, 160 330, 250 300 S 420 250, 600 210" fill="none" />
+        <path class="plan-route" d="M30 120 C 160 150, 260 190, 340 205 S 500 190, 590 150" fill="none" />
+        <path class="plan-route plan-route--fine" d="M300 40 C 300 110, 290 170, 270 250" fill="none" />
+        <path class="plan-chemin" d="M244 224 C 252 232, 260 238, 266 242" fill="none" />
+        <circle class="plan-ville" cx="270" cy="246" r="7" data-repere />
+        <text class="plan-texte" x="286" y="262">Nyon</text>
+        <text class="plan-texte plan-texte--lac" x="380" y="360">Le Léman</text>
+        <g class="plan-epingle" data-repere><path d="M244 160 c-14 0 -24 10 -24 24 c0 18 24 40 24 40 s24 -22 24 -40 c0 -14 -10 -24 -24 -24 z" /><circle cx="244" cy="184" r="8" /></g>
+        <text class="plan-texte plan-texte--atelier" x="120" y="152">L&#39;atelier</text>
+      </svg>
+    </figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-haut">
+    <div class="pied-disque" data-effet="face-b">
+      <svg class="disque-svg pied-disque-svg" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-audit-ignorer>
+  <defs><path id="pied-arc" d="M100 100 m-26 0 a26 26 0 1 1 52 0 a26 26 0 1 1 -52 0" /></defs>
+  <circle cx="100" cy="100" r="98" class="disque-vinyle" />
+  <g class="disque-sillons"><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="47.4" /><circle cx="100" cy="100" r="50.8" /><circle cx="100" cy="100" r="54.2" /><circle cx="100" cy="100" r="57.6" /><circle cx="100" cy="100" r="61" /><circle cx="100" cy="100" r="64.4" /><circle cx="100" cy="100" r="67.8" /><circle cx="100" cy="100" r="71.2" /><circle cx="100" cy="100" r="74.6" /><circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="81.4" /><circle cx="100" cy="100" r="84.8" /><circle cx="100" cy="100" r="88.19999999999999" /><circle cx="100" cy="100" r="91.6" /><circle cx="100" cy="100" r="95" /></g>
+  <path class="disque-reflet" d="M100 2 A98 98 0 0 1 169 31 L100 100 Z" />
+  <path class="disque-reflet" d="M100 198 A98 98 0 0 1 31 169 L100 100 Z" />
+  <circle cx="100" cy="100" r="38" class="disque-etiquette" />
+  <text class="disque-texte"><textPath href="#pied-arc" startOffset="0">FIN DE LA FACE B · MADEBYMELODY · </textPath></text>
+  <circle cx="100" cy="100" r="3" class="disque-trou" />
+</svg>
+      <span class="pied-face" aria-hidden="true">Face B</span>
+    </div>
+    <form class="pied-lettre" data-formulaire novalidate>
+      <p class="pied-titre">Ne manquez pas les nouvelles collections</p>
+      <p>Abonnez-vous à la lettre d&#39;information.</p>
+      <div class="champ champ--ligne"><label for="lettre-email">Votre e-mail</label>
+        <span class="champ-rangee"><input id="lettre-email" name="email" type="email" autocomplete="email" required><button class="bouton bouton--rose" type="submit">S&#39;abonner</button></span></div>
+      <p class="mention-donnees">Votre adresse sert uniquement à recevoir la lettre (nLPD). Politique de confidentialité : à compléter.</p>
+      <p data-message-envoi hidden></p>
+    </form>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-titre">L&#39;atelier</p>
+      <p>Ch. de Crève-Cœur 3, 1260 Nyon, Suisse<br><a href="tel:+41763969174">+41 76 396 91 74</a><br><a href="mailto:melody_j8@hotmail.com">melody_j8@hotmail.com</a></p>
+      <p><a class="lien-externe" href="https://www.instagram.com/madebymelody.ch/" target="_blank" rel="noopener">Instagram @madebymelody.ch <span class="visuellement-cache">(nouvel onglet)</span></a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/univers" data-libelle="L&#39;univers">L&#39;univers</a></li><li><a href="/sur-mesure" data-libelle="Sur mesure">Sur mesure</a></li><li><a href="/boutique" data-libelle="Boutique">Boutique</a></li><li><a href="/contact" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Confort de lecture</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette : les informations marquées « à compléter » seront fournies par madebymelody.</p>
+    <p>© madebymelody</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+41763969174">Appeler</a>
+  <a class="bouton bouton--rose" href="/sur-mesure#rendez-vous" data-libelle="Sur mesure" aria-label="Prendre rendez-vous">Rendez-vous</a>
+</div>
+</body>
+</html>

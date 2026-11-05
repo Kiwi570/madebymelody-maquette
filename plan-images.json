@@ -1,0 +1,1776 @@
+[
+ {
+  "source": "recu/grok/accueil-ouverture.jpg",
+  "source_mobile": "recu/grok/accueil-ouverture-mobile.jpg",
+  "nom": "accueil-ouverture",
+  "role": "ouverture",
+  "page": "Accueil",
+  "emplacement": "Ouverture : fond derrière le disque",
+  "priorite": "Indispensable",
+  "mobile": "9:16",
+  "zone_texte": "centre",
+  "alt": "Velours noir dans la pénombre, halo de lumière rose et voiles de tulle",
+  "consigne_scene": "A deep black velvet backdrop in a dark studio, a soft round haze of pale pink light glowing in the centre like a spotlight seen through smoke, a faint cherry red rim light along the lower edge, fine dust floating in the beam, the centre of the frame completely empty and dark enough for a spinning record and a headline added later"
+ },
+ {
+  "source": "recu/grok/accueil-sage.jpg",
+  "nom": "accueil-sage",
+  "role": "section-fond",
+  "page": "Accueil",
+  "emplacement": "Face A sage : fond",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "alt": "Tulle rose poudré et dentelle ivoire superposés",
+  "consigne_scene": "Extreme close-up of layers of blush pink silk tulle and ivory cotton lace gently overlapping, soft diffuse daylight passing through the fabric, delicate floral lace pattern, airy and tender, filling the frame edge to edge"
+ },
+ {
+  "source": "recu/grok/accueil-sauvage.jpg",
+  "nom": "accueil-sauvage",
+  "role": "section-fond",
+  "page": "Accueil",
+  "emplacement": "Face B sauvage : fond",
+  "priorite": "Indispensable",
+  "zone_texte": "droite",
+  "alt": "Dentelle noire sur velours froissé, reflets rouge cerise",
+  "consigne_scene": "Extreme close-up of black lace laid over crushed black velvet, a hard cherry red rim light grazing the folds, deep shadows, a few iridescent blue-green glints like a beetle wing, rock and nocturnal, filling the frame edge to edge"
+ },
+ {
+  "source": "recu/grok/accueil-matiere.jpg",
+  "nom": "accueil-matiere",
+  "role": "section-fond",
+  "gabarit": "texture",
+  "page": "Accueil",
+  "emplacement": "Une seule prise : fond matière",
+  "priorite": "Conseillée",
+  "alt": "Tissage de laine et de lin écru, en gros plan",
+  "consigne_scene": "Straight-on macro photograph of undyed natural wool and linen woven fabric in warm cream, visible threads and slubs, evenly lit with soft raking light, filling the whole frame edge to edge, usable as a texture"
+ },
+ {
+  "source": "recu/grok/accueil-atelier.jpg",
+  "nom": "accueil-atelier",
+  "role": "section-fond",
+  "gabarit": "lieu",
+  "page": "Accueil",
+  "emplacement": "L'atelier : ambiance",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "alt": "Table de coupe au crépuscule : tissus pliés, ciseaux de tailleur et bobines",
+  "consigne_scene": "A small tidy sewing atelier at dusk, a large wooden cutting table with folded bolts of natural fabric, a pair of steel tailor's shears and spools of thread resting on it, a warm lamp glow and pink evening light through a window, nobody in the room, no sewing machine, no garment anywhere"
+ },
+ {
+  "source": "recu/grok/univers-dentelle.jpg",
+  "nom": "univers-dentelle",
+  "role": "galerie",
+  "gabarit": "texture",
+  "page": "L'univers",
+  "emplacement": "Le mélangeur : dentelle",
+  "priorite": "Conseillée",
+  "alt": "Dentelle ivoire à motif floral posée sur une soie rose",
+  "consigne_scene": "Macro photograph of ivory cotton lace with a floral pattern lying flat on pale pink silk, soft raking light, filling the whole frame"
+ },
+ {
+  "source": "recu/grok/univers-insectes.jpg",
+  "nom": "univers-insectes",
+  "role": "galerie",
+  "gabarit": "texture",
+  "page": "L'univers",
+  "emplacement": "Le mélangeur : insectes",
+  "priorite": "Conseillée",
+  "alt": "Aile irisée bleu-vert posée sur un tulle rose et de la dentelle",
+  "consigne_scene": "Macro photograph of iridescent blue-green butterfly wing scales seen from directly above, shimmering softly, abstract, filling the whole frame, no complete insect visible"
+ },
+ {
+  "source": "recu/grok/univers-tulle.jpg",
+  "nom": "univers-tulle",
+  "role": "galerie",
+  "gabarit": "texture",
+  "page": "L'univers",
+  "emplacement": "Le mélangeur : tulle",
+  "priorite": "Conseillée",
+  "alt": "Volutes de tulle rose en contre-jour",
+  "consigne_scene": "Macro photograph of several layers of pale pink silk tulle floating in soft backlight, airy and weightless, filling the whole frame"
+ },
+ {
+  "source": "recu/grok/univers-paon.jpg",
+  "nom": "univers-paon",
+  "role": "galerie",
+  "gabarit": "texture",
+  "page": "L'univers",
+  "emplacement": "Le mélangeur : paon",
+  "priorite": "Conseillée",
+  "alt": "Œil d'une plume de paon, sarcelle, or et émeraude",
+  "consigne_scene": "Macro photograph of a peacock feather eye in deep teal, gold and emerald on a black background, fine barbs in sharp focus, soft raking light, filling the whole frame"
+ },
+ {
+  "source": "recu/grok/univers-silence.jpg",
+  "nom": "univers-silence",
+  "role": "galerie",
+  "gabarit": "texture",
+  "page": "L'univers",
+  "emplacement": "Le mélangeur : silencieux",
+  "priorite": "Facultative",
+  "alt": "Satin rose pâle, plis calmes dans une lumière douce",
+  "consigne_scene": "Macro photograph of smooth folded pale pink satin in calm soft light, quiet and still, filling the whole frame"
+ },
+ {
+  "source": "recu/grok/univers-revendication.jpg",
+  "nom": "univers-revendication",
+  "role": "galerie",
+  "gabarit": "texture",
+  "page": "L'univers",
+  "emplacement": "Le mélangeur : revendicateur",
+  "priorite": "Facultative",
+  "alt": "Cuir noir brut clouté d'argent",
+  "consigne_scene": "Macro photograph of raw black leather with a few round silver studs, hard side light, rock attitude, filling the whole frame, flat material only, no garment shape, no zip pull with lettering"
+ },
+ {
+  "source": "recu/grok/univers-musique.jpg",
+  "nom": "univers-musique",
+  "role": "galerie",
+  "gabarit": "lieu",
+  "page": "L'univers",
+  "emplacement": "La designer : la musique",
+  "priorite": "Conseillée",
+  "alt": "Tourne-disque rose ouvert sur une commode, une rose séchée sur une pile de pochettes",
+  "consigne_scene": "A vintage record player with its lid open on a wooden sideboard, the tonearm resting on its rest, a small stack of vinyl records in plain unmarked black and cream sleeves leaning beside it, a dried rose lying on the stack, soft warm lamp light, nobody",
+  "pieges": [
+   "mécanismes",
+   "texte parasite"
+  ]
+ },
+ {
+  "source": "recu/grok/surmesure-ouverture.jpg",
+  "source_mobile": "recu/grok/surmesure-ouverture-mobile.jpg",
+  "nom": "surmesure-ouverture",
+  "role": "ouverture",
+  "page": "Sur mesure",
+  "emplacement": "Ouverture : voile de tulle",
+  "priorite": "Indispensable",
+  "mobile": "9:16",
+  "zone_texte": "haut",
+  "alt": "Voile de tulle ivoire suspendu dans un studio rose pâle",
+  "consigne_scene": "A long veil of ivory silk tulle floating in mid-air in a pale pink studio, softly backlit, gentle folds and transparency, lots of calm empty space, nothing else, no person, no dress"
+ },
+ {
+  "source": "recu/grok/surmesure-mariee.jpg",
+  "nom": "surmesure-mariee",
+  "role": "galerie",
+  "gabarit": "scene-metier",
+  "page": "Sur mesure",
+  "emplacement": "Robes de mariée : les matières",
+  "priorite": "Indispensable",
+  "alt": "Échantillons de satin, dentelle et tulle ivoire, épingles à tête nacrée",
+  "consigne_scene": "Neatly arranged top-down flat lay on pale linen of fabric swatches: ivory silk satin, cotton lace, silk tulle and a small coil of ivory ribbon, a few pearl-headed pins, all completely blank, generous spacing, soft daylight, no hands"
+ },
+ {
+  "source": "recu/grok/surmesure-confection.jpg",
+  "nom": "surmesure-confection",
+  "role": "galerie",
+  "gabarit": "scene-metier",
+  "page": "Sur mesure",
+  "emplacement": "Matières et confection",
+  "priorite": "Indispensable",
+  "alt": "Bobines de fil rose, rouge et crème, craie de tailleur, pelote d'épingles et ciseaux sur du lin",
+  "consigne_scene": "Top-down flat lay on raw linen of spools of thread in pink, red and cream, a piece of tailor's chalk, a pincushion with pearl-headed pins, a pair of steel tailor's shears and a plain cloth tape measure loosely coiled with no numbers printed on it, soft raking daylight, no hands",
+  "pieges": [
+   "texte parasite"
+  ]
+ },
+ {
+  "source": "recu/grok/surmesure-enfants.jpg",
+  "nom": "surmesure-enfants",
+  "role": "galerie",
+  "gabarit": "texture",
+  "page": "Sur mesure",
+  "emplacement": "Les enfants",
+  "priorite": "Conseillée",
+  "alt": "Chutes de coton pastel découpées en nuages",
+  "consigne_scene": "Small offcuts of pastel cotton fabric in sky blue, cream and blush pink cut into soft cloud shapes, scattered on pale linen, seen from directly above, gentle daylight, playful and light, no hands"
+ },
+ {
+  "source": "recu/grok/surmesure-costumiere.jpg",
+  "nom": "surmesure-costumiere",
+  "role": "galerie",
+  "gabarit": "lieu",
+  "page": "Sur mesure",
+  "emplacement": "Costumière : théâtre et cinéma",
+  "priorite": "Conseillée",
+  "alt": "Coulisses de théâtre : portant de cintres vides sous un projecteur, rideau de velours rouge",
+  "consigne_scene": "An empty theatre backstage corridor, a rolling rail of empty wooden hangers under a single warm spotlight, a dark red velvet curtain on one side, dust floating in the light beam, nobody, no costume hanging",
+  "lieu": "a small old theatre"
+ },
+ {
+  "source": "recu/grok/boutique-fond.jpg",
+  "source_mobile": "recu/grok/boutique-fond-mobile.jpg",
+  "nom": "boutique-fond",
+  "role": "ouverture",
+  "gabarit": "texture",
+  "page": "Boutique",
+  "emplacement": "Ouverture : fond du bac",
+  "priorite": "Conseillée",
+  "mobile": "9:16",
+  "alt": "Carton kraft",
+  "consigne_scene": "Straight-on macro photograph of plain kraft cardboard with fine fibres in warm brown, evenly lit, filling the whole frame edge to edge, no print, no writing"
+ },
+ {
+  "source": "recu/grok/contact-ouverture.jpg",
+  "source_mobile": "recu/grok/contact-ouverture-mobile.jpg",
+  "nom": "contact-ouverture",
+  "role": "ouverture",
+  "gabarit": "lieu",
+  "page": "Contact",
+  "emplacement": "Ouverture : bandeau",
+  "priorite": "Indispensable",
+  "mobile": "9:16",
+  "zone_texte": "bas",
+  "alt": "Coin d'atelier à l'heure dorée : chaise, tissus pliés et bouquet de fleurs des champs",
+  "consigne_scene": "The corner of a calm sewing atelier at golden hour seen from the doorway, a wooden chair, a stack of folded natural fabrics, a small vase of wild flowers on a side table, warm light and long shadows, nobody, no garment"
+ },
+ {
+  "source": "recu/grok/page-404.jpg",
+  "nom": "page-404",
+  "role": "404",
+  "page": "Page 404",
+  "emplacement": "Image de tête",
+  "priorite": "Conseillée",
+  "alt": "Platine vinyle, le bras de lecture relevé du disque",
+  "consigne_scene": "A record player seen from above with an empty platter and no record on it, the tonearm resting in its rest, soft pink side light on a black surface, a gentle touch of humour, nothing else",
+  "pieges": [
+   "mécanismes"
+  ]
+ },
+ {
+  "source": "recu/madly.jpg",
+  "nom": "pieces/madly-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MADLY, pièce madebymelody",
+  "cadrage": [
+   52,
+   16
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/madly-2.png",
+  "nom": "pieces/madly-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MADLY, vue 2",
+  "cadrage": [
+   48,
+   49
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/madly-3.png",
+  "nom": "pieces/madly-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MADLY, vue 3",
+  "cadrage": [
+   48,
+   48
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/strange-days.jpg",
+  "nom": "pieces/strange-days-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "STRANGE DAYS, pièce madebymelody",
+  "cadrage": [
+   17,
+   21
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/strange-days-2.png",
+  "nom": "pieces/strange-days-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "STRANGE DAYS, vue 2",
+  "cadrage": [
+   51,
+   48
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/sunshine.jpg",
+  "nom": "pieces/sunshine-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "SUNSHINE, pièce madebymelody",
+  "cadrage": [
+   50,
+   25
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/sunshine-2.jpg",
+  "nom": "pieces/sunshine-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "SUNSHINE, vue 2",
+  "cadrage": [
+   61,
+   26
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/sunshine-3.png",
+  "nom": "pieces/sunshine-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "SUNSHINE, vue 3",
+  "cadrage": [
+   50,
+   41
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/sunshine-4.png",
+  "nom": "pieces/sunshine-4",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "SUNSHINE, vue 4",
+  "cadrage": [
+   49,
+   35
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/juliette.jpg",
+  "nom": "pieces/juliette-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JULIETTE, pièce madebymelody",
+  "cadrage": [
+   38,
+   18
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/juliette-3.png",
+  "nom": "pieces/juliette-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JULIETTE, vue 2",
+  "cadrage": [
+   51,
+   45
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/juliette-4.jpg",
+  "nom": "pieces/juliette-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JULIETTE, vue 3",
+  "cadrage": [
+   47,
+   59
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/juliette-2.jpg",
+  "nom": "pieces/juliette-4",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JULIETTE, vue 4",
+  "cadrage": [
+   47,
+   45
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/love-me-two.png",
+  "nom": "pieces/love-me-two-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "LOVE ME TWO, pièce madebymelody",
+  "cadrage": [
+   50,
+   42
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/love-me-two-2.png",
+  "nom": "pieces/love-me-two-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "LOVE ME TWO, vue 2",
+  "cadrage": [
+   51,
+   40
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/love-me-two-3.png",
+  "nom": "pieces/love-me-two-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "LOVE ME TWO, vue 3",
+  "cadrage": [
+   49,
+   41
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/flash.png",
+  "nom": "pieces/flash-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "FLASH, pièce madebymelody",
+  "cadrage": [
+   49,
+   41
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/grapevine-2.jpg",
+  "nom": "pieces/grapevine-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "GRAPEVINE, pièce madebymelody",
+  "cadrage": [
+   52,
+   46
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/grapevine.png",
+  "nom": "pieces/grapevine-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "GRAPEVINE, vue 2",
+  "cadrage": [
+   40,
+   55
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/three-little-birds-2.png",
+  "nom": "pieces/three-little-birds-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "THREE LITTLE BIRDS, pièce madebymelody",
+  "cadrage": [
+   49,
+   36
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/three-little-birds.png",
+  "nom": "pieces/three-little-birds-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "THREE LITTLE BIRDS, vue 2",
+  "cadrage": [
+   66,
+   35
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/peacock.jpg",
+  "nom": "pieces/peacock-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "PEACOCK, pièce madebymelody",
+  "cadrage": [
+   64,
+   33
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/peacock-2.jpg",
+  "nom": "pieces/peacock-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "PEACOCK, vue 2",
+  "cadrage": [
+   59,
+   34
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/peacock-3.png",
+  "nom": "pieces/peacock-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "PEACOCK, vue 3",
+  "cadrage": [
+   51,
+   42
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/supernature.jpg",
+  "nom": "pieces/supernature-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "SUPERNATURE, pièce madebymelody",
+  "cadrage": [
+   58,
+   32
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/supernature-2.jpg",
+  "nom": "pieces/supernature-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "SUPERNATURE, vue 2",
+  "cadrage": [
+   58,
+   29
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/supernature-3.png",
+  "nom": "pieces/supernature-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "SUPERNATURE, vue 3",
+  "cadrage": [
+   50,
+   67
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/supernature-4.png",
+  "nom": "pieces/supernature-4",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "SUPERNATURE, vue 4",
+  "cadrage": [
+   45,
+   51
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/fever.jpg",
+  "nom": "pieces/fever-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "FEVER, pièce madebymelody",
+  "cadrage": [
+   47,
+   34
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/fever-3.png",
+  "nom": "pieces/fever-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "FEVER, vue 2",
+  "cadrage": [
+   35,
+   60
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/fever-2.png",
+  "nom": "pieces/fever-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "FEVER, vue 3",
+  "cadrage": [
+   44,
+   33
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/envolez-moi.jpg",
+  "nom": "pieces/envolez-moi-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "ENVOLEZ-MOI, pièce madebymelody",
+  "cadrage": [
+   56,
+   41
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/envolez-moi-3.jpg",
+  "nom": "pieces/envolez-moi-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "ENVOLEZ-MOI, vue 2",
+  "cadrage": [
+   48,
+   44
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/envolez-moi-4.jpg",
+  "nom": "pieces/envolez-moi-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "ENVOLEZ-MOI, vue 3",
+  "cadrage": [
+   46,
+   44
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/envolez-moi-2.jpg",
+  "nom": "pieces/envolez-moi-4",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "ENVOLEZ-MOI, vue 4",
+  "cadrage": [
+   51,
+   44
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/jekyll-3.png",
+  "nom": "pieces/jekyll-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JEKYLL, pièce madebymelody",
+  "cadrage": [
+   47,
+   51
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/jekyll-4.png",
+  "nom": "pieces/jekyll-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JEKYLL, vue 2",
+  "cadrage": [
+   51,
+   51
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/jekyll.png",
+  "nom": "pieces/jekyll-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JEKYLL, vue 3",
+  "cadrage": [
+   46,
+   19
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/jekyll-2.png",
+  "nom": "pieces/jekyll-4",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JEKYLL, vue 4",
+  "cadrage": [
+   51,
+   52
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/javanaise-5.jpg",
+  "nom": "pieces/javanaise-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JAVANAISE, pièce madebymelody",
+  "cadrage": [
+   61,
+   56
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/javanaise-3.png",
+  "nom": "pieces/javanaise-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JAVANAISE, vue 2",
+  "cadrage": [
+   53,
+   33
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/javanaise-4.png",
+  "nom": "pieces/javanaise-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JAVANAISE, vue 3",
+  "cadrage": [
+   53,
+   33
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/javanaise-2.jpg",
+  "nom": "pieces/javanaise-4",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "JAVANAISE, vue 4",
+  "cadrage": [
+   34,
+   49
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/aquarius.png",
+  "nom": "pieces/aquarius-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "AQUARIUS, pièce madebymelody",
+  "cadrage": [
+   52,
+   43
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/aquarius-2.png",
+  "nom": "pieces/aquarius-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "AQUARIUS, vue 2",
+  "cadrage": [
+   52,
+   38
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/hurricane.png",
+  "nom": "pieces/hurricane-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "HURRICANE, pièce madebymelody",
+  "cadrage": [
+   51,
+   41
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/hurricane-3.png",
+  "nom": "pieces/hurricane-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "HURRICANE, vue 2",
+  "cadrage": [
+   50,
+   45
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/hurricane-4.png",
+  "nom": "pieces/hurricane-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "HURRICANE, vue 3",
+  "cadrage": [
+   48,
+   48
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/hurricane-2.jpg",
+  "nom": "pieces/hurricane-4",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "HURRICANE, vue 4",
+  "cadrage": [
+   33,
+   34
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/flesh-2.png",
+  "nom": "pieces/flesh-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "FLESH, pièce madebymelody",
+  "cadrage": [
+   49,
+   40
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/flesh.jpg",
+  "nom": "pieces/flesh-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "FLESH, vue 2",
+  "cadrage": [
+   47,
+   36
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/flesh-3.png",
+  "nom": "pieces/flesh-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "FLESH, vue 3",
+  "cadrage": [
+   49,
+   40
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/cminor.jpg",
+  "nom": "pieces/cminor-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "CMinor, pièce madebymelody",
+  "cadrage": [
+   59,
+   46
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/cminor-2.jpg",
+  "nom": "pieces/cminor-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "CMinor, vue 2",
+  "cadrage": [
+   64,
+   25
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/cminor-3.png",
+  "nom": "pieces/cminor-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "CMinor, vue 3",
+  "cadrage": [
+   58,
+   44
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/mary.jpg",
+  "nom": "pieces/mary-l-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MARY L, pièce madebymelody",
+  "cadrage": [
+   60,
+   43
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/mary-3.png",
+  "nom": "pieces/mary-l-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MARY L, vue 2",
+  "cadrage": [
+   60,
+   43
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/mary-4.png",
+  "nom": "pieces/mary-l-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MARY L, vue 3",
+  "cadrage": [
+   49,
+   47
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/playground.png",
+  "nom": "pieces/playground-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "PLAYGROUND, pièce madebymelody",
+  "cadrage": [
+   54,
+   37
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/playground-3.png",
+  "nom": "pieces/playground-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "PLAYGROUND, vue 2",
+  "cadrage": [
+   44,
+   30
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/ghost.jpg",
+  "nom": "pieces/ghost-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "GHOST, pièce madebymelody",
+  "cadrage": [
+   54,
+   38
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/ghost-2.jpg",
+  "nom": "pieces/ghost-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "GHOST, vue 2",
+  "cadrage": [
+   51,
+   36
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/marche-ombre.jpg",
+  "nom": "pieces/marche-a-l-ombre-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MARCHE À L'OMBRE, pièce madebymelody",
+  "cadrage": [
+   49,
+   45
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/requiem.png",
+  "nom": "pieces/requiem-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "REQUIEM, pièce madebymelody",
+  "cadrage": [
+   59,
+   46
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/ballade-3.jpg",
+  "nom": "pieces/ballade-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "BALLADE, pièce madebymelody",
+  "cadrage": [
+   53,
+   35
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/ballade-5.jpg",
+  "nom": "pieces/ballade-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "BALLADE, vue 2",
+  "cadrage": [
+   43,
+   45
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/ballade.jpg",
+  "nom": "pieces/ballade-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "BALLADE, vue 3",
+  "cadrage": [
+   64,
+   33
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/ballade-4.jpg",
+  "nom": "pieces/ballade-4",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "BALLADE, vue 4",
+  "cadrage": [
+   48,
+   16
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/marilou-3.png",
+  "nom": "pieces/marilou-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MARILOU, pièce madebymelody",
+  "cadrage": [
+   49,
+   48
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/marilou.jpg",
+  "nom": "pieces/marilou-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MARILOU, vue 2",
+  "cadrage": [
+   54,
+   25
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/marilou-2.png",
+  "nom": "pieces/marilou-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MARILOU, vue 3",
+  "cadrage": [
+   50,
+   51
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/bonnie.jpg",
+  "nom": "pieces/bonnie-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "BONNIE, pièce madebymelody",
+  "cadrage": [
+   36,
+   33
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/bonnie-2.png",
+  "nom": "pieces/bonnie-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "BONNIE, vue 2",
+  "cadrage": [
+   48,
+   38
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/bonnie-3.png",
+  "nom": "pieces/bonnie-3",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "BONNIE, vue 3",
+  "cadrage": [
+   52,
+   40
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/paint-it-black.jpg",
+  "nom": "pieces/paint-it-black-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "PAINT IT BLACK, pièce madebymelody",
+  "cadrage": [
+   49,
+   34
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/mustang.jpg",
+  "nom": "pieces/mustang-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MUSTANG, pièce madebymelody",
+  "cadrage": [
+   52,
+   31
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/mustang-2.png",
+  "nom": "pieces/mustang-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "MUSTANG, vue 2",
+  "cadrage": [
+   50,
+   45
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/clouds-up.jpg",
+  "nom": "pieces/clouds-up-1",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "CLOUDS UP, pièce madebymelody",
+  "cadrage": [
+   55,
+   34
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/clouds-up-2.png",
+  "nom": "pieces/clouds-up-2",
+  "role": "produit",
+  "recadrer": false,
+  "alt": "CLOUDS UP, vue 2",
+  "cadrage": [
+   52,
+   46
+  ],
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "Boutique"
+ },
+ {
+  "source": "recu/mary-2.jpg",
+  "nom": "site/etiquette-a",
+  "role": "ouverture",
+  "alt": "Robe beige portée dans l’herbe au soleil",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "cadrage": [
+   57,
+   30
+  ],
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/playground-2.jpg",
+  "nom": "site/etiquette-b",
+  "role": "ouverture",
+  "alt": "Robe rouge portée sur une chaise longue dans l’herbe",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "cadrage": [
+   42,
+   36
+  ],
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/marque.png",
+  "nom": "site/collage-marque",
+  "role": "section-fond",
+  "alt": "Collage madebymelody : photos, croquis d’insectes et rubans adhésifs",
+  "largeurs": [
+   800,
+   1400,
+   2000
+  ],
+  "cadrage": [
+   76,
+   29
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/marque-2.png",
+  "nom": "site/collage-portrait",
+  "role": "galerie",
+  "alt": "Collage madebymelody autour d’un portrait en noir et blanc",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "cadrage": [
+   38,
+   52
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/marque-3.png",
+  "nom": "site/collage-bandeau",
+  "role": "section-fond",
+  "alt": "Bandeau de collages : photos, dessins et pochettes",
+  "largeurs": [
+   800,
+   1400,
+   1900
+  ],
+  "cadrage": [
+   51,
+   44
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/collections.png",
+  "nom": "site/collage-collections",
+  "role": "galerie",
+  "alt": "Collage : portrait en noir et blanc sur un papier dessiné d’insectes",
+  "largeurs": [
+   480,
+   800,
+   1120
+  ],
+  "cadrage": [
+   45,
+   55
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/concept-2.jpg",
+  "nom": "site/collage-concept",
+  "role": "galerie",
+  "alt": "Collage : portrait et croquis de libellule",
+  "largeurs": [
+   480,
+   741
+  ],
+  "cadrage": [
+   40,
+   54
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/enfants.jpg",
+  "nom": "site/collage-enfants",
+  "role": "galerie",
+  "alt": "Collage de l’univers madebymelody pour les enfants",
+  "largeurs": [
+   480,
+   800,
+   1080
+  ],
+  "cadrage": [
+   76,
+   57
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/robe-mesure-madebymelody.png",
+  "nom": "site/robe-sur-mesure",
+  "role": "galerie",
+  "alt": "Robe bustier rouge sur mesure, sur un buste de couture",
+  "largeurs": [
+   480,
+   800,
+   1400
+  ],
+  "cadrage": [
+   52,
+   39
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/boutique-madebymelody.jpg",
+  "nom": "site/rayures-tennis",
+  "role": "galerie",
+  "alt": "Veste marine à rayures tennis portée dans une bibliothèque",
+  "largeurs": [
+   640,
+   1280,
+   2000
+  ],
+  "cadrage": [
+   36,
+   39
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/madebymelody.jpg",
+  "nom": "site/robe-rouge-herbe",
+  "role": "galerie",
+  "alt": "Robe rouge portée, allongée dans l’herbe",
+  "largeurs": [
+   640,
+   1280,
+   1688
+  ],
+  "cadrage": [
+   37,
+   27
+  ],
+  "recadrer": false
+ },
+ {
+  "source": "recu/e-mail.png",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "madebymelody",
+  "recadrer": false,
+  "marque": "principale"
+ },
+ {
+  "source": "recu/madebymelody-2.png",
+  "nom": "monogramme",
+  "role": "logo",
+  "alt": "M",
+  "recadrer": false,
+  "marque": "monogramme"
+ }
+]

@@ -1,0 +1,805 @@
+[
+ {
+  "piste": 1,
+  "id": "madly",
+  "nom": "MADLY",
+  "type": "short",
+  "prix": 50,
+  "taille": "S/M",
+  "matiere": "100 % coton",
+  "face": "A",
+  "description": "Short fleuri inspiré des années 1970, rose, orange et vert.",
+  "photos": [
+   {
+    "nom": "pieces/madly-1",
+    "cadrage": "52% 16%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/madly-2",
+    "cadrage": "48% 49%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/madly-3",
+    "cadrage": "48% 48%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#5a1420"
+ },
+ {
+  "piste": 2,
+  "id": "strange-days",
+  "nom": "STRANGE DAYS",
+  "type": "short",
+  "prix": 50,
+  "taille": "S/M",
+  "matiere": "100 % coton",
+  "face": "A",
+  "description": "Short vert inspiré des années 1970, biais vert foncé sur les côtés.",
+  "photos": [
+   {
+    "nom": "pieces/strange-days-1",
+    "cadrage": "17% 21%",
+    "ratio": 0.5626
+   },
+   {
+    "nom": "pieces/strange-days-2",
+    "cadrage": "51% 48%",
+    "ratio": 1.7778
+   }
+  ],
+  "teinte": "#3d4a2a"
+ },
+ {
+  "piste": 3,
+  "id": "sunshine",
+  "nom": "SUNSHINE",
+  "type": "robe",
+  "prix": 110,
+  "taille": "XS/S",
+  "matiere": "100 % coton denim",
+  "face": "A",
+  "description": "Robe en jean bleu à reflets dorés, ornée de deux boutons dorés à motif ancre sur l'épaule. Elle se ferme grâce à des pressions invisibles.",
+  "photos": [
+   {
+    "nom": "pieces/sunshine-1",
+    "cadrage": "50% 25%",
+    "ratio": 0.6128
+   },
+   {
+    "nom": "pieces/sunshine-2",
+    "cadrage": "61% 26%",
+    "ratio": 0.6733
+   },
+   {
+    "nom": "pieces/sunshine-3",
+    "cadrage": "50% 41%",
+    "ratio": 1.3333
+   },
+   {
+    "nom": "pieces/sunshine-4",
+    "cadrage": "49% 35%",
+    "ratio": 0.75
+   }
+  ],
+  "teinte": "#3a0f18"
+ },
+ {
+  "piste": 4,
+  "id": "juliette",
+  "nom": "JULIETTE",
+  "type": "haut",
+  "prix": 55,
+  "taille": "XS/S",
+  "matiere": "100 % coton",
+  "face": "A",
+  "description": "Top marine imprimé de coquelicots rouges. Les bretelles sont ajustables.",
+  "photos": [
+   {
+    "nom": "pieces/juliette-1",
+    "cadrage": "38% 18%",
+    "ratio": 1.0
+   },
+   {
+    "nom": "pieces/juliette-2",
+    "cadrage": "51% 45%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/juliette-3",
+    "cadrage": "47% 59%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/juliette-4",
+    "cadrage": "47% 45%",
+    "ratio": 0.75
+   }
+  ],
+  "teinte": "#1e1a1c"
+ },
+ {
+  "piste": 5,
+  "id": "love-me-two",
+  "nom": "LOVE ME TWO",
+  "type": "robe",
+  "prix": 85,
+  "taille": "XS",
+  "matiere": "100 % coton",
+  "face": "A",
+  "description": "Robe jaune imprimée de petites fleurs blanches. Boutons en trompe-l'œil dans le dos.",
+  "photos": [
+   {
+    "nom": "pieces/love-me-two-1",
+    "cadrage": "50% 42%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/love-me-two-2",
+    "cadrage": "51% 40%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/love-me-two-3",
+    "cadrage": "49% 41%",
+    "ratio": 0.75
+   }
+  ],
+  "teinte": "#6b5418"
+ },
+ {
+  "piste": 6,
+  "id": "flash",
+  "nom": "FLASH",
+  "type": "jupe",
+  "prix": 80,
+  "taille": "S/M",
+  "matiere": "coton, polyester et fils métalliques",
+  "face": "B",
+  "description": "Jupe noire plissée avec fils métalliques incrustés. S'attache avec un zip au dos.",
+  "photos": [
+   {
+    "nom": "pieces/flash-1",
+    "cadrage": "49% 41%",
+    "ratio": 1.3333
+   }
+  ],
+  "teinte": "#26242a"
+ },
+ {
+  "piste": 7,
+  "id": "grapevine",
+  "nom": "GRAPEVINE",
+  "type": "haut",
+  "prix": 55,
+  "taille": "M",
+  "matiere": "100 % tulle de coton",
+  "face": "B",
+  "description": "Top noir transparent avec motifs de tissus africains appliqués.",
+  "photos": [
+   {
+    "nom": "pieces/grapevine-1",
+    "cadrage": "52% 46%",
+    "ratio": 0.5627
+   },
+   {
+    "nom": "pieces/grapevine-2",
+    "cadrage": "40% 55%",
+    "ratio": 0.75
+   }
+  ],
+  "teinte": "#3a1420"
+ },
+ {
+  "piste": 8,
+  "id": "three-little-birds",
+  "nom": "THREE LITTLE BIRDS",
+  "type": "jupe",
+  "prix": 55,
+  "taille": "S/M",
+  "matiere": "100 % tulle de coton",
+  "face": "B",
+  "description": "Jupe noire à taille élastique, légèrement transparente, avec motifs de tissus africains appliqués.",
+  "photos": [
+   {
+    "nom": "pieces/three-little-birds-1",
+    "cadrage": "49% 36%",
+    "ratio": 1.3333
+   },
+   {
+    "nom": "pieces/three-little-birds-2",
+    "cadrage": "66% 35%",
+    "ratio": 0.75
+   }
+  ],
+  "teinte": "#2a2226"
+ },
+ {
+  "piste": 9,
+  "id": "peacock",
+  "nom": "PEACOCK",
+  "type": "robe",
+  "prix": 80,
+  "taille": "M/L",
+  "matiere": null,
+  "face": "B",
+  "description": "Robe bustier noire ornée d'un paon doré en dentelle appliqué sur le devant. Les côtés sont soulignés par un passepoil doré. Un élastique noir au bustier permet de la porter en robe ou en jupe si la longueur est ajustée.",
+  "photos": [
+   {
+    "nom": "pieces/peacock-1",
+    "cadrage": "64% 33%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/peacock-2",
+    "cadrage": "59% 34%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/peacock-3",
+    "cadrage": "51% 42%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#2b2416"
+ },
+ {
+  "piste": 10,
+  "id": "supernature",
+  "nom": "SUPERNATURE",
+  "type": "robe",
+  "prix": 150,
+  "taille": "S/M",
+  "matiere": null,
+  "face": "B",
+  "description": "Robe longue imprimée de papillons de toutes les couleurs. Les bretelles sont croisées dans le dos.",
+  "photos": [
+   {
+    "nom": "pieces/supernature-1",
+    "cadrage": "58% 32%",
+    "ratio": 0.5626
+   },
+   {
+    "nom": "pieces/supernature-2",
+    "cadrage": "58% 29%",
+    "ratio": 0.6667
+   },
+   {
+    "nom": "pieces/supernature-3",
+    "cadrage": "50% 67%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/supernature-4",
+    "cadrage": "45% 51%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#3a2f1c"
+ },
+ {
+  "piste": 11,
+  "id": "fever",
+  "nom": "FEVER",
+  "type": "robe",
+  "prix": 150,
+  "taille": "S/M",
+  "matiere": "coton et élasthanne",
+  "face": "B",
+  "description": "Robe bustier gris foncé inspirée des années 1950. Des fleurs dorées en dentelle ornent le bustier et la jupe. Fermeture éclair invisible dans le dos.",
+  "photos": [
+   {
+    "nom": "pieces/fever-1",
+    "cadrage": "47% 34%",
+    "ratio": 0.6667
+   },
+   {
+    "nom": "pieces/fever-2",
+    "cadrage": "35% 60%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/fever-3",
+    "cadrage": "44% 33%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#2c2a2e"
+ },
+ {
+  "piste": 12,
+  "id": "envolez-moi",
+  "nom": "ENVOLEZ-MOI",
+  "type": "robe",
+  "prix": 160,
+  "taille": "S/M/L",
+  "matiere": "100 % soie, doublure 100 % coton",
+  "face": "B",
+  "description": "Robe en soie rouge foncé imprimée d'hirondelles. Une petite chaînette en métal à l'avant et à l'arrière règle le décolleté. Doublure noire.",
+  "photos": [
+   {
+    "nom": "pieces/envolez-moi-1",
+    "cadrage": "56% 41%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/envolez-moi-2",
+    "cadrage": "48% 44%",
+    "ratio": 0.7509
+   },
+   {
+    "nom": "pieces/envolez-moi-3",
+    "cadrage": "46% 44%",
+    "ratio": 1.2906
+   },
+   {
+    "nom": "pieces/envolez-moi-4",
+    "cadrage": "51% 44%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#4a1420"
+ },
+ {
+  "piste": 13,
+  "id": "jekyll",
+  "nom": "JEKYLL",
+  "type": "short",
+  "prix": 50,
+  "taille": "S/M",
+  "matiere": "100 % coton",
+  "face": "A",
+  "description": "Shorty blanc effet jupe à l'avant, avec un double boutonnage de boutons vintage en trompe-l'œil. Petit élastique au dos.",
+  "photos": [
+   {
+    "nom": "pieces/jekyll-1",
+    "cadrage": "47% 51%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/jekyll-2",
+    "cadrage": "51% 51%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/jekyll-3",
+    "cadrage": "46% 19%",
+    "ratio": 0.6624
+   },
+   {
+    "nom": "pieces/jekyll-4",
+    "cadrage": "51% 52%",
+    "ratio": 0.6624
+   }
+  ],
+  "teinte": "#4a4540"
+ },
+ {
+  "piste": 14,
+  "id": "javanaise",
+  "nom": "JAVANAISE",
+  "type": "veste",
+  "prix": 220,
+  "taille": "M/L",
+  "matiere": "100 % laine",
+  "face": "B",
+  "description": "Veste inspirée de l'univers Gainsbourg, avec un dos nu renversé à l'arrière. La couleur marine à fines lignes blanches rappelle les tenues de Gainsbourg.",
+  "photos": [
+   {
+    "nom": "pieces/javanaise-1",
+    "cadrage": "61% 56%",
+    "ratio": 0.6667
+   },
+   {
+    "nom": "pieces/javanaise-2",
+    "cadrage": "53% 33%",
+    "ratio": 1.3333
+   },
+   {
+    "nom": "pieces/javanaise-3",
+    "cadrage": "53% 33%",
+    "ratio": 1.3333
+   },
+   {
+    "nom": "pieces/javanaise-4",
+    "cadrage": "34% 49%",
+    "ratio": 0.6667
+   }
+  ],
+  "teinte": "#1e2340"
+ },
+ {
+  "piste": 15,
+  "id": "aquarius",
+  "nom": "AQUARIUS",
+  "type": "robe",
+  "prix": 90,
+  "taille": "M/L",
+  "matiere": "100 % coton",
+  "face": "A",
+  "description": "Robe marine avec une petite ancre appliquée sur le devant. Le col au dos est plissé.",
+  "photos": [
+   {
+    "nom": "pieces/aquarius-1",
+    "cadrage": "52% 43%",
+    "ratio": 1.3333
+   },
+   {
+    "nom": "pieces/aquarius-2",
+    "cadrage": "52% 38%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#1c2340"
+ },
+ {
+  "piste": 16,
+  "id": "hurricane",
+  "nom": "HURRICANE",
+  "type": "veste",
+  "prix": 150,
+  "taille": null,
+  "matiere": null,
+  "face": "B",
+  "description": null,
+  "photos": [
+   {
+    "nom": "pieces/hurricane-1",
+    "cadrage": "51% 41%",
+    "ratio": 0.8019
+   },
+   {
+    "nom": "pieces/hurricane-2",
+    "cadrage": "50% 45%",
+    "ratio": 1.7778
+   },
+   {
+    "nom": "pieces/hurricane-3",
+    "cadrage": "48% 48%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/hurricane-4",
+    "cadrage": "33% 34%",
+    "ratio": 0.7966
+   }
+  ],
+  "teinte": "#1d2238"
+ },
+ {
+  "piste": 17,
+  "id": "flesh",
+  "nom": "FLESH",
+  "type": "haut",
+  "prix": 90,
+  "taille": "M/L",
+  "matiere": "100 % soie",
+  "face": "B",
+  "description": "Petit haut rose imprimé de moustiques sérigraphiés à la main. Dos nu, il s'attache par une petite chaînette métallique derrière le cou.",
+  "photos": [
+   {
+    "nom": "pieces/flesh-1",
+    "cadrage": "49% 40%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/flesh-2",
+    "cadrage": "47% 36%",
+    "ratio": 0.6667
+   },
+   {
+    "nom": "pieces/flesh-3",
+    "cadrage": "49% 40%",
+    "ratio": 0.75
+   }
+  ],
+  "teinte": "#5a3c3e"
+ },
+ {
+  "piste": 18,
+  "id": "cminor",
+  "nom": "CMinor",
+  "type": "robe",
+  "prix": 145,
+  "taille": "S/M",
+  "matiere": "100 % soie",
+  "face": "A",
+  "description": "Robe rose à col rouge, bretelles ajustables.",
+  "photos": [
+   {
+    "nom": "pieces/cminor-1",
+    "cadrage": "59% 46%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/cminor-2",
+    "cadrage": "64% 25%",
+    "ratio": 0.6727
+   },
+   {
+    "nom": "pieces/cminor-3",
+    "cadrage": "58% 44%",
+    "ratio": 0.6579
+   }
+  ],
+  "teinte": "#141113"
+ },
+ {
+  "piste": 19,
+  "id": "mary-l",
+  "nom": "MARY L",
+  "type": "robe",
+  "prix": 145,
+  "taille": "S/M",
+  "matiere": "100 % soie",
+  "face": "A",
+  "description": "Robe beige à col rose ; des fleurs dorées en dentelle ornent le bas de la robe. Bretelles beiges transparentes ajustables par un nœud.",
+  "photos": [
+   {
+    "nom": "pieces/mary-l-1",
+    "cadrage": "60% 43%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/mary-l-2",
+    "cadrage": "60% 43%",
+    "ratio": 1.0
+   },
+   {
+    "nom": "pieces/mary-l-3",
+    "cadrage": "49% 47%",
+    "ratio": 1.0
+   }
+  ],
+  "teinte": "#5a4a3a"
+ },
+ {
+  "piste": 20,
+  "id": "playground",
+  "nom": "PLAYGROUND",
+  "type": "robe",
+  "prix": 160,
+  "taille": "S/M",
+  "matiere": "100 % viscose",
+  "face": "B",
+  "description": "Robe rouge vigne à col rose, imprimée de moustiques blancs sérigraphiés à la main en atelier. Bretelles ajustables.",
+  "photos": [
+   {
+    "nom": "pieces/playground-1",
+    "cadrage": "54% 37%",
+    "ratio": 1.3333
+   },
+   {
+    "nom": "pieces/playground-2",
+    "cadrage": "44% 30%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#241215"
+ },
+ {
+  "piste": 21,
+  "id": "ghost",
+  "nom": "GHOST",
+  "type": "pantalon",
+  "prix": 80,
+  "taille": "S/M",
+  "matiere": null,
+  "face": "B",
+  "description": "Pantalon droit gris avec poches fermées au boutonnage marine, de chaque côté.",
+  "photos": [
+   {
+    "nom": "pieces/ghost-1",
+    "cadrage": "54% 38%",
+    "ratio": 0.6667
+   },
+   {
+    "nom": "pieces/ghost-2",
+    "cadrage": "51% 36%",
+    "ratio": 0.6667
+   }
+  ],
+  "teinte": "#3f4448"
+ },
+ {
+  "piste": 22,
+  "id": "marche-a-l-ombre",
+  "nom": "MARCHE À L'OMBRE",
+  "type": "short",
+  "prix": 90,
+  "taille": "S/M",
+  "matiere": "100 % coton",
+  "face": "A",
+  "description": "Short en jean bleu ciel, boutons façon marin sur le devant et biais à motif d'ancres marines à la taille.",
+  "photos": [
+   {
+    "nom": "pieces/marche-a-l-ombre-1",
+    "cadrage": "49% 45%",
+    "ratio": 0.6667
+   }
+  ],
+  "teinte": "#2f4660"
+ },
+ {
+  "piste": 23,
+  "id": "requiem",
+  "nom": "REQUIEM",
+  "type": "haut",
+  "prix": 50,
+  "taille": "M",
+  "matiere": "100 % tulle de coton",
+  "face": "B",
+  "mesures": "longueur depuis l'épaule 60 cm, largeur 100 cm",
+  "description": "Petit haut transparent couleur corail, sur lequel est appliqué un paon doré en dentelle. Emmanchures bordées d'un biais de soie rose.",
+  "photos": [
+   {
+    "nom": "pieces/requiem-1",
+    "cadrage": "59% 46%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#6a3a30"
+ },
+ {
+  "piste": 24,
+  "id": "ballade",
+  "nom": "BALLADE",
+  "type": "pantalon",
+  "prix": 150,
+  "taille": "S/M",
+  "matiere": "100 % laine",
+  "face": "B",
+  "description": "Pantalon droit inspiré de l'univers Gainsbourg, ceinture en cuir noir. Couleur marine à rayures tennis blanches.",
+  "photos": [
+   {
+    "nom": "pieces/ballade-1",
+    "cadrage": "53% 35%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/ballade-2",
+    "cadrage": "43% 45%",
+    "ratio": 0.75
+   },
+   {
+    "nom": "pieces/ballade-3",
+    "cadrage": "64% 33%",
+    "ratio": 0.6667
+   },
+   {
+    "nom": "pieces/ballade-4",
+    "cadrage": "48% 16%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#4a1a26"
+ },
+ {
+  "piste": 25,
+  "id": "marilou",
+  "nom": "MARILOU",
+  "type": "gilet",
+  "prix": 95,
+  "taille": null,
+  "matiere": null,
+  "face": "A",
+  "description": null,
+  "photos": [
+   {
+    "nom": "pieces/marilou-1",
+    "cadrage": "49% 48%",
+    "ratio": 0.5625
+   },
+   {
+    "nom": "pieces/marilou-2",
+    "cadrage": "54% 25%",
+    "ratio": 0.7176
+   },
+   {
+    "nom": "pieces/marilou-3",
+    "cadrage": "50% 51%",
+    "ratio": 0.5625
+   }
+  ],
+  "teinte": "#1e2238"
+ },
+ {
+  "piste": 26,
+  "id": "bonnie",
+  "nom": "BONNIE",
+  "type": "combinaison",
+  "prix": 220,
+  "taille": "S/M",
+  "matiere": "100 % laine",
+  "face": "B",
+  "mesures": "longueur de l'épaule à l'entrejambe 75 cm",
+  "description": "Combinaison inspirée de l'univers Gainsbourg, avec l'effet d'un gilet et d'un short-jupe assemblés. Croisée et doublement boutonnée à l'avant, elle se ferme à l'intérieur par des pressions. Marine à rayures tennis blanches.",
+  "photos": [
+   {
+    "nom": "pieces/bonnie-1",
+    "cadrage": "36% 33%",
+    "ratio": 0.6666
+   },
+   {
+    "nom": "pieces/bonnie-2",
+    "cadrage": "48% 38%",
+    "ratio": 0.8
+   },
+   {
+    "nom": "pieces/bonnie-3",
+    "cadrage": "52% 40%",
+    "ratio": 1.3701
+   }
+  ],
+  "teinte": "#1e2340"
+ },
+ {
+  "piste": 27,
+  "id": "paint-it-black",
+  "nom": "PAINT IT BLACK",
+  "type": "robe",
+  "prix": 140,
+  "taille": null,
+  "matiere": null,
+  "face": "B",
+  "description": null,
+  "photos": [
+   {
+    "nom": "pieces/paint-it-black-1",
+    "cadrage": "49% 34%",
+    "ratio": 0.6667
+   }
+  ],
+  "teinte": "#1e1c1e"
+ },
+ {
+  "piste": 28,
+  "id": "mustang",
+  "nom": "MUSTANG",
+  "type": "veste",
+  "prix": 190,
+  "taille": "XS/S",
+  "matiere": "coton ciré",
+  "face": "B",
+  "description": "Veste droite double face noire en coton ciré.",
+  "photos": [
+   {
+    "nom": "pieces/mustang-1",
+    "cadrage": "52% 31%",
+    "ratio": 0.6668
+   },
+   {
+    "nom": "pieces/mustang-2",
+    "cadrage": "50% 45%",
+    "ratio": 0.75
+   }
+  ],
+  "teinte": "#2a1418"
+ },
+ {
+  "piste": 29,
+  "id": "clouds-up",
+  "nom": "CLOUDS UP",
+  "type": "pull",
+  "prix": 85,
+  "taille": null,
+  "matiere": "100 % coton",
+  "face": "A",
+  "description": "Pull imprimé de nuages bleus, beiges et crème.",
+  "photos": [
+   {
+    "nom": "pieces/clouds-up-1",
+    "cadrage": "55% 34%",
+    "ratio": 1.4998
+   },
+   {
+    "nom": "pieces/clouds-up-2",
+    "cadrage": "52% 46%",
+    "ratio": 1.3333
+   }
+  ],
+  "teinte": "#2a4258"
+ }
+]

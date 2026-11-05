@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "madebymelody",
+  "url": "https://madebymelody-maquette.vercel.app/",
+  "telephone": "+41763969174",
+  "email": "melody_j8@hotmail.com",
+  "address": { "@type": "PostalAddress", "streetAddress": "Ch. de Crève-Cœur 3", "postalCode": "1260", "addressLocality": "Nyon", "addressRegion": "VD", "addressCountry": "CH" },
+  "sameAs": ["https://www.instagram.com/madebymelody.ch/"],
+  "founder": { "@type": "Person", "name": "Melody" },
+  "currenciesAccepted": "CHF",
+  "description": { "fr": "Créatrice de mode à Nyon : pièces uniques et numérotées pour femmes et enfants, faites main, et atelier sur mesure (robes de mariée, costumes de scène).", "en": "Fashion designer in Nyon: one-of-a-kind numbered pieces for women and children, handmade, and a made-to-measure atelier." }
+}

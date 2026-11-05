@@ -1,0 +1,32 @@
+{
+  "echecs": [],
+  "aRegarder": [],
+  "nonLances": [
+    {
+      "controle": "parcours:calme",
+      "raison": "elementHandle.click: Timeout 30000ms exceeded.",
+      "etape": "parcours"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 6,
+    "liens et boutons": 6,
+    "liens profonds": 10,
+    "liens vers la page en cours": 5,
+    "changements de hauteur": 5,
+    "mode calme": 10,
+    "parcours du projet": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=1",
+    "Audit standard : étapes lourdes sur /, /boutique, /contact, /sur-mesure, /univers.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés."
+  ]
+}
